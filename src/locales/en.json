@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "header": "Hello, my name is ",
+      "firstParagraph": "and I am 22 years old full-stack-developer"
+    },
+    "skills": {
+      "header": "My skills"
+    },
+    "experience": {
+      "header": "Experience",
+      "items": [
+        {
+          "date": "2024 — present",
+          "title": "Frontend Developer",
+          "description": "Building interfaces with Vue and Tailwind.",
+          "projects": [
+            {
+              "title": "Project One",
+              "description": "Short description of what this project does and the problem it solves.",
+              "tech": ["Vue", "Node.js", "PostgreSQL"]
+            }
+          ]
+        },
+        {
+          "date": "2022 — 2024",
+          "title": "Junior Developer",
+          "description": "First production projects, learning backend.",
+          "projects": [
+            {
+              "title": "Project Two",
+              "description": "Short description of what this project does and the problem it solves.",
+              "tech": ["React", "Express", "MongoDB"]
+            }
+          ]
+        },
+        {
+          "date": "2021",
+          "title": "Started learning programming",
+          "description": "First lines of code, online courses.",
+          "projects": []
+        }
+      ]
+    },
+    "testimonials": {
+  "header": "What people say",
+  "items": [
+    {
+      "quote": "Working with them was a great experience — clean code, clear communication, and always on time.",
+      "name": "Anna Kowalska",
+      "role": "Product Manager, Acme Corp"
+    },
+    {
+      "quote": "One of the most reliable developers I've worked with. Solved problems I didn't even know we had.",
+      "name": "John Smith",
+      "role": "CTO, StartupXYZ"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    }
+  ]
+}
+  }
+}

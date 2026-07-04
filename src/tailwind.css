@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-claret: #670e36;
+  --color-primary-blue: #95bfe5;
+  --color-primary-yellow: #fee505;
+  --font-imb: "IBM Plex Sans";
+}

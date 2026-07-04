@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas"
+  },
+  "home": {
+    "hero": {
+      "header": "Cześć, jestem ",
+      "firstParagraph": "i jestem 22 letnim full-stack-developerem"
+    },
+    "skills": {
+      "header": "Moje umiejętności"
+    },
+    "experience": {
+      "header": "Doświadczenie",
+      "items": [
+        {
+          "date": "2024 — obecnie",
+          "title": "Frontend Developer",
+          "description": "Budowanie interfejsów w Vue i Tailwind.",
+          "projects": [
+            {
+              "title": "Projekt Pierwszy",
+              "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
+              "tech": ["Vue", "Node.js", "PostgreSQL"]
+            }
+          ]
+        },
+        {
+          "date": "2022 — 2024",
+          "title": "Junior Developer",
+          "description": "Pierwsze projekty produkcyjne, nauka backendu.",
+          "projects": [
+            {
+              "title": "Projekt Drugi",
+              "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
+              "tech": ["React", "Express", "MongoDB"]
+            }
+          ]
+        },
+        {
+          "date": "2021",
+          "title": "Rozpoczęcie nauki programowania",
+          "description": "Pierwsze linie kodu, kursy online.",
+          "projects": []
+        }
+      ]
+    },
+    "testimonials": {
+  "header": "Co mówią inni",
+  "items": [
+    {
+      "quote": "Współpraca była świetnym doświadczeniem — czysty kod, jasna komunikacja i zawsze na czas.",
+      "name": "Anna Kowalska",
+      "role": "Product Manager, Acme Corp"
+    },
+    {
+      "quote": "Jeden z najbardziej niezawodnych developerów, z jakimi pracowałem. Rozwiązywał problemy, o których nie wiedzieliśmy, że istnieją.",
+      "name": "Jan Kowalski",
+      "role": "CTO, StartupXYZ"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    },
+    {
+      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+      "name": "Maria Nowak",
+      "role": "Design Lead, PixelStudio"
+    }
+  ]
+}
+  }
+}
