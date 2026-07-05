@@ -114,6 +114,12 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
+button {
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -153,10 +159,4 @@ body {
     background-position: bottom left;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-button {
-    &:not(:disabled) {
-        cursor: pointer;
-    }
 }

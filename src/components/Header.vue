@@ -16,13 +16,12 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 <template>
   <header
     :class="[
-      'text-white p-4 flex justify-between max-w-screen px-10 fixed top-0 z-10 w-full transition-colors duration-300',
+      'text-white p-4 flex justify-between max-w-screen px-10 fixed top-0 z-10 w-full transition-colors duration-300 h-20',
       isScrolled ? 'bg-primary-blue' : 'bg-transparent'
     ]"
   >
     <nav class="flex gap-4 items-center">
-      <router-link to="/">{{ $t('nav.home') }}</router-link>
-      <router-link to="/about">{{ $t('nav.about') }}</router-link>
+      <router-link to="/about">{{ $t('nav.skills') }}</router-link>
     </nav>
     <div class="flex items-center gap-4">
       <ThemeSwitch />

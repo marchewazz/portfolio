@@ -11,18 +11,23 @@ function switchLocale(lang) {
 </script>
 
 <template>
-  <div class="flex gap-2">
-    <button
-      @click="switchLocale('en')"
-      :class="{ 'font-bold underline': locale === 'en' }"
+  <button
+    @click="switchLocale(locale === 'en' ? 'pl' : 'en')"
+    class="relative inline-flex items-center w-20 h-8 rounded-full bg-white/10 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/40"
+    role="switch"
+    :aria-checked="locale === 'pl'"
+    aria-label="Switch language"
+  >
+    <span
+      class="absolute top-0.5 left-0.5 w-9 h-7 rounded-full bg-white shadow-md transition-transform duration-300 flex items-center justify-center text-xs font-bold text-slate-800"
+      :class="locale === 'pl' ? 'translate-x-[2.55rem]' : 'translate-x-0'"
     >
-      EN
-    </button>
-    <button
-      @click="switchLocale('pl')"
-      :class="{ 'font-bold underline': locale === 'pl' }"
-    >
-      PL
-    </button>
-  </div>
+      {{ locale === 'pl' ? 'PL' : 'EN' }}
+    </span>
+
+    <span class="absolute inset-0 flex items-center justify-between px-2.5 text-xs font-bold text-white/50 pointer-events-none">
+      <span>EN</span>
+      <span>PL</span>
+    </span>
+  </button>
 </template>

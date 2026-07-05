@@ -7,10 +7,17 @@ const { theme, toggleTheme } = useTheme()
 <template>
   <button
     @click="toggleTheme"
-    class="p-2 rounded-full transition-colors duration-300 hover:bg-white/10"
+    class="relative inline-flex items-center w-14 h-7 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/40"
+    :class="theme === 'dark' ? 'bg-slate-700' : 'bg-yellow-400'"
+    role="switch"
+    :aria-checked="theme === 'dark'"
     :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
   >
-    <span v-if="theme === 'dark'">🌙</span>
-    <span v-else>☀️</span>
+    <span
+      class="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md flex items-center justify-center text-xs transition-transform duration-300"
+      :class="theme === 'dark' ? 'translate-x-7' : 'translate-x-0'"
+    >
+      {{ theme === 'dark' ? '🌙' : '☀️' }}
+    </span>
   </button>
 </template>

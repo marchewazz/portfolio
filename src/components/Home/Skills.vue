@@ -62,18 +62,21 @@ onUnmounted(() => stopAutoCycle())
 </script>
 
 <template>
-    <section class="bg-primary-blue pt-8 flex flex-col gap-8">
-        <div class="container mx-auto justify-center">
+    <section class="bg-primary-claret flex flex-col">
+        <div class="bg-primary-blue py-8">
+              <div class="container mx-auto justify-center">
             <h3 class="text-primary-claret text-3xl text-center">
                 {{ $t("home.skills.header") }}
             </h3>
         </div>
-        <div class="flex flex-col lg:flex-row max-w-480 bg-primary-claret">
+        </div>
+      
+        <div class="flex flex-col justify-center mx-auto lg:flex-row max-w-480 w-full bg-primary-claret">
             <button
                 v-for="(skill, index) in skills"
                 :key="skill.title"
                 @click="toggle(index)"
-                class="relative overflow-hidden text-white transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 lg:rounded-b-2xl h-80"
+                class="relative overflow-hidden text-white transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 lg:rounded-b-2xl lg:last:rounded-br-none lg:first:rounded-bl-none h-80"
                 :class="activeIndex === index ? 'flex-3 bg-primary-blue bg-overlay' : 'flex-1 bg-primary-claret'"
             >
                 <component :is="skill.icon" class="size-12 text-white transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'max-h-0' : 'max-h-12 min-h-12'" />

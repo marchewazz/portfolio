@@ -2,7 +2,8 @@
 import Experience from '../components/Home/Experience.vue';
 import Hero from '../components/Home/Hero.vue';
 import Skills from '../components/Home/Skills.vue';
-import Testimonials from '../components/Home/Testimonials.vue';
+import TestimonialsNotes from '../components/Home/TestimonialsNotes.vue';
+import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
 
 </script>
 
@@ -10,5 +11,6 @@ import Testimonials from '../components/Home/Testimonials.vue';
     <Hero />
     <Skills />
     <Experience />
-    <Testimonials />
+    <!-- <TestimonialsSwiper /> -->
+     <TestimonialsNotes />
 </template>
