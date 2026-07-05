@@ -62,7 +62,7 @@ onUnmounted(() => stopAutoCycle())
 </script>
 
 <template>
-    <section class="bg-primary-claret flex flex-col">
+    <section class="bg-primary-claret flex flex-col" id="skills">
         <div class="bg-primary-blue py-8">
               <div class="container mx-auto justify-center">
             <h3 class="text-primary-claret text-3xl text-center">

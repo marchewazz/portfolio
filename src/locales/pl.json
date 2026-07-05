@@ -1,7 +1,9 @@
 {
   "nav": {
-    "home": "Strona główna",
-    "about": "O nas"
+    "start": "Start",
+    "skills": "Umiejętności",
+    "experience": "Doświadczenie",
+    "testimonials": "Rekomendacje"
   },
   "home": {
     "hero": {
