@@ -55,7 +55,6 @@ function onSwiperInit(swiper) {
 }
 
 watch(activeSection, (id) => {
-  console.log(id)
   const index = sectionLinks.findIndex((l) => l.id === id)
   if (index !== -1 && swiperInstance.value) {
     swiperInstance.value.slideTo(index, 300)

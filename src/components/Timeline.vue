@@ -1,17 +1,48 @@
 <script setup>
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Logo from "../assets/images/logo-dark.svg?component"
 import Accordion from './Accordion.vue'
 
-defineProps({
+gsap.registerPlugin(ScrollTrigger)
+
+const props = defineProps({
   items: {
     type: Array,
     required: true
   }
 })
+
+const listRef = ref(null)
+let ctx
+
+onMounted(async () => {
+  await nextTick()
+
+  ctx = gsap.context(() => {
+    const items = listRef.value.querySelectorAll('li')
+
+    gsap.from(items, {
+      opacity: 0,
+      y: 40,
+      duration: 1,
+      ease: 'power2.out',
+      stagger: 0.5,
+      scrollTrigger: {
+        trigger: listRef.value,
+        start: 'top 75%',
+        toggleActions: 'play none none reverse'
+      }
+    })
+  }, listRef.value)
+})
+
+onUnmounted(() => ctx?.revert())
 </script>
 
 <template>
-  <ol class="relative ms-3">
+  <ol ref="listRef" class="relative ms-3">
     <li
       v-for="(item, index) in items"
       :key="index"
@@ -47,10 +78,10 @@ defineProps({
 
       <!-- Accordion for extra detail, only if present -->
       <Accordion
-  v-if="item.projects && item.projects.length"
-  class="mt-3"
-  :items="item.projects"
-/>
+        v-if="item.projects && item.projects.length"
+        class="mt-3"
+        :items="item.projects"
+      />
     </li>
   </ol>
 </template>
