@@ -12,13 +12,13 @@ import Face from "../../assets/images/face.jpg"
                 <h1 class="text-2xl bg-primary-yellow text-primary-claret py-2 w-fit px-6 font-bold rounded-full">
                     Full-stack developer
                 </h1>
-                <h2 class="text-3xl font-bold text-primary-blue mt-4">
+                <h2 class="text-3xl font-bold text-primary-claret dark:text-primary-blue mt-4">
                     {{ $t("home.hero.header") }}
                     <span class="text-primary-yellow">
                         Mateusz!
                     </span>
                 </h2>
-                <p class="font-imb text-white text-xl">
+                <p class="font-imb text-black dark:text-white text-xl">
                     {{ $t("home.hero.firstParagraph") }}
                 </p>
             </div>

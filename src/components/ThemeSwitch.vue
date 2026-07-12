@@ -7,8 +7,8 @@ const { theme, toggleTheme } = useTheme()
 <template>
   <button
     @click="toggleTheme"
-    class="relative inline-flex items-center w-14 h-7 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/40"
-    :class="theme === 'dark' ? 'bg-slate-700' : 'bg-yellow-400'"
+    class="relative inline-flex items-center w-15 h-8 rounded-full transition-colors duration-300 border-2"
+    :class="theme === 'dark' ? 'bg-slate-700 border-primary-yellow' : 'bg-primary-yellow border-primary-claret'"
     role="switch"
     :aria-checked="theme === 'dark'"
     :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"

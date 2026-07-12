@@ -56,35 +56,35 @@ onUnmounted(() => {
   >
     <nav class="flex gap-8 items-center">
       <a
-        class="font-bold transition-all duration-300"
+        class="font-bold transition-all duration-100"
         :class="activeSection === 'hero' ? 'text-2xl' : 'text-base'"
         href="#hero"
       >
         {{ $t('nav.start') }}
       </a>
       <a
-        class="font-bold transition-all duration-300"
+        class="font-bold transition-all duration-100"
         :class="activeSection === 'skills' ? 'text-2xl' : 'text-base'"
         href="#skills"
       >
         {{ $t('nav.skills') }}
       </a>
       <a
-        class="font-bold transition-all duration-300"
+        class="font-bold transition-all duration-100"
         :class="activeSection === 'experience' ? 'text-2xl' : 'text-base'"
         href="#experience"
       >
         {{ $t('nav.experience') }}
       </a>
       <a
-        class="font-bold transition-all duration-300"
+        class="font-bold transition-all duration-100"
         :class="activeSection === 'testimonials' ? 'text-2xl' : 'text-base'"
         href="#testimonials"
       >
         {{ $t('nav.testimonials') }}
       </a>
-      <a href="https://github.com/marchewazz" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">LinkedIn</a>
+      <a class="transition-all duration-100" href="https://github.com/marchewazz" target="_blank">Github</a>
+      <a class="transition-all duration-100" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">LinkedIn</a>
     </nav>
     <div class="flex items-center gap-4">
       <ThemeSwitch />

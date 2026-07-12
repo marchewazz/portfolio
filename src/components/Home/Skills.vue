@@ -6,6 +6,7 @@ import Db from "../../assets/images/icons/db.svg"
 import CMS from "../../assets/images/icons/cms.svg"
 import Tools from "../../assets/images/icons/tools.svg"
 import Overlay from "../../assets/images/overlay.svg"
+import Cpu from "../../assets/images/icons/cpu.svg"
 
 const activeIndex = ref(0)
 
@@ -26,15 +27,20 @@ const skills = [
         icon: Db
     },
     {
-        title: 'CMS',
-        technologies: ['Wordpress'],
-        icon: CMS
+        title: 'AI',
+        technologies: ['Codex', 'Claude'],
+        icon: Cpu
     },
     {
         title: 'Tools',
         technologies: ['Git', 'Docker', 'Figma', 'Vite'],
         icon: Tools
-    }
+    },
+      {
+        title: 'CMS',
+        technologies: ['Wordpress'],
+        icon: CMS
+    },
 ]
 
 let intervalId = null
@@ -76,7 +82,9 @@ onUnmounted(() => stopAutoCycle())
                 v-for="(skill, index) in skills"
                 :key="skill.title"
                 @click="toggle(index)"
-                class="relative overflow-hidden text-white transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 lg:rounded-b-2xl lg:last:rounded-br-none lg:first:rounded-bl-none h-80"
+                class="relative overflow-hidden text-white transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 
+                lg:rounded-b-2xl lg:last:rounded-br-none lg:first:rounded-bl-none h-80
+                full-hd:last:rounded-b-2xl! full-hd:first:rounded-b-2xl!"
                 :class="activeIndex === index ? 'flex-3 bg-primary-blue bg-overlay' : 'flex-1 bg-primary-claret'"
             >
                 <component :is="skill.icon" class="size-12 text-white transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'max-h-0' : 'max-h-12 min-h-12'" />
