@@ -112,10 +112,12 @@
 
 html {
     scroll-padding-top: 79px;
+    overflow-x: hidden;
 }
 
 body {
   font-family: "JetBrains Mono", monospace;
+  overflow-x: hidden;
 }
 
 button {

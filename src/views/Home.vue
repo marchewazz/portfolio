@@ -1,4 +1,6 @@
 <script setup>
+import Collaboration from '../components/Home/Collaboration.vue';
+import Events from '../components/Home/Events.vue';
 import Experience from '../components/Home/Experience.vue';
 import Hero from '../components/Home/Hero.vue';
 import Skills from '../components/Home/Skills.vue';
@@ -13,4 +15,6 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
     <Experience />
     <!-- <TestimonialsSwiper /> -->
      <TestimonialsNotes />
+     <Collaboration />
+     <Events />
 </template>

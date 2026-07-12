@@ -3,7 +3,9 @@
     "start": "Start",
     "skills": "Umiejętności",
     "experience": "Doświadczenie",
-    "testimonials": "Rekomendacje"
+    "testimonials": "Rekomendacje",
+    "events": "Wydarzenia",
+    "collaboration": "Współpraca"
   },
   "home": {
     "hero": {
@@ -72,6 +74,12 @@
       "role": "Design Lead, PixelStudio"
     }
   ]
+},
+"collaboration": {
+  "header": "Współpraca"
+},
+"events": {
+  "header": "Wydarzenia"
 }
   }
 }
