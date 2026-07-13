@@ -1,5 +1,15 @@
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+
+const email = 'mateuszmarchewczyk24@gmail.com'
+const copied = ref(false)
+
+function copyEmail() {
+    navigator.clipboard.writeText(email)
+    copied.value = true
+    setTimeout(() => (copied.value = false), 2000)
+}
 </script>
 
 <template>

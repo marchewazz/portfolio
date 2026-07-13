@@ -40,7 +40,7 @@ function setupObserver() {
     },
     { rootMargin: '-50% 0px -50% 0px', threshold: 0 }
   )
-  
+
   let setted = true
 
   sectionIds.forEach((id) => {
@@ -79,43 +79,32 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header
-    :class="[
-      'fixed top-0 z-10 w-full transition-colors duration-300',
-      isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-white'
-    ]"
-  >
-    <div class="flex justify-between items-center px-4 lg:px-10 h-16 lg:h-20">
-      <nav class="hidden lg:flex gap-8 items-center">
-        <a
-          v-for="link in sectionLinks"
-          :key="link.id"
-          :href="link.href"
-          class="font-bold transition-all duration-100"
-          :class="activeSection === link.id ? 'text-2xl' : 'text-base'"
-        >
+  <header :class="[
+    'fixed top-0 z-10 w-full transition-colors duration-300',
+    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-white'
+  ]">
+    <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-16 lg:h-20">
+      <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
+        <a v-for="link in sectionLinks" :key="link.id" :href="link.href" class="font-bold transition-all duration-100 h-full flex items-center hover:text-xl hover:font-black"
+          :class="activeSection === link.id ? 'text-2xl' : 'text-base'">
           {{ $t(link.key) }}
         </a>
-        <a href="https://github.com/marchewazz" target="_blank"><component :is="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank"><component :is="LinkedIn" /></a>
+        <a class="h-full min-w-11 items-center justify-center group lg:hidden xl:flex" href="https://github.com/marchewazz" target="_blank">
+          <component :is="GitHub" class="w-7 group-hover:w-8" />
+        </a>
+        <a class="h-full min-w-11 items-center justify-center group lg:hidden xl:flex" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
+          <component :is="LinkedIn" class="w-7 group-hover:w-8" />
+        </a>
       </nav>
 
       <!-- mobile: stationary icons row -->
       <div class="lg:hidden flex items-center gap-3">
-        <a
-          href="https://github.com/marchewazz"
-          target="_blank"
-          aria-label="Github"
-          class="opacity-80 hover:opacity-100 transition-opacity"
-        >
+        <a href="https://github.com/marchewazz" target="_blank" aria-label="Github"
+          class="opacity-80 hover:opacity-100 transition-opacity">
           <component :is="GitHub" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/"
-          target="_blank"
-          aria-label="LinkedIn"
-          class="opacity-80 hover:opacity-100 transition-opacity"
-        >
+        <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank" aria-label="LinkedIn"
+          class="opacity-80 hover:opacity-100 transition-opacity">
           <component :is="LinkedIn" />
         </a>
       </div>
@@ -128,29 +117,17 @@ onUnmounted(() => {
 
     <!-- mobile section nav swiper -->
     <div class="lg:hidden relative h-10">
-      <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-r from-current to-transparent opacity-10" />
-      <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-l from-current to-transparent opacity-10" />
+      <div
+        class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-r from-current to-transparent opacity-10" />
+      <div
+        class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-l from-current to-transparent opacity-10" />
 
-     <Swiper
-  slides-per-view="auto"
-  :space-between="24"
-  :free-mode="true"
-  :centered-slides="true"
-  class="!px-4 h-full"
-  @swiper="onSwiperInit"
->
-        <SwiperSlide
-          v-for="link in sectionLinks"
-          :key="link.id"
-          class="!w-auto flex items-center"
-        >
-          <a
-            :href="link.href"
-            class="whitespace-nowrap font-bold transition-all duration-150 pb-1"
-            :class="activeSection === link.id
-              ? 'text-lg border-b-2 border-current'
-              : 'text-sm opacity-60'"
-          >
+      <Swiper slides-per-view="auto" :space-between="24" :free-mode="true" :centered-slides="true" class="!px-4 h-full"
+        @swiper="onSwiperInit">
+        <SwiperSlide v-for="link in sectionLinks" :key="link.id" class="!w-auto flex items-center">
+          <a :href="link.href" class="whitespace-nowrap font-bold transition-all duration-150 pb-1" :class="activeSection === link.id
+            ? 'text-lg border-b-2 border-current'
+            : 'text-sm opacity-60'">
             {{ $t(link.key) }}
           </a>
         </SwiperSlide>
