@@ -26,7 +26,11 @@
             {
               "title": "Projekt Pierwszy",
               "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
-              "tech": ["Vue", "Node.js", "PostgreSQL"]
+              "tech": [
+                "Vue",
+                "Node.js",
+                "PostgreSQL"
+              ]
             }
           ]
         },
@@ -38,7 +42,11 @@
             {
               "title": "Projekt Drugi",
               "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
-              "tech": ["React", "Express", "MongoDB"]
+              "tech": [
+                "React",
+                "Express",
+                "MongoDB"
+              ]
             }
           ]
         },
@@ -51,35 +59,35 @@
       ]
     },
     "testimonials": {
-  "header": "Co mówią inni",
-  "items": [
-    {
-      "quote": "Współpraca była świetnym doświadczeniem — czysty kod, jasna komunikacja i zawsze na czas.",
-      "name": "Anna Kowalska",
-      "role": "Product Manager, Acme Corp"
+      "header": "Co mówią inni",
+      "items": [
+        {
+          "quote": "Współpraca była świetnym doświadczeniem — czysty kod, jasna komunikacja i zawsze na czas.",
+          "name": "Anna Kowalska",
+          "role": "Product Manager, Acme Corp"
+        },
+        {
+          "quote": "Jeden z najbardziej niezawodnych developerów, z jakimi pracowałem. Rozwiązywał problemy, o których nie wiedzieliśmy, że istnieją.",
+          "name": "Jan Kowalski",
+          "role": "CTO, StartupXYZ"
+        },
+        {
+          "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+          "name": "Maria Nowak",
+          "role": "Design Lead, PixelStudio"
+        },
+        {
+          "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
+          "name": "Maria Nowak",
+          "role": "Design Lead, PixelStudio"
+        }
+      ]
     },
-    {
-      "quote": "Jeden z najbardziej niezawodnych developerów, z jakimi pracowałem. Rozwiązywał problemy, o których nie wiedzieliśmy, że istnieją.",
-      "name": "Jan Kowalski",
-      "role": "CTO, StartupXYZ"
+    "collaboration": {
+      "header": "Współpraca"
     },
-    {
-      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
-      "name": "Maria Nowak",
-      "role": "Design Lead, PixelStudio"
-    },
-    {
-      "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
-      "name": "Maria Nowak",
-      "role": "Design Lead, PixelStudio"
+    "events": {
+      "header": "Wydarzenia"
     }
-  ]
-},
-"collaboration": {
-  "header": "Współpraca"
-},
-"events": {
-  "header": "Wydarzenia"
-}
   }
 }

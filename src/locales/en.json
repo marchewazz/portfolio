@@ -4,7 +4,7 @@
     "skills": "Skills",
     "experience": "Experience",
     "testimonials": "Testimonials",
-      "events": "Events",
+    "events": "Events",
     "collaboration": "Collaboration"
   },
   "home": {
@@ -26,7 +26,11 @@
             {
               "title": "Project One",
               "description": "Short description of what this project does and the problem it solves.",
-              "tech": ["Vue", "Node.js", "PostgreSQL"]
+              "tech": [
+                "Vue",
+                "Node.js",
+                "PostgreSQL"
+              ]
             }
           ]
         },
@@ -38,7 +42,11 @@
             {
               "title": "Project Two",
               "description": "Short description of what this project does and the problem it solves.",
-              "tech": ["React", "Express", "MongoDB"]
+              "tech": [
+                "React",
+                "Express",
+                "MongoDB"
+              ]
             }
           ]
         },
@@ -51,35 +59,35 @@
       ]
     },
     "testimonials": {
-  "header": "What people say",
-  "items": [
-    {
-      "quote": "Working with them was a great experience — clean code, clear communication, and always on time.",
-      "name": "Anna Kowalska",
-      "role": "Product Manager, Acme Corp"
+      "header": "What people say",
+      "items": [
+        {
+          "quote": "Working with them was a great experience — clean code, clear communication, and always on time.",
+          "name": "Anna Kowalska",
+          "role": "Product Manager, Acme Corp"
+        },
+        {
+          "quote": "One of the most reliable developers I've worked with. Solved problems I didn't even know we had.",
+          "name": "John Smith",
+          "role": "CTO, StartupXYZ"
+        },
+        {
+          "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+          "name": "Maria Nowak",
+          "role": "Design Lead, PixelStudio"
+        },
+        {
+          "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
+          "name": "Maria Nowak",
+          "role": "Design Lead, PixelStudio"
+        }
+      ]
     },
-    {
-      "quote": "One of the most reliable developers I've worked with. Solved problems I didn't even know we had.",
-      "name": "John Smith",
-      "role": "CTO, StartupXYZ"
+    "collaboration": {
+      "header": "Collaboration"
     },
-    {
-      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
-      "name": "Maria Nowak",
-      "role": "Design Lead, PixelStudio"
-    },
-    {
-      "quote": "Delivered a polished frontend way ahead of schedule. Highly recommend.",
-      "name": "Maria Nowak",
-      "role": "Design Lead, PixelStudio"
+    "events": {
+      "header": "Events"
     }
-  ]
-},
-"collaboration": {
-  "header": "Collaboration"
-},
-"events": {
-  "header": "Events"
-}
   }
 }
