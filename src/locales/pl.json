@@ -84,10 +84,48 @@
       ]
     },
     "collaboration": {
-      "header": "Współpraca"
+      "header": "Współpraca",
+      "intro": "Obecnie pracuję jako Full Stack Developer, jestem otwarty na nowe możliwości i ciekawe projekty.",
+      "employment": {
+        "title": "Forma zatrudnienia",
+        "text": "Otwarty na pracę na pełny etat oraz współpracę freelance/kontraktową."
+      },
+      "location": {
+        "title": "Lokalizacja",
+        "text": "Warszawa, Polska — dostępny do pracy zdalnej, hybrydowej lub stacjonarnej."
+      },
+      "availability": {
+        "title": "Dostępność",
+        "text": "Obecnie zatrudniony, otwarty na nowe propozycje."
+      },
+      "workflow": {
+        "title": "Jak pracuję",
+        "text": "Sprawnie poruszam się zarówno we frontendzie, jak i backendzie — od schematu bazy danych po interfejs użytkownika — współpracując z projektantami i zespołami produktowymi."
+      },
+      "cta": "Porozmawiajmy o Twoim projekcie."
     },
     "events": {
-      "header": "Wydarzenia"
+      "header": "Społeczność i wydarzenia",
+      "items": [
+        {
+          "role": "Prelegent",
+          "name": "CodeWeek",
+          "year": "2024",
+          "description": "Poprowadziłem wprowadzenie do nowoczesnego web developmentu dla początkujących."
+        },
+        {
+          "role": "Uczestnik",
+          "name": "Hackathon XYZ",
+          "year": "2023",
+          "description": "Zbudowałem aplikację full-stack w 24h w zespole 4-osobowym, skupioną na [temat]."
+        },
+        {
+          "role": "Uczestnik",
+          "name": "WordCamp Warszawa",
+          "year": "2023",
+          "description": "Wziąłem udział w prelekcjach o wydajności WordPressa i architekturze wtyczek."
+        }
+      ]
     }
   }
 }

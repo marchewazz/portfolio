@@ -16,8 +16,8 @@ const sectionLinks = [
   { id: 'skills', key: 'nav.skills', href: '#skills' },
   { id: 'experience', key: 'nav.experience', href: '#experience' },
   { id: 'testimonials', key: 'nav.testimonials', href: '#testimonials' },
+  { id: 'events', key: 'nav.events', href: '#events' },
   { id: 'collaboration', key: 'nav.collaboration', href: '#collaboration' },
-  { id: 'events', key: 'nav.events', href: '#events' }
 ]
 
 const sectionIds = sectionLinks.map((l) => l.id)

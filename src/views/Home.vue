@@ -14,7 +14,7 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
     <Skills />
     <Experience />
     <!-- <TestimonialsSwiper /> -->
-     <TestimonialsNotes />
-     <Collaboration />
-     <Events />
+    <TestimonialsNotes />
+    <Events />
+    <Collaboration />
 </template>

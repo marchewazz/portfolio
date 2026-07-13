@@ -84,10 +84,48 @@
       ]
     },
     "collaboration": {
-      "header": "Collaboration"
+      "header": "Collaboration",
+      "intro": "I'm currently working as a Full Stack Developer, open to new opportunities and interesting projects.",
+      "employment": {
+        "title": "Employment",
+        "text": "Open to full-time positions and freelance/contract work."
+      },
+      "location": {
+        "title": "Location",
+        "text": "Based in Warsaw, Poland — available for remote, hybrid, or on-site work."
+      },
+      "availability": {
+        "title": "Availability",
+        "text": "Currently employed, open to hearing about new opportunities."
+      },
+      "workflow": {
+        "title": "How I work",
+        "text": "Comfortable owning both frontend and backend, from database schema to UI, and collaborating closely with designers and product teams."
+      },
+      "cta": "Let's talk about your project."
     },
     "events": {
-      "header": "Events"
+      "header": "Community & Events",
+      "items": [
+        {
+          "role": "Speaker",
+          "name": "CodeWeek",
+          "year": "2024",
+          "description": "Presented an introduction to modern web development for beginners."
+        },
+        {
+          "role": "Participant",
+          "name": "Hackathon XYZ",
+          "year": "2023",
+          "description": "Built a full-stack app in 24h with a team of 4, focused on [topic]."
+        },
+        {
+          "role": "Attendee",
+          "name": "WordCamp Warsaw",
+          "year": "2023",
+          "description": "Attended talks on WordPress performance and plugin architecture."
+        }
+      ]
     }
   }
 }
