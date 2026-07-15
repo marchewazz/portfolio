@@ -13,32 +13,17 @@ function copyEmail() {
 </script>
 
 <template>
-    <section class="pt-16 pb-20 bg-primary-claret bg-experience" id="collaboration">
-        <div class="container mx-auto items-center flex flex-col gap-8">
-            <h3 class="text-primary-blue text-3xl text-center">
+    <section class="pt-16 pb-20 bg-primary-claret bg-collaboration" id="collaboration">
+        <div class="container mx-auto items-center flex flex-col gap-8 bg-primary-yellow rounded-2xl py-6 shadow-inner shadow-black">
+            <h3 class="text-primary-claret text-3xl text-center">
                 {{ $t('home.collaboration.header') }}
             </h3>
 
-            <p class="text-primary-blue text-center max-w-2xl">
+            <p class="text-primary-claret text-center max-w-2xl">
                 {{ $t('home.collaboration.intro') }}
             </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
-                <div
-                    v-for="key in ['employment', 'location', 'availability', 'workflow']"
-                    :key="key"
-                    class="bg-primary-blue/10 rounded-2xl p-6 flex flex-col gap-2"
-                >
-                    <h4 class="text-primary-blue text-lg font-semibold">
-                        {{ $t(`home.collaboration.${key}.title`) }}
-                    </h4>
-                    <p class="text-primary-blue text-sm">
-                        {{ $t(`home.collaboration.${key}.text`) }}
-                    </p>
-                </div>
-            </div>
-
-             <div class="flex items-center rounded-full bg-primary-yellow text-primary-claret overflow-hidden h-11">
+            
+                  <div class="flex items-center rounded-full bg-primary-blue text-primary-claret overflow-hidden h-11">
                         <a
                             :href="`mailto:${email}`"
                             class="px-5 h-full flex items-center font-semibold text-sm hover:bg-primary-claret/10 transition"
@@ -59,6 +44,20 @@ function copyEmail() {
                             </svg>
                         </button>
                     </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
+                <div
+                    v-for="key in ['employment', 'location', 'availability', 'workflow']"
+                    :key="key"
+                    class="bg-primary-claret rounded-2xl p-6 flex flex-col gap-2 hover:scale-120 transition-[scale]"
+                >
+                    <h4 class="text-primary-blue text-lg font-semibold">
+                        {{ $t(`home.collaboration.${key}.title`) }}
+                    </h4>
+                    <p class="text-primary-blue text-sm">
+                        {{ $t(`home.collaboration.${key}.text`) }}
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
