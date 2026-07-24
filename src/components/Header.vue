@@ -81,7 +81,7 @@ onUnmounted(() => {
 <template>
   <header :class="[
     'fixed top-0 z-10 w-full transition-colors duration-300',
-    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-white'
+    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-primary-white'
   ]">
     <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-16 lg:h-20">
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">

@@ -13,8 +13,8 @@ function copyEmail() {
 </script>
 
 <template>
-    <section class="pt-16 pb-20 bg-primary-claret bg-collaboration" id="collaboration">
-        <div class="container mx-auto items-center flex flex-col gap-8 bg-primary-yellow rounded-2xl py-6 shadow-inner shadow-black">
+    <section class="pt-16 pb-20" >
+        <div id="collaboration" class="container mx-auto items-center flex flex-col gap-8 bg-primary-yellow rounded-2xl py-6 shadow-inner shadow-black">
             <h3 class="text-primary-claret text-3xl text-center">
                 {{ $t('home.collaboration.header') }}
             </h3>
@@ -48,7 +48,7 @@ function copyEmail() {
                 <div
                     v-for="key in ['employment', 'location', 'availability', 'workflow']"
                     :key="key"
-                    class="bg-primary-claret rounded-2xl p-6 flex flex-col gap-2 hover:scale-120 transition-[scale]"
+                    class="collaboration-card bg-primary-claret border-2 border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-120 transition-[scale]"
                 >
                     <h4 class="text-primary-blue text-lg font-semibold">
                         {{ $t(`home.collaboration.${key}.title`) }}

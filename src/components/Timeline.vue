@@ -42,11 +42,11 @@ onUnmounted(() => ctx?.revert())
 </script>
 
 <template>
-  <ol ref="listRef" class="relative ms-3">
+  <ol ref="listRef" class="relative">
     <li
       v-for="(item, index) in items"
       :key="index"
-      class="relative mb-10 ms-6 last:mb-0 ps-10"
+      class="relative mb-10 ms-3 last:mb-0 ps-10"
     >
       <!-- Connecting line (only if not the last item) -->
       <span
@@ -72,7 +72,7 @@ onUnmounted(() => ctx?.revert())
       </div>
 
       <!-- Description -->
-      <p class="font-imb text-base text-white mt-2">
+      <p class="font-imb text-base text-primary-white mt-2">
         {{ item.description }}
       </p>
 

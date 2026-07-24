@@ -38,7 +38,7 @@ const modules = [Autoplay, Pagination, Navigation]
                     class="h-auto pb-12"
                 >
                     <div class="flex flex-col justify-between h-full border-2 border-primary-yellow rounded-2xl p-6 gap-4">
-                        <p class="font-imb text-base text-white">
+                        <p class="font-imb text-base text-primary-white">
                             "{{ testimonial.quote }}"
                         </p>
 
@@ -47,7 +47,7 @@ const modules = [Autoplay, Pagination, Navigation]
                                 <span class="font-heading text-sm text-primary-yellow">
                                     {{ testimonial.name }}
                                 </span>
-                                <span class="font-imb text-xs text-white/70">
+                                <span class="font-imb text-xs text-primary-white/70">
                                     {{ testimonial.role }}
                                 </span>
                             </div>

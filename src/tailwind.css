@@ -2,9 +2,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary-claret: #670e36;
-  --color-primary-blue: #95bfe5;
-  --color-primary-yellow: #fee505;
+  --color-primary-claret: #3a0a1e;
+  --color-primary-blue: #7fa8cc;
+  --color-primary-yellow: #f2c14e;
+  --color-primary-white: #eae6dc;
+  --color-primary-black: #201c13;
   --font-imb: "IBM Plex Sans";
    --breakpoint-full-hd: 1920px;
 }

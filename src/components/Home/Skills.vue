@@ -68,7 +68,7 @@ onUnmounted(() => stopAutoCycle())
 </script>
 
 <template>
-    <section class="bg-primary-claret flex flex-col" id="skills">
+    <section class="flex flex-col bg-primary-yellow" id="skills">
         <div class="bg-primary-blue py-8">
               <div class="container mx-auto justify-center">
             <h3 class="text-primary-claret text-3xl text-center">
@@ -77,17 +77,16 @@ onUnmounted(() => stopAutoCycle())
         </div>
         </div>
       
-        <div class="flex flex-col justify-center mx-auto lg:flex-row max-w-480 w-full bg-primary-claret">
+        <div class="flex flex-col justify-center mx-auto lg:flex-row max-w-480 w-full">
             <button
                 v-for="(skill, index) in skills"
                 :key="skill.title"
                 @click="toggle(index)"
-                class="relative overflow-hidden text-white transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 
-                lg:rounded-b-2xl lg:last:rounded-br-none lg:first:rounded-bl-none h-80
-                full-hd:last:rounded-b-2xl! full-hd:first:rounded-b-2xl!"
-                :class="activeIndex === index ? 'flex-3 bg-primary-blue bg-overlay' : 'flex-1 bg-primary-claret'"
+                class="relative overflow-hidden text-primary-claret transition-all duration-500 ease-in-out flex flex-col gap-4 items-center p-6 
+                h-80"
+                    :class="activeIndex === index ? 'flex-3 bg-[#85accf] bg-overlay text-primary-white' : 'flex-1 bg-transparent '"
             >
-                <component :is="skill.icon" class="size-12 text-white transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'max-h-0' : 'max-h-12 min-h-12'" />
+                <component :is="skill.icon" class="size-12 text-primary-claret transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'max-h-0' : 'max-h-12 min-h-12'" />
                 <span class="font-heading text-xl whitespace-nowrap mb-4">
                     {{ skill.title }}
                 </span>

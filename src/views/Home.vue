@@ -12,9 +12,12 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
 <template>
     <Hero />
     <Skills />
-    <Experience />
-    <!-- <TestimonialsSwiper /> -->
-    <TestimonialsNotes />
-    <Events />
-    <Collaboration />
+    <div class="bg-main">
+        <Experience />
+        <!-- <TestimonialsSwiper /> -->
+        <TestimonialsNotes />
+        <Events />
+        <Collaboration />
+    </div>
+  
 </template>

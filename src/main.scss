@@ -152,11 +152,66 @@ button {
     }
 }
 
-.dark .hero::before {
-    background-color: var(--color-primary-blue);
+.dark {
+    .hero, footer {
+        &::before {
+            background-color: var(--color-primary-blue);
+        }
+    }
 }
 
 .bg-overlay {
-    background-position: 0 -200px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(./assets/images/overlay.svg);
+}
+
+.bg-testimonials {
+    background-image: url(./assets/images/bg-abstract-paper-3.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.bg-main {
+    background-image: url(./assets/images/simple-shiny.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.testimonial-card {
+    background-image: url(./assets/images/paper.svg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    @media (min-width: 1024px) {
+        &:nth-child(1) { 
+            transform: rotate(-4deg); 
+            margin-top: 2rem;
+        }
+        &:nth-child(2) { 
+            transform: rotate(6deg); 
+        }
+        &:nth-child(3) { 
+            transform: rotate(-2deg); 
+        }
+        &:nth-child(4) { 
+            transform: rotate(4deg); 
+            margin-left: -5rem;
+            margin-top: 2rem;
+        }
+    }
+   
+
+
+    &:hover {
+        transform: rotate(0deg) scale(1.2);
+        z-index: 1;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.collaboration-card {
+    background-image: url(./assets/images/paper.svg);
 }

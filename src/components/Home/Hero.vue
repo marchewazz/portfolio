@@ -27,7 +27,7 @@ function copyEmail() {
                         Mateusz!
                     </span>
                 </h2>
-                <p class="font-imb text-black dark:text-white text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white text-xl">
                     {{ $t("home.hero.firstParagraph") }}
                 </p>
 

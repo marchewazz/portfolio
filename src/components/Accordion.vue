@@ -46,7 +46,7 @@ function toggle(index) {
         :class="openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'"
       >
         <div class="overflow-hidden">
-          <p class="font-imb text-base text-white pb-4">
+          <p class="font-imb text-base text-primary-white pb-4">
             {{ item.description }}
           </p>
 
