@@ -1,20 +1,26 @@
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Timeline from '../Timeline.vue'
 
 const { tm } = useI18n()
+
+const showHeader = ref(true)
 </script>
 
 <template>
     <section class="">
         <div class="container mx-auto flex justify-center py-16">
-            <div  id="experience" class="items-center flex flex-col gap-8 py-16 px-8 bg-primary-blue border border-black shadow-[inset_0_0_8px_rgba(0,0,0,0.5)] shadow-black rounded-3xl w-fit">
-                <h3 class="text-primary-yellow text-3xl text-center">
+            <div  id="experience" class="items-center flex flex-col w-fit lg:w-160 gap-8 p-8 bg-primary-claret/70 border border-black shadow-[inset_0_0_8px_rgba(0,0,0,0.5)] shadow-black rounded-3xl">
+                <h3 v-if="showHeader" class="text-primary-yellow text-3xl text-center">
                     {{ $t('home.experience.header') }}
                 </h3>
-                <Timeline :items="tm('home.experience.items')" />
+                <Timeline
+                    :items="tm('home.experience.items')"
+                    @detail-open="showHeader = false"
+                    @detail-close="showHeader = true"
+                />
             </div>
-        
         </div>
     </section>
 </template>

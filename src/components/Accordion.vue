@@ -54,7 +54,7 @@ function toggle(index) {
             <span
               v-for="tech in item.tech"
               :key="tech"
-              class="text-sm font-heading text-primary-blue bg-primary-yellow rounded-full px-3 py-1"
+              class="text-sm font-heading text-primary-claret font-semimedium bg-primary-yellow rounded-full px-3 py-1"
             >
               {{ tech }}
             </span>

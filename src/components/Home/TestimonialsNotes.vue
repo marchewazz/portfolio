@@ -5,9 +5,9 @@ const { tm } = useI18n()
 </script>
 
 <template>
-    <section class="pt-16 pb-20 overflow-hidden" id="testimonials">
+    <section class="pt-16 pb-20 overflow-hidden">
         <div class="container mx-auto items-center flex flex-col gap-8 relative z-2">
-            <h3 class="text-primary-blue text-3xl text-center">
+            <h3 class="text-primary-yellow text-3xl text-center" id="testimonials">
                 {{ $t('home.testimonials.header') }}
             </h3>
 
