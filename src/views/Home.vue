@@ -14,7 +14,7 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
     <Skills />
     <div class="bg-main">
         <Experience />
-        <!-- <TestimonialsSwiper /> -->
+        <TestimonialsSwiper />
         <TestimonialsNotes />
         <Events />
         <Collaboration />

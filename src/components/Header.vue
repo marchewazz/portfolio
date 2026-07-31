@@ -83,7 +83,7 @@ onUnmounted(() => {
     'fixed top-0 z-10 w-full transition-colors duration-300',
     isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-primary-white'
   ]">
-    <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-16 lg:h-20">
+    <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-20">
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
         <a v-for="link in sectionLinks" :key="link.id" :href="link.href" class="font-bold transition-all duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="activeSection === link.id ? 'text-2xl' : 'text-base'">

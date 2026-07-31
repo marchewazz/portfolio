@@ -14,6 +14,7 @@ function copyEmail() {
 // --- Terminal flip logic ---
 const terminalLines = ref([])
 const typing = ref(false)
+const flipped = ref(false)
 
 const devInfo = {
     firstName: "Mateusz",
@@ -73,17 +74,39 @@ function resetTyping() {
     typing.value = false
     terminalLines.value = []
 }
+
+// --- Click handling (mainly for touch devices without hover) ---
+function toggleFlip() {
+    flipped.value = !flipped.value
+    if (flipped.value) {
+        startTyping()
+    } else {
+        resetTyping()
+    }
+}
+
+function handleMouseEnter() {
+    flipped.value = true
+    startTyping()
+}
+
+function handleMouseLeave() {
+    flipped.value = false
+    resetTyping()
+}
 </script>
 
 <template>
     <!-- FLIP CARD zamiast zwykłego <img> -->
     <div
         class="w-1/2 lg:w-100 aspect-square perspective-distant group cursor-pointer"
-        @mouseenter="startTyping"
-        @mouseleave="resetTyping"
+        @mouseenter="handleMouseEnter"
+        @mouseleave="handleMouseLeave"
+        @click="toggleFlip"
     >
         <div
-            class="relative w-full h-full transition-transform duration-700 ease-in-out transform-3d group-hover:transform-[rotateY(180deg)]"
+            class="relative w-full h-full transition-transform duration-700 ease-in-out transform-3d"
+            :class="flipped ? 'transform-[rotateY(180deg)]' : ''"
         >
             <!-- FRONT: zdjęcie -->
             <div class="absolute inset-0 backface-hidden">

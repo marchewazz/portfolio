@@ -111,9 +111,13 @@
 }
 
 html {
-    scroll-padding-top: 79px;
+    scroll-padding-top: 88px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
+    @media (min-width: 1024px) {
+        scroll-padding-top: 79px;
+    }
 }
 
 body {
@@ -132,7 +136,7 @@ button {
     padding-right: 1rem;
 }
 
-.hero, footer {
+.hero {
     position: relative;
     z-index: 0;
 
@@ -153,7 +157,7 @@ button {
 }
 
 .dark {
-    .hero, footer {
+    .hero {
         &::before {
             background-color: var(--color-primary-blue);
         }
@@ -201,15 +205,16 @@ button {
             margin-left: -5rem;
             margin-top: 2rem;
         }
+        &:hover {
+            transform: rotate(0deg) scale(1.2);
+            z-index: 1;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
     }
    
 
 
-    &:hover {
-        transform: rotate(0deg) scale(1.2);
-        z-index: 1;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    }
+   
 }
 
 .collaboration-card {

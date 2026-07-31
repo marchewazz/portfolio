@@ -13,8 +13,9 @@ function copyEmail() {
 </script>
 
 <template>
-    <section class="pt-16 pb-20" >
-        <div id="collaboration" class="container mx-auto items-center flex flex-col gap-8 bg-primary-yellow rounded-2xl py-6 shadow-inner shadow-black">
+    <section class="sm:pt-16 sm:pb-20" >
+        <div class="container mx-auto pl-0! pr-0! sm:pl-4! sm:pr-4!">
+             <div id="collaboration" class="items-center flex flex-col gap-8 bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
             <h3 class="text-primary-claret text-3xl text-center">
                 {{ $t('home.collaboration.header') }}
             </h3>
@@ -23,17 +24,17 @@ function copyEmail() {
                 {{ $t('home.collaboration.intro') }}
             </p>
             
-                  <div class="flex items-center rounded-full bg-primary-blue text-primary-claret overflow-hidden h-11">
+                  <div class="flex items-center rounded-full bg-primary-blue text-primary-claret overflow-hidden h-11 max-w-full">
                         <a
                             :href="`mailto:${email}`"
-                            class="px-5 h-full flex items-center font-semibold text-sm hover:bg-primary-claret/10 transition"
+                            class="px-2 md:px-4 h-full flex items-center font-semibold text-sm hover:bg-primary-claret/10 transition"
                         >
                             {{ email }}
                         </a>
                         <button
                             @click="copyEmail"
                             aria-label="Copy email"
-                            class="h-full px-4 flex items-center justify-center border-l border-primary-claret/20 hover:bg-primary-claret/10 transition cursor-pointer"
+                            class="h-full px-2 md:px-4 min-w-11 flex items-center justify-center border-l border-primary-claret/20 hover:bg-primary-claret/10 transition cursor-pointer"
                         >
                             <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="9" y="9" width="11" height="11" rx="2" />
@@ -48,7 +49,7 @@ function copyEmail() {
                 <div
                     v-for="key in ['employment', 'location', 'availability', 'workflow']"
                     :key="key"
-                    class="collaboration-card bg-primary-claret border-2 border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-120 transition-[scale]"
+                    class="collaboration-card bg-primary-claret border-2 border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 transition-[scale]"
                 >
                     <h4 class="text-primary-blue text-lg font-semibold">
                         {{ $t(`home.collaboration.${key}.title`) }}
@@ -59,5 +60,7 @@ function copyEmail() {
                 </div>
             </div>
         </div>
+        </div>
+       
     </section>
 </template>

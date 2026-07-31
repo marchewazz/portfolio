@@ -13,7 +13,7 @@ const modules = [Autoplay, Pagination, Navigation]
 </script>
 
 <template>
-    <section class="pt-16 pb-20 bg-primary-claret">
+    <section class="py-8 bg-primary-yellow lg:hidden" id="testimonials">
         <div class="container mx-auto items-center flex flex-col gap-8">
             <h3 class="text-primary-blue text-3xl text-center">
                 {{ $t('home.testimonials.header') }}
@@ -37,7 +37,7 @@ const modules = [Autoplay, Pagination, Navigation]
                     :key="index"
                     class="h-auto pb-12"
                 >
-                    <div class="flex flex-col justify-between h-full border-2 border-primary-yellow rounded-2xl p-6 gap-4">
+                    <div class="flex flex-col justify-between testimonial-card bg-primary-claret h-full border-2 border-primary-blue rounded-2xl p-6 gap-4">
                         <p class="font-imb text-base text-primary-white">
                             "{{ testimonial.quote }}"
                         </p>

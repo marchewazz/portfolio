@@ -71,24 +71,24 @@ onUnmounted(() => ctx?.revert())
 </script>
 
 <template>
-  <div class="relative min-h-[400px]">
+  <div class="relative min-h-100 w-full">
     <Transition name="stage" mode="out-in">
       <!-- STAGE 1: Timeline -->
       <ol v-if="!activeProject" key="timeline" ref="listRef" class="relative min-w-0">
         <li
           v-for="(item, index) in items"
           :key="index"
-          class="relative mb-10 ms-3 last:mb-0 ps-10"
+          class="relative mb-10 md:ms-3 last:mb-0 md:ps-10"
         >
           <!-- Connecting line (only if not the last item) -->
           <span
             v-if="index !== items.length - 1"
-            class="absolute -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-yellow"
+            class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-yellow"
           ></span>
 
           <!-- Dot on the line -->
           <span
-            class="absolute flex items-center justify-center w-4 h-4 rounded-full -start-2 ring-4 ring-primary-blue bg-primary-claret"
+            class="absolute hidden md:block flex items-center justify-center w-4 h-4 rounded-full -start-2 ring-4 ring-primary-blue bg-primary-claret"
           ></span>
 
           <!-- Date -->
@@ -96,8 +96,8 @@ onUnmounted(() => ctx?.revert())
             {{ item.date }}
           </time>
 
-          <div class="flex items-center gap-4 py-2">
-            <h4 class="text-xl text-primary-blue font-bold text-nowrap">
+          <div class="flex flex-col items-start lg:flex-row lg:items-center gap-4 py-2">
+            <h4 class="text-xl text-primary-blue font-bold">
               {{ item.title }}
             </h4>
             <Logo class="h-5" />
@@ -136,7 +136,7 @@ onUnmounted(() => ctx?.revert())
       </ol>
 
       <!-- STAGE 2: Project detail (timeline hidden) -->
-      <div v-else key="detail" class="w-full flex flex-col gap-2 max-w-140">
+      <div v-else key="detail" class="w-full flex flex-col gap-2">
  
            <button
           type="button"

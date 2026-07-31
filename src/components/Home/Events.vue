@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 </script>
 
 <template>
-    <section class="pt-16 pb-20 bg-primary-claret/70" id="events">
+    <section class="py-8 lg:pt-16 lg:pb-20 bg-primary-claret/70" id="events">
         <div class="container mx-auto items-center flex flex-col gap-8">
             <h3 class="text-primary-blue text-3xl text-center">
                 {{ $t('home.events.header') }}
