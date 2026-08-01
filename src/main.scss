@@ -151,7 +151,7 @@ button {
         -webkit-mask-image: url(./assets/images/circuit-board-bg.svg);
         -webkit-mask-size: cover;
         -webkit-mask-repeat: no-repeat;
-        opacity: 0.2;
+        opacity: 0.05;
         z-index: -1;
     }
 }
@@ -160,7 +160,33 @@ button {
     .hero {
         &::before {
             background-color: var(--color-primary-blue);
+            opacity: .2;
         }
+    }
+    .bg-main {
+        background-image: url(./assets/images/simple-shiny.svg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }   
+    .bg-overlay {
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(./assets/images/overlay.svg);
+    }
+    .bg-testimonials {
+        background-image: url(./assets/images/bg-abstract-paper-blue.svg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .testimonial-card, .collaboration-card {
+        background-image: url(./assets/images/paper.svg);
+        background-color: var(--color-primary-claret);
+    }
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+        background: var(--color-primary-black) !important;
     }
 }
 
@@ -168,25 +194,25 @@ button {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/overlay.svg);
+    background-image: url(./assets/images/overlay-yellow.svg);
 }
 
 .bg-testimonials {
-    background-image: url(./assets/images/bg-abstract-paper-3.svg);
+    background-image: url(./assets/images/bg-abstract-paper-claret.svg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 }
 
 .bg-main {
-    background-image: url(./assets/images/simple-shiny.svg);
+    background-image: url(./assets/images/simple-shiny-blue.svg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .testimonial-card {
-    background-image: url(./assets/images/paper.svg);
+    background-color: var(--color-primary-blue);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     @media (min-width: 1024px) {
@@ -218,5 +244,12 @@ button {
 }
 
 .collaboration-card {
-    background-image: url(./assets/images/paper.svg);
+    background-color: var(--color-primary-blue);
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary-white) !important;
+    &-active {
+        background: var(--color-primary-blue) !important;
+    }
 }

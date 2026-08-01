@@ -25,7 +25,7 @@ const devInfo = {
 }
 
 const scriptLines = [
-    { text: '> console.log(devInfo)', delay: 30 },
+    { text: '> console.log(tl-dr)', delay: 30 },
     { text: '{', delay: 20 },
     { text: `  "firstName": "${devInfo.firstName}",`, delay: 16 },
     { text: `  "lastName": "${devInfo.lastName}",`, delay: 16 },

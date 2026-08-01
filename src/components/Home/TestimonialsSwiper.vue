@@ -13,9 +13,9 @@ const modules = [Autoplay, Pagination, Navigation]
 </script>
 
 <template>
-    <section class="py-8 bg-primary-yellow lg:hidden" id="testimonials">
+    <section class="py-8 bg-primary-claret dark:bg-primary-yellow lg:hidden" id="testimonials">
         <div class="container mx-auto items-center flex flex-col gap-8">
-            <h3 class="text-primary-blue text-3xl text-center">
+            <h3 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                 {{ $t('home.testimonials.header') }}
             </h3>
 
@@ -37,17 +37,17 @@ const modules = [Autoplay, Pagination, Navigation]
                     :key="index"
                     class="h-auto pb-12"
                 >
-                    <div class="flex flex-col justify-between testimonial-card bg-primary-claret h-full border-2 border-primary-blue rounded-2xl p-6 gap-4">
-                        <p class="font-imb text-base text-primary-white">
+                    <div class="flex flex-col justify-between testimonial-card h-full border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 gap-4">
+                        <p class="font-imb text-base text-primary-black dark:text-primary-white">
                             "{{ testimonial.quote }}"
                         </p>
 
                         <div class="flex items-center gap-3 mt-2">
                             <div class="flex flex-col">
-                                <span class="font-heading text-sm text-primary-yellow">
+                                <span class="font-heading text-sm text-primary-claret dark:text-primary-yellow">
                                     {{ testimonial.name }}
                                 </span>
-                                <span class="font-imb text-xs text-primary-white/70">
+                                <span class="font-imb text-xs text-primary-black dark:text-primary-white">
                                     {{ testimonial.role }}
                                 </span>
                             </div>

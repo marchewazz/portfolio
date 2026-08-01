@@ -15,10 +15,10 @@ const links = [
 </script>
 
 <template>
-    <footer class="bg-primary-blue dark:bg-primary-claret/70 border-t-2 border-t-primary-blue py-8 text-neutral-100 font-mono max-w-screen w-full">
+    <footer class="bg-primary-blue/90 dark:bg-primary-claret/70 border-t-2 border-t-primary-blue py-8 text-neutral-100 font-mono max-w-screen w-full">
 
         <!-- Otwierający tag <footer> -->
-        <div class="px-6 sm:px-8 pb-3 text-xs text-white border-b border-dashed border-primary-blue">
+        <div class="px-6 sm:px-8 pb-3 text-xs text-white border-b border-dashed border-primary-black dark:border-primary-blue">
             &lt;footer&gt;
         </div>
 
@@ -51,7 +51,7 @@ const links = [
                         href="https://github.com/marchewazz"
                         target="_blank"
                         aria-label="GitHub"
-                        class="group size-10 flex items-center justify-center rounded border border-transparent bg-primary-blue hover:border-primary-blue hover:bg-primary-claret  hover:-translate-y-0.5 transition-[border,background,transform] duration-150"
+                        class="group size-10 flex items-center justify-center rounded border border-transparent bg-primary-blue hover:border-primary-black dark:border-primary-blue hover:bg-primary-claret  hover:-translate-y-0.5 transition-[border,background,transform] duration-150"
                     >
                         <GitHub class="size-5 text-primary-claret group-hover:text-primary-blue transition-colors" />
                     </a>
@@ -59,7 +59,7 @@ const links = [
                         href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/"
                         target="_blank"
                         aria-label="LinkedIn"
-                        class="group size-10 flex items-center justify-center rounded border border-transparent bg-primary-blue hover:border-primary-blue hover:bg-primary-claret hover:-translate-y-0.5 transition-[border,background,transform] duration-150"
+                        class="group size-10 flex items-center justify-center rounded border border-transparent bg-primary-blue hover:border-primary-black dark:border-primary-blue hover:bg-primary-claret hover:-translate-y-0.5 transition-[border,background,transform] duration-150"
                     >
                         <LinkedIn class="size-5 text-primary-claret group-hover:text-primary-blue transition-colors" />
                     </a>
@@ -69,7 +69,7 @@ const links = [
         </div>
 
         <!-- Status/copyright -->
-         <div class="px-6 lg:px-8 py-4 flex flex-col  border-t border-dashed border-primary-blue">
+         <div class="px-6 lg:px-8 py-4 flex flex-col  border-t border-dashed border-primary-black dark:border-primary-blue">
             <div class="text-xs text-white pr-1">&lt;div class="additional-informations"&gt;</div>
             <div class="flex flex-col text-primary-white lg:flex-row justify-between gap-2 px-6 sm:px-8 py-3 text-xs">
                 <span>pomysły: ja</span>
@@ -81,7 +81,7 @@ const links = [
         </div>
        
         <!-- Zamykający tag </footer> -->
-        <div class="px-6 sm:px-8 pt-3 text-xs text-neutral-200 border-t border-dashed border-primary-blue">
+        <div class="px-6 sm:px-8 pt-3 text-xs text-neutral-200 border-t border-dashed border-primary-black dark:border-primary-blue">
             &lt;/footer&gt;
         </div>
     </footer>

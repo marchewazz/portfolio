@@ -83,28 +83,28 @@ onUnmounted(() => ctx?.revert())
           <!-- Connecting line (only if not the last item) -->
           <span
             v-if="index !== items.length - 1"
-            class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-yellow"
+            class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-claret dark:bg-primary-yellow"
           ></span>
 
           <!-- Dot on the line -->
           <span
-            class="absolute hidden md:block flex items-center justify-center w-4 h-4 rounded-full -start-2 ring-4 ring-primary-blue bg-primary-claret"
+            class="absolute hidden md:flex items-center justify-center w-4 h-4 rounded-full -start-2 ring-4 ring-primary-claret dark:ring-primary-blue bg-transparent"
           ></span>
 
           <!-- Date -->
-          <time class="font-heading text-lg text-primary-yellow mb-1">
+          <time class="font-heading text-lg text-primary-black dark:text-primary-yellow mb-1">
             {{ item.date }}
           </time>
 
           <div class="flex flex-col items-start lg:flex-row lg:items-center gap-4 py-2">
-            <h4 class="text-xl text-primary-blue font-bold">
+            <h4 class="text-xl text-primary-claret dark:text-primary-blue font-bold">
               {{ item.title }}
             </h4>
-            <Logo class="h-5" />
+            <Logo class="h-5 text-[#151515] dark:text-white" />
           </div>
 
           <!-- Description -->
-          <p class="font-imb text-lg text-primary-white mt-2">
+          <p class="font-imb text-lg text-primary-black dark:text-primary-white mt-2">
             {{ item.description }}
           </p>
 
@@ -113,21 +113,21 @@ onUnmounted(() => ctx?.revert())
             <div
               v-for="(project, pIndex) in item.projects"
               :key="project.title"
-              class="border-b-2 border-primary-yellow"
+              class="border-b-2 border-primary-claret dark:border-primary-yellow"
             >
               <button
                 type="button"
                 class="w-full flex items-center justify-between gap-4 py-4 text-left"
                 @click="toggleProject(index, pIndex)"
               >
-                <h4 class="font-heading text-lg text-primary-blue">
+                <h4 class="font-heading text-lg text-primary-claret dark:text-primary-blue">
                   {{ project.title }}
                 </h4>
 
                 <span
                   class="shrink-0 transition-transform duration-300"
                 >
-                 <ArrowRight class="text-primary-blue" />
+                 <ArrowRight class="text-primary-claret dark:text-primary-blue" />
                 </span>
               </button>
             </div>
@@ -140,10 +140,10 @@ onUnmounted(() => ctx?.revert())
  
            <button
           type="button"
-          class="flex items-center gap-2 font-heading text-primary-blue"
+          class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue"
           @click="closePanel"
         >
-          <ArrowLeft class="text-primary-blue" />
+          <ArrowLeft />
           Back to timeline
         </button>
             <img :src="UpiScreen" class="hover:scale-105 w-full rounded-3xl transtion-[scale] duration-300" alt="" />
@@ -156,10 +156,10 @@ onUnmounted(() => ctx?.revert())
                 {{ tech }}
               </span>
             </div>
-            <h5 class="font-heading text-xl text-primary-blue">
+            <h5 class="font-heading text-xl text-primary-claret dark:text-primary-blue">
               {{ activeProject.title }}
             </h5>
-          <p class="font-imb text-lg text-primary-white">
+          <p class="font-imb text-lg text-primary-black dark:text-primary-white">
             {{ activeProject.description }}
           </p>
  

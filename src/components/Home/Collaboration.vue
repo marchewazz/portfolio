@@ -15,12 +15,12 @@ function copyEmail() {
 <template>
     <section class="sm:pt-16 sm:pb-20" >
         <div class="container mx-auto pl-0! pr-0! sm:pl-4! sm:pr-4!">
-             <div id="collaboration" class="items-center flex flex-col gap-8 bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
-            <h3 class="text-primary-claret text-3xl text-center">
+             <div id="collaboration" class="items-center flex flex-col gap-8 bg-primary-claret dark:bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
+            <h3 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                 {{ $t('home.collaboration.header') }}
             </h3>
 
-            <p class="text-primary-claret text-center max-w-2xl">
+            <p class="text-primary-yellow dark:text-primary-claret text-center max-w-2xl">
                 {{ $t('home.collaboration.intro') }}
             </p>
             
@@ -49,12 +49,12 @@ function copyEmail() {
                 <div
                     v-for="key in ['employment', 'location', 'availability', 'workflow']"
                     :key="key"
-                    class="collaboration-card bg-primary-claret border-2 border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 transition-[scale]"
+                    class="collaboration-card border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 transition-[scale]"
                 >
-                    <h4 class="text-primary-blue text-lg font-semibold">
+                    <h4 class="text-primary-claret dark:text-primary-blue text-lg font-semibold">
                         {{ $t(`home.collaboration.${key}.title`) }}
                     </h4>
-                    <p class="text-primary-blue text-sm">
+                    <p class="text-primary-black dark:text-primary-blue text-sm">
                         {{ $t(`home.collaboration.${key}.text`) }}
                     </p>
                 </div>
