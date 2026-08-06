@@ -25,7 +25,7 @@ const devInfo = {
 }
 
 const scriptLines = [
-    { text: '> console.log(tl-dr)', delay: 30 },
+    { text: '> console.log(tl_dr)', delay: 30 },
     { text: '{', delay: 20 },
     { text: `  "firstName": "${devInfo.firstName}",`, delay: 16 },
     { text: `  "lastName": "${devInfo.lastName}",`, delay: 16 },
@@ -99,7 +99,7 @@ function handleMouseLeave() {
 <template>
     <!-- FLIP CARD zamiast zwykłego <img> -->
     <div
-        class="w-1/2 lg:w-100 aspect-square perspective-distant group cursor-pointer"
+        class="w-1/2 lg:w-100 shrink-0 aspect-square perspective-distant group cursor-pointer"
         @mouseenter="handleMouseEnter"
         @mouseleave="handleMouseLeave"
         @click="toggleFlip"

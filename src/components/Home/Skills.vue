@@ -75,7 +75,7 @@ onUnmounted(() => stopAutoCycle())
 
 <template>
     <section class="flex flex-col bg-primary-claret dark:bg-primary-yellow" id="skills">
-        <div class="bg-[#e1b352] dark:bg-[#93b1c4] py-8">
+        <div class="bg-primary-yellow dark:bg-primary-blue py-8">
             <div class="container mx-auto justify-center">
                 <h3 class="text-primary-claret text-3xl text-center">
                     {{ $t("home.skills.header") }}
@@ -90,7 +90,7 @@ onUnmounted(() => stopAutoCycle())
                 @click="toggle(index)"
                 class="relative overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-4 items-center
                 h-80"
-                    :class="activeIndex === index ? 'flex-3 bg-overlay text-primary-black dark:text-primary-white p-6' : ' text-primary-yellow dark:text-primary-claret flex-1 bg-transparent p-2 md:p-6'"
+                    :class="activeIndex === index ? 'flex-3 bg-primary-yellow dark:bg-primary-blue text-primary-black dark:text-primary-white p-6' : ' text-primary-yellow dark:text-primary-claret flex-1 bg-transparent p-2 md:p-6'"
             >
                 <component :is="skill.icon" class="size-12 text-primary-yellow dark:text-primary-claret transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'hidden' : 'max-h-12 min-h-12'" />
                 <span class="font-heading text-xl whitespace-nowrap mb-4">

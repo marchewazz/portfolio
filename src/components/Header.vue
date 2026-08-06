@@ -83,10 +83,10 @@ onUnmounted(() => {
     'fixed top-0 z-10 w-full transition-colors duration-300',
     isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-primary-white'
   ]">
-    <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-20">
+    <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-16">
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
         <a v-for="link in sectionLinks" :key="link.id" :href="link.href" class="font-bold transition-all duration-100 h-full flex items-center hover:text-xl hover:font-black"
-          :class="activeSection === link.id ? 'text-2xl' : 'text-base'">
+          :class="activeSection === link.id ? 'text-xl' : 'text-base'">
           {{ $t(link.key) }}
         </a>
         <a class="h-full min-w-11 items-center justify-center group lg:hidden xl:flex" href="https://github.com/marchewazz" target="_blank">

@@ -30,12 +30,12 @@ const modules = [Autoplay, Pagination, Navigation]
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 }
                 }"
-                class="w-full testimonials-swiper flex"
+                class="w-full testimonials-swiper"
             >
                 <SwiperSlide
                     v-for="(testimonial, index) in tm('home.testimonials.items')"
                     :key="index"
-                    class="h-auto pb-12"
+                    class="grow h-auto! pb-12"
                 >
                     <div class="flex flex-col justify-between testimonial-card h-full border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 gap-4">
                         <p class="font-imb text-base text-primary-black dark:text-primary-white">
