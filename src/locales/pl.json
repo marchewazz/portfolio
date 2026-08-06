@@ -10,7 +10,10 @@
   "home": {
     "hero": {
       "header": "Cześć, jestem ",
-      "firstParagraph": "i jestem 22 letnim full-stack-developerem"
+      "firstParagraph": "Jestem 22-letnim full-stack developerem z Kielc, obecnie pracującym zdalnie. Od ponad trzech lat rozwijam swoje umiejętności w prawdziwych, komercyjnych projektach — zaczynałem jako stażysta jeszcze w trakcie nauki w technikum, a dziś pracuję na stanowisku Mid Full-Stack Developera, łącząc programowanie z koordynacją pracy zespołu.",
+      "secondParagraph": "Swobodnie poruszam się zarówno po stronie frontendu, jak i backendu — od projektowania interfejsów w oparciu o makiety z Figmy, przez logikę biznesową w PHP i Vue, po strukturę baz danych MySQL. Na co dzień pracuję z Wordpressem, Roots/Sage, Laravelem oraz integruję systemy zewnętrzne, takie jak API InPost czy SalesForce.",
+      "thirdParagraph": "Najbardziej cenię projekty, w których mogę zobaczyć cały proces — od pomysłu, przez implementację, aż po wdrożenie i realny efekt dla użytkownika. Blisko współpracuję z działami sprzedaży, marketingu i SEO, co nauczyło mnie patrzeć na kod nie tylko technicznie, ale też biznesowo.",
+      "more": "Informacje o współpracy ze mną"
     },
     "skills": {
       "header": "Moje umiejętności"
@@ -19,67 +22,237 @@
       "header": "Doświadczenie",
       "items": [
         {
-          "date": "2024 — obecnie",
-          "title": "Frontend Developer",
-          "description": "Budowanie interfejsów w Vue i Tailwind.",
+          "date": "listopad 2025 — obecnie",
+          "form": "KIELCE / ZDALNIE",
+          "title": "Mid Full-Stack Developer",
+          "description": "Obecnie moje obowiązki są szersze, oprócz developmentu miałem przyjemność nadzorować kilku stażystów oraz delegować im taski na Jirze, współpracuję blisko z działami sprzedaży, marketingu oraz SEO TEB Edukacja, jestem ważnym głosem na spotkaniach statusowych oraz dopilnowywuję prac projektowych.",
           "projects": [
             {
-              "title": "Projekt Pierwszy",
-              "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
+              "title": "Utrzymanie i rozwój strony teb.pl",
+              "slug": "teb-website-maintenance",
+              "description": "W międzyczasie kontynujemy prace utrzymaniowe strony teb.pl takie jak aktualizacja nagłówków stron ofert czy zaszywanie informacji dla botów AI na stronie. Biorę udział w planowaniu oraz programowaniu i wdrażaniu nowych rozwiązań jak alerty o możliwych przestojach w integracji lub wyróżnianie ofert i promocji na stronie.",
+              "tech": [
+                "Wordpress",
+                "PHP",
+                "CSS",
+                "JavaScript"
+              ]
+            },
+            {
+              "title": "Integracja formularza z InPost",
+              "slug": "teb-registration-form-inpost",
+              "description": "Małe uwygodnienie w fomularzu, usystematyzowanie wysyłek potrzebnych dokumentów do oddziału w razie potrzeby, wszystko dzieje się w ramach zapisu, użytkownik po kilku kliknięciach dostaje kod nadania do paczkomatu w mieście które wybrał. W tym projekcie odpowiedzialny byłem za wygląd elementów informujących o wysyłce przez InPost, integrację z API  oraz wdrożenie na stronę.",
               "tech": [
                 "Vue",
-                "Node.js",
-                "PostgreSQL"
+                "PHP",
+                "InPost API"
+              ]
+            },
+            {
+              "title": "Dodatkowe prace projektowe przy formularzu",
+              "slug": "teb-registration-form-development",
+              "description": "Oprócz tego, że formularz musi odpowiadać zmianom które przeprowadzamy na stronie min. w integracji realizujemy w ramach niego osobne projekty. Byłem odpowiedzialny w całości za wprowadzenie kilku z nich. Jednym z nich jest okno dosprzedaży zaaktualizowane o wyszukiwarkę oraz nowe połączenia ofert tak by zaproponować użytkownikowi dodatkowe produkty jak najbardziej dopasowane pod niego.",
+              "tech": [
+                "Vue",
+                "PHP",
+                "MySQL"
+              ]
+            },
+            {
+              "title": "Prace projektowe teb.pl",
+              "slug": "teb-website-development",
+              "description": "Podczas pracy przy stronie teb.pl czasem realizujemy większe projekty. W bliskiej współpracy z działami sprzedaży czy marketingu planujemy zmiany a ja odpowiadam za ich zaprogramowanie i wdrożenie. Często projekty obejmują zmiany wyglądu całych podstron, zmiany w integracji ofert czy struktur baz danych. Wyróżnić mogę tutaj przebudowę zakładki z ofertą oraz wszelkie prace związane z dodatkowymi opcjami w SalesForce pod które trzeba dostosować stronę.",
+              "tech": [
+                "Wordpress",
+                "PHP",
+                "CSS",
+                "JavaScript"
+              ]
+            },
+            {
+              "title": "Utrzymanie i rozwój formularza zapisu teb.pl",
+              "slug": "teb-registration-form-maintenance",
+              "description": "Ponieważ formularz jest złożonym systemem czasem potrzebuje na przykład weryfikacji zwrotek z szyny lub sprawdzenia informacji o zapisie takich jak czas podpisania umowy. Wykonuję też prace rozwojowe przy okazji tego formularza np. aktualizacje draftów umów, wyświetlanie etykiet kierunków przy wyborze lub nowe SMSy do użytkowników.",
+              "tech": [
+                "Vue",
+                "PHP",
+                "MySQL"
+              ]
+            },
+            {
+              "title": "Milestone",
+              "slug": "milestone",
+              "description": "Motyw Wordpress dla dwujęzycznego liceum prowadzonego przez TEB Edukacja, byłem odpowiedzialny w pełni za tę stronę.",
+              "tech": [
+                "Wordpress",
+                "Roots/Sage",
+                "JavaScript",
+                "Blade",
+                "SCSS"
+              ]
+            },
+            {
+              "title": "Zbalansowani",
+              "slug": "zbalansowani",
+              "description": "Motyw Wordpress dla poradnii psychologicznej prowadzonej przez TEB Edukacja, byłem odpowiedzialny za przeniesienie wyglądu z Figmy, oskryptowanie strony a także utowrzenie logiki pól ACF oraz CPT potrzebnych działania stron.",
+              "tech": [
+                "Wordpress",
+                "Roots/Sage",
+                "JavaScript",
+                "Blade",
+                "SCSS"
               ]
             }
           ]
         },
         {
-          "date": "2022 — 2024",
-          "title": "Junior Developer",
-          "description": "Pierwsze projekty produkcyjne, nauka backendu.",
+          "date": "czerwiec 2023 — listopad 2025",
+          "form": "KIELCE / ZDALNIE",
+          "title": "Junior Front-end Developer",
+          "description": "Kontynuowałem łączenie pracy ze szkołą do ukończenia technikum w kwietniu 2024, od czerwca 2024 pracowałem już w pełnym wymiarze czasu, głównie przy projektach TEB Edukacja. Podczas tego czasu bardzo rozwinąłem się szczególnie jeśli chodzi o komunikację oraz pracę w zespole.",
           "projects": [
             {
-              "title": "Projekt Drugi",
-              "description": "Krótki opis tego, co robi projekt i jaki problem rozwiązuje.",
+              "title": "Formularz zapisu do teb.pl",
+              "slug": "teb-registration-form",
+              "description": "Pierwszy bardzo duży projekt przy którym miałem okazję pracować, formularz który pozwala użytkownikowi zapisać się do szkoły TEB a nawet podpisać umowę bez wychodzenia z domu. Rozbudowany system połączony z ofertą na stronie, deduplikacją w SalesForce, dodatkowo generujący draft z harmonogramem płatności a także pozwalający na szybką płatność w bramce AutoPay. W tym projekcie pracowałem zarówno po stronie front-endu przenosząc wygląd z Figmy czy tworząc logikę min. przechowywania wartości z formularza jak i po stronie backendu projektując eventy cron, tworząc drafty umów według wzorów, programując generator harmonogramów płatności według dokumentacji od działu sprzedaży czy komunikując formularz z szyną integracyjną. Miło wspominam ten projekt i cieszę się że mogę nadal przy nim pracować.",
               "tech": [
-                "React",
-                "Express",
-                "MongoDB"
+                "Vue",
+                "PHP",
+                "MySQL"
+              ]
+            },
+            {
+              "title": "Wdrożenie bota AI informującego o ofertach oraz oddziałach",
+              "slug": "teb-ai-offers-bot",
+              "description": "Projekt \"na czasie\". Na stronie teb.pl widget Livechat miał zostać zastąpiony botem AI dostarczonym przez ChatLab w oparciu o GPT. Stworzyłem API pod tego bota według wytycznych działu sprzedaży, a także pomagałem w ustaleniu roli, opisów akcji API czy schematu działań według którego bot może dostać odpowiednią ofertę biorąc pod uwagę nasz schemat bazy danych czy dane w polach ACF na stronie. Mimo iż często dziwiliśmy się logice Wirtualnego Doradcy dowieźliśmy działającego asystenta sprzedaży.",
+              "tech": [
+                "ChatGPT",
+                "PHP",
+                "MySQL"
+              ]
+            },
+            {
+              "title": "Utrzymanie i rozwój strony teb.pl",
+              "slug": "teb-website-maintenance",
+              "description": "Kolejną stroną TEB Edukacja przy której pracuję to główna strona Szkół dla dorosłych teb.pl. Do wykonywania prac przy tej stronie współpracuję z działami marketingu oraz SEO. Nanoszę konieczne poprawki, dodaję elementy na stronie, weryfikuję wyświetlanie się ofert a także poruszam się po panelu Wordpress używając wtyczek takich jak ACF. W tym czasie dużym projektem który realizowałem wraz z działem SEO i marketingu był blog.",
+              "tech": [
+                "Wordpress",
+                "PHP",
+                "CSS",
+                "JavaScript"
+              ]
+            },
+            {
+              "title": "Utrzymanie oraz rozwój stron technikum.pl oraz teb.liceum.pl",
+              "slug": "teb-school-sites-maintenance",
+              "description": "Przez około rok dbałem o obie te strony, weryfikując i nanosząc poprawki treści, aktualizując wygląd strony oraz formularz zapisu o potrzebne elementy np. tooltipy. Największym wyzwaniem podczas utrzymywania tych stron był projekt Edukacji Domowej oraz Liceum Plastycznego, rozciągnięcie strony stworzonej pod liceum tak by nawigacja, kierunki czy formularze wyświetlały odpowiednie informacje w zależności od oddziału wymagało wielu warunków w kodzie :).",
+              "tech": [
+                "Wordpress",
+                "Roots/Sage",
+                "JavaScript",
+                "Blade",
+                "SCSS"
+              ]
+            },
+            {
+              "title": "Strona technikum.pl",
+              "slug": "technikum-pl-website",
+              "description": "Pierwszy projekt dla TEB Edukacja w który byłem zaangażowany, pracowałem przy początkach strony przenosząc wygląd z Figmy do kodu.",
+              "tech": [
+                "Wordpress",
+                "Roots/Sage",
+                "JavaScript",
+                "Blade",
+                "SCSS"
+              ]
+            },
+            {
+              "title": "ogram.to v2",
+              "slug": "ogram-to-v2",
+              "description": "Druga wersja strony ogram.to, tym razem tworzona jako motyw Wordpressa, działa z wtyczkami ACF i CPT, byłem częścią dwuosobowego zespołu dbającego o wygląd desktopowy i mobilny strony oraz działanie strony z treściami tworzonymi w Wordpress.",
+              "tech": [
+                "Wordpress",
+                "Roots/Sage",
+                "Blade",
+                "PHP",
+                "Tailwind"
+              ]
+            },
+            {
+              "title": "ogram.to",
+              "slug": "ogram-to",
+              "description": "Pierwsza wersja strony ogram.to, był to mój pierwszy kontakt z frameworkiem Laravel. Tworzyłem ostylowane widoki, pisałem skrypty JavaScript, poznałem działanie migracji oraz modeli oraz użyłem wbudowanej autentykacji.",
+              "tech": [
+                "Laravel",
+                "Blade",
+                "SCSS",
+                "JavaScript"
               ]
             }
           ]
         },
         {
-          "date": "2021",
-          "title": "Rozpoczęcie nauki programowania",
-          "description": "Pierwsze linie kodu, kursy online.",
+          "date": "marzec 2023 — czerwiec 2023",
+          "form": "ZDALNIE",
+          "title": "Stażysta",
+          "description": "Staż który łączyłem ze szkołą w ramach którego brałem udział przy pierwszych komercyjnych projektach.",
+          "projects": [
+              {
+              "title": "Strona firmowa coderhino.cc",
+              "slug": "coderhino-company-website",
+              "description": "Strona firmowa CODERHINO zbudowana w React, moim zadaniem było przeniesienie wyglądu z Figmy, dodanie animacji oraz połączenie front-endu z back-endem, jako źródło danych użyłem Wordpressa z wtyczkami ACF i CPT.",
+              "tech": [
+                "React",
+                "SCSS",
+                "Wordpress"
+              ]
+            },
+            {
+              "title": "How To IAB",
+              "slug": "iab-how-to",
+              "description": "Czysty motyw Wordpressa dla stowarzyszenia IAB, moim zadaniem było przepisanie wyglądu z Figmy do kodu oraz napisanie koniecznego kodu JavaScript. Wygląd strony jest responsowny oraz działa z ACF.",
+              "tech": [
+                "PHP",
+                "SCSS",
+                "JavaScript",
+                "Wordpress"
+              ]
+            },
+            {
+              "title": "Forum IAB",
+              "slug": "iab-forum",
+              "description": "Mój pierwszy komercyjny projekt podczas stażu, moim zadaniem było stworzenie kodu strony wraz z responsywnością na podstawie projektu z Figmy.",
+              "tech": [
+                "PHP",
+                "SCSS",
+                "JavaScript",
+                "Wordpress"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "maj 2022",
+          "form": "ZDALNIE",
+          "title": "Praktykant",
+          "description": "Moje pierwsze praktyki w technikum. Podczas tych praktyk budowaliśmy layout w przeglądarce zsynchronizowany z danymi z klienta gry League of Legends. W tym projekcie byłem odpowiedzalny za backend w NodeJS.",
           "projects": []
         }
-      ]
+      ],
+      "backToTimeline": "Wróć do osi czasu" 
     },
     "testimonials": {
       "header": "Co mówią inni",
       "items": [
         {
-          "quote": "Współpraca była świetnym doświadczeniem — czysty kod, jasna komunikacja i zawsze na czas.",
-          "name": "Anna Kowalska",
-          "role": "Product Manager, Acme Corp"
+          "quote": "Współpracuję z Mateuszem od łącznie 4 miesięcy. Jest sumiennym i wytrwałym pracownikiem, który nie spocznie, dopóki nie znajdzie rozwiązania problemu. Mimo swojego wieku posiada doskonałe umiejętności programistyczne, szczególnie w dziedzinie front-end developmentu. Szybko się uczy, jest komunikatywny i godny zaufania.",
+          "name": "Przemysław Wiencko",
+          "role": "Właściciel, CODERHINO"
         },
         {
-          "quote": "Jeden z najbardziej niezawodnych developerów, z jakimi pracowałem. Rozwiązywał problemy, o których nie wiedzieliśmy, że istnieją.",
-          "name": "Jan Kowalski",
-          "role": "CTO, StartupXYZ"
-        },
-        {
-          "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
-          "name": "Maria Nowak",
-          "role": "Design Lead, PixelStudio"
-        },
-        {
-          "quote": "Dostarczył dopracowany frontend znacznie przed terminem. Gorąco polecam.",
-          "name": "Maria Nowak",
-          "role": "Design Lead, PixelStudio"
+          "quote": "Współpraca z Mateuszem w CODERHINO była czystą przyjemnością. Oprócz tego, że był niezawodnym członkiem zespołu, pełnił rolę fantastycznego mentora, udzielając nieocenionych wskazówek, które znacząco pomogły mi rozwinąć moje umiejętności techniczne i zawodowe. Jego wiedza i cierpliwość w tłumaczeniu skomplikowanych zagadnień naprawdę wpłynęły na moją codzienną pracę.",
+          "name": "Kacper Pawlik",
+          "role": "Kolega z pracy, CODERHINO"
         }
       ]
     },
@@ -88,11 +261,11 @@
       "intro": "Obecnie pracuję jako Full Stack Developer, jestem otwarty na nowe możliwości i ciekawe projekty.",
       "employment": {
         "title": "Forma zatrudnienia",
-        "text": "Otwarty na pracę na pełny etat oraz współpracę freelance/kontraktową."
+        "text": "Otwarty na pracę na pełny etat."
       },
       "location": {
         "title": "Lokalizacja",
-        "text": "Warszawa, Polska — dostępny do pracy zdalnej, hybrydowej lub stacjonarnej."
+        "text": "Kraków, Polska — dostępny do pracy zdalnej lub hybrydowej."
       },
       "availability": {
         "title": "Dostępność",
@@ -108,22 +281,22 @@
       "header": "Społeczność i wydarzenia",
       "items": [
         {
-          "role": "Prelegent",
-          "name": "CodeWeek",
+          "role": "Uczestnik",
+          "name": "WordCamp Kraków",
+          "year": "2026",
+          "description": "Miałem przyjemność przez dwa dni uczestniczyć w prelekcjach oraz warsztatach dokoła Wordpressa, programowania i cyberbezpieczeństwa"
+        },
+        {
+          "role": "Uczestnik",
+          "name": "Silesian CYBERHackathon",
           "year": "2024",
-          "description": "Poprowadziłem wprowadzenie do nowoczesnego web developmentu dla początkujących."
+          "description": "Podczas tego wydarzenia byłem częścią kilku osobowego zespołu którego celem było zbudowanie tematycznej aplikacji w 8 godzin. Stworzyliśmy prosty webowy panel połączony z czujnikiem do monitorowania warunków np. pod ziemią"
         },
         {
-          "role": "Uczestnik",
-          "name": "Hackathon XYZ",
-          "year": "2023",
-          "description": "Zbudowałem aplikację full-stack w 24h w zespole 4-osobowym, skupioną na [temat]."
-        },
-        {
-          "role": "Uczestnik",
-          "name": "WordCamp Warszawa",
-          "year": "2023",
-          "description": "Wziąłem udział w prelekcjach o wydajności WordPressa i architekturze wtyczek."
+          "role": "Prelegent",
+          "name": "Codeweek",
+          "year": "2022",
+          "description": "Byłem jednym z dwóch prelegentów w ramach lekcji \"Monty Python w IT\" podczas CodeWeek w mojej szkole. Przedstawialiśmy skrypt w Pythonie pozwalający ściągnąć dane z strony Wikipedia oraz zbudowaliśmy czat na żywo z użyciem biblioteki socket"
         }
       ]
     }
