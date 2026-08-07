@@ -99,6 +99,9 @@ function handleMouseLeave() {
 <template>
     <div
         class="w-1/2 lg:w-100 shrink-0 aspect-square perspective-distant group cursor-pointer"
+        tabindex="0"
+        @focusin="handleMouseEnter"
+        @focusout="handleMouseLeave"
         @mouseenter="handleMouseEnter"
         @mouseleave="handleMouseLeave"
         @click="toggleFlip"

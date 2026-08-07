@@ -5,9 +5,9 @@ import { useI18n } from 'vue-i18n'
 <template>
     <section class="py-8 lg:pt-16 lg:pb-20 bg-primary-yellow/85 dark:bg-primary-claret/70" id="events">
         <div class="container mx-auto items-center flex flex-col gap-8 text-primary-claret dark:text-primary-blue">
-            <h3 class="text-3xl text-center">
+            <h2 class="text-3xl text-center">
                 {{ $t('home.events.header') }}
-            </h3>
+            </h2>
              <div class="flex flex-col gap-4 w-full max-w-3xl">
             <div v-for="event in $tm('home.events.items')" :key="event.name"
                 class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 border-b border-primary-blue/20 pb-3">

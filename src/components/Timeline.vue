@@ -163,14 +163,14 @@ onUnmounted(() => ctx?.revert())
           </time>
 
           <div class="flex flex-col items-start lg:flex-row lg:items-center gap-4 py-2">
-            <h4 class="text-xl text-primary-claret dark:text-primary-blue font-bold">
+            <h3 class="text-xl text-primary-claret dark:text-primary-blue font-bold">
               {{ item.title }}
-            </h4>
+            </h3>
             <Logo class="h-5 text-[#151515] dark:text-white" />
           </div>
-          <h4 class="text-sm text-primary-claret dark:text-primary-blue font-bold mt-2">
+          <p class="text-sm text-primary-claret dark:text-primary-blue font-bold mt-2">
             {{ item.form }}
-          </h4>
+          </p>
           <p class="font-imb text-lg text-primary-black dark:text-primary-white mt-2">
             {{ item.description }}
           </p>
@@ -180,10 +180,9 @@ onUnmounted(() => ctx?.revert())
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
               <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-left group"
                 @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
-                <h4 class="font-heading text-lg text-primary-claret dark:text-primary-blue">
+                <span class="font-heading text-lg text-primary-claret dark:text-primary-blue">
                   {{ project.title }}
-                </h4>
-
+                </span>
                 <ArrowRight class="shrink-0 text-primary-claret dark:text-primary-blue transition-transform duration-300 group-hover:translate-x-2" />
               </button>
             </div>
@@ -217,9 +216,9 @@ onUnmounted(() => ctx?.revert())
             {{ tech }}
           </span>
         </div>
-        <h5 class="font-heading text-xl text-primary-claret dark:text-primary-blue">
+        <p class="font-heading text-xl text-primary-claret dark:text-primary-blue">
           {{ activeProject.title }}
-        </h5>
+        </p>
         <p class="font-imb text-lg text-primary-black dark:text-primary-white">
           {{ activeProject.description }}
         </p>

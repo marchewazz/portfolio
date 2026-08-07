@@ -15,9 +15,9 @@ const modules = [Autoplay, Pagination, Navigation]
 <template>
     <section class="py-8 bg-primary-claret dark:bg-primary-yellow lg:hidden" id="testimonials">
         <div class="container mx-auto items-center flex flex-col gap-8">
-            <h3 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
+            <h2 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                 {{ $t('home.testimonials.header') }}
-            </h3>
+            </h2>
 
             <Swiper
                 :modules="modules"

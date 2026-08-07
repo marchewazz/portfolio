@@ -22,14 +22,14 @@ function copyEmail() {
             <div class="flex flex-col justify-start gap-4 lg:max-w-[63%]">
                 <h1
                     class="text-xl lg:text-2xl bg-primary-yellow text-primary-claret py-2 w-fit px-6 font-bold rounded-full">
-                    Full-stack developer
+                    Full-stack developer 
                 </h1>
-                <h2 class="text-3xl font-bold text-primary-claret dark:text-primary-blue mt-4">
+                <p class="text-3xl font-bold text-primary-claret dark:text-primary-blue mt-4">
                     {{ $t("home.hero.header") }}
                     <span class="text-primary-yellow">
                         Mateusz!
                     </span>
-                </h2>
+                </p>
                 <p class="font-imb text-primary-black dark:text-primary-white text-xl">
                     {{ $t("home.hero.firstParagraph") }}
                 </p>
@@ -41,7 +41,7 @@ function copyEmail() {
                 </p>
 
                 <div class="flex flex-col xl:flex-row xl:items-center gap-4">
-                    <div class="flex items-center xl:justify-center gap-4">
+                    <div class="flex items-center flex-wrap xl:justify-center gap-4">
                         <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
                             aria-label="GitHub"
                             class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition">

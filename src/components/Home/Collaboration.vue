@@ -16,9 +16,9 @@ function copyEmail() {
     <section class="sm:pt-16 sm:pb-20" >
         <div class="container mx-auto pl-0! pr-0! sm:pl-4! sm:pr-4!">
              <div id="collaboration" class="items-center flex flex-col gap-8 bg-primary-claret dark:bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
-            <h3 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
+            <h2 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                 {{ $t('home.collaboration.header') }}
-            </h3>
+            </h2>
 
             <p class="text-primary-yellow dark:text-primary-claret text-center max-w-2xl">
                 {{ $t('home.collaboration.intro') }}
@@ -47,13 +47,14 @@ function copyEmail() {
                     </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
                 <div
+                    tabindex="0"
                     v-for="key in ['employment', 'location', 'availability', 'workflow']"
                     :key="key"
-                    class="collaboration-card border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 transition-[scale]"
+                    class="collaboration-card border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 md:focus-visible:scale-120 transition-[scale]"
                 >
-                    <h4 class="text-primary-claret dark:text-primary-blue text-lg font-semibold">
+                    <h3 class="text-primary-claret dark:text-primary-blue text-lg font-semibold">
                         {{ $t(`home.collaboration.${key}.title`) }}
-                    </h4>
+                    </h3>
                     <p class="text-primary-black dark:text-primary-blue text-sm">
                         {{ $t(`home.collaboration.${key}.text`) }}
                     </p>

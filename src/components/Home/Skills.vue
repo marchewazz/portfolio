@@ -77,9 +77,9 @@ onUnmounted(() => stopAutoCycle())
     <section class="flex flex-col bg-primary-claret dark:bg-primary-yellow" id="skills">
         <div class="bg-primary-yellow dark:bg-primary-blue py-8">
             <div class="container mx-auto justify-center">
-                <h3 class="text-primary-claret text-3xl text-center">
+                <h2 class="text-primary-claret text-3xl text-center">
                     {{ $t("home.skills.header") }}
-                </h3>
+                </h2>
             </div>
         </div>
       
