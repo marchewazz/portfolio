@@ -11,11 +11,11 @@ const { tm } = useI18n()
                 {{ $t('home.testimonials.header') }}
             </h3>
 
-            <div class="flex flex-wrap justify-center gap-8 w-full py-12 px-4 rounded-3xl shadow-inner shadow-primary-blue bg-primary-claret dark:bg-primary-blue/70 bg-testimonials">
+            <div class="flex flex-wrap justify-center gap-12 w-full py-12 px-4 rounded-3xl shadow-inner shadow-primary-blue bg-primary-claret dark:bg-primary-blue/70 bg-testimonials">
                 <div
                     v-for="(testimonial, index) in tm('home.testimonials.items')"
                     :key="index"
-                    class="testimonial-card flex flex-col justify-between border-4 min-h-62.5 border-primary-yellow rounded-2xl p-6 gap-x-8 gap-y-4 bg-primary-claret w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]"
+                    class="testimonial-card flex flex-col justify-between border-4 min-h-62.5 border-primary-yellow rounded-2xl p-6 gap-x-8 gap-y-4 bg-primary-claret w-full lg:w-[calc(50%-2rem)]"
                 >
                     <p class="font-imb text-lg text-primary-black dark:text-primary-white">
                         "{{ testimonial.quote }}"

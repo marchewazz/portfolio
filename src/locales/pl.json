@@ -5,7 +5,16 @@
     "experience": "Doświadczenie",
     "testimonials": "Rekomendacje",
     "events": "Wydarzenia",
-    "collaboration": "Współpraca"
+    "collaboration": "Współpraca",
+    "flagsAlts": {
+      "uk": "Flaga Zjednoczonego Królestwa",
+      "pl": "Flaga Polski"
+    }
+  },
+  "head": {
+    "title": "Portfolio Mateusz Marchewczyka",
+    "leftPage": "poszedłeś se",
+    "returnedToPage": "cześć znowu"
   },
   "home": {
     "hero": {
@@ -13,7 +22,8 @@
       "firstParagraph": "Jestem 22-letnim full-stack developerem z Kielc, obecnie pracującym zdalnie. Od ponad trzech lat rozwijam swoje umiejętności w prawdziwych, komercyjnych projektach — zaczynałem jako stażysta jeszcze w trakcie nauki w technikum, a dziś pracuję na stanowisku Mid Full-Stack Developera, łącząc programowanie z koordynacją pracy zespołu.",
       "secondParagraph": "Swobodnie poruszam się zarówno po stronie frontendu, jak i backendu — od projektowania interfejsów w oparciu o makiety z Figmy, przez logikę biznesową w PHP i Vue, po strukturę baz danych MySQL. Na co dzień pracuję z Wordpressem, Roots/Sage, Laravelem oraz integruję systemy zewnętrzne, takie jak API InPost czy SalesForce.",
       "thirdParagraph": "Najbardziej cenię projekty, w których mogę zobaczyć cały proces — od pomysłu, przez implementację, aż po wdrożenie i realny efekt dla użytkownika. Blisko współpracuję z działami sprzedaży, marketingu i SEO, co nauczyło mnie patrzeć na kod nie tylko technicznie, ale też biznesowo.",
-      "more": "Informacje o współpracy ze mną"
+      "more": "Informacje o współpracy ze mną",
+      "alt": "Zdjęcia profilowe Mateusza Marchewczyka"
     },
     "skills": {
       "header": "Moje umiejętności"
@@ -80,7 +90,7 @@
               ]
             },
             {
-              "title": "Milestone",
+              "title": "Strona dwujęzycznego liceum Milestone",
               "slug": "milestone",
               "description": "Motyw Wordpress dla dwujęzycznego liceum prowadzonego przez TEB Edukacja, byłem odpowiedzialny w pełni za tę stronę.",
               "tech": [
@@ -92,7 +102,7 @@
               ]
             },
             {
-              "title": "Zbalansowani",
+              "title": "Strona poradnii psychologicznej Zbalansowani",
               "slug": "zbalansowani",
               "description": "Motyw Wordpress dla poradnii psychologicznej prowadzonej przez TEB Edukacja, byłem odpowiedzialny za przeniesienie wyglądu z Figmy, oskryptowanie strony a także utowrzenie logiki pól ACF oraz CPT potrzebnych działania stron.",
               "tech": [
@@ -167,7 +177,7 @@
               ]
             },
             {
-              "title": "ogram.to v2",
+              "title": "Portal dla graczy ogram.to v2",
               "slug": "ogram-to-v2",
               "description": "Druga wersja strony ogram.to, tym razem tworzona jako motyw Wordpressa, działa z wtyczkami ACF i CPT, byłem częścią dwuosobowego zespołu dbającego o wygląd desktopowy i mobilny strony oraz działanie strony z treściami tworzonymi w Wordpress.",
               "tech": [
@@ -179,7 +189,7 @@
               ]
             },
             {
-              "title": "ogram.to",
+              "title": "Portal dla graczy ogram.to",
               "slug": "ogram-to",
               "description": "Pierwsza wersja strony ogram.to, był to mój pierwszy kontakt z frameworkiem Laravel. Tworzyłem ostylowane widoki, pisałem skrypty JavaScript, poznałem działanie migracji oraz modeli oraz użyłem wbudowanej autentykacji.",
               "tech": [
@@ -197,7 +207,7 @@
           "title": "Stażysta",
           "description": "Staż który łączyłem ze szkołą w ramach którego brałem udział przy pierwszych komercyjnych projektach.",
           "projects": [
-              {
+            {
               "title": "Strona firmowa coderhino.cc",
               "slug": "coderhino-company-website",
               "description": "Strona firmowa CODERHINO zbudowana w React, moim zadaniem było przeniesienie wyglądu z Figmy, dodanie animacji oraz połączenie front-endu z back-endem, jako źródło danych użyłem Wordpressa z wtyczkami ACF i CPT.",
@@ -208,7 +218,7 @@
               ]
             },
             {
-              "title": "How To IAB",
+              "title": "Strona informująca o eventach How To IAB",
               "slug": "iab-how-to",
               "description": "Czysty motyw Wordpressa dla stowarzyszenia IAB, moim zadaniem było przepisanie wyglądu z Figmy do kodu oraz napisanie koniecznego kodu JavaScript. Wygląd strony jest responsowny oraz działa z ACF.",
               "tech": [
@@ -219,7 +229,7 @@
               ]
             },
             {
-              "title": "Forum IAB",
+              "title": "Strona stowarzyszenia Forum IAB",
               "slug": "iab-forum",
               "description": "Mój pierwszy komercyjny projekt podczas stażu, moim zadaniem było stworzenie kodu strony wraz z responsywnością na podstawie projektu z Figmy.",
               "tech": [
@@ -239,7 +249,55 @@
           "projects": []
         }
       ],
-      "backToTimeline": "Wróć do osi czasu" 
+      "alts": {
+        "tebRegistrationFormInpost": {
+          "1": "Formularz rejestracyjny TEB z integracją paczkomatów InPost"
+        },
+        "tebRegistrationFormDevelopment": {
+          "1": "Interfejs formularza rejestracyjnego TEB stworzony podczas developmentu"
+        },
+        "tebWebsiteDevelopment": {
+          "1": "Strona główna serwisu TEB stworzona podczas developmentu"
+        },
+        "tebRegistrationFormMaintenance": {
+          "1": "Formularz rejestracyjny TEB po aktualizacjach w ramach utrzymania"
+        },
+        "milestone": {
+          "1": "Panel projektu Milestone"
+        },
+        "tebWebsiteMaintenance": {
+          "1": "Strona główna serwisu TEB po aktualizacjach w ramach utrzymania"
+        },
+        "tebRegistrationForm": {
+          "1": "Interfejs formularza rejestracyjnego online TEB"
+        },
+        "tebAiOffersBot": {
+          "1": "Interfejs chatbota AI generującego oferty TEB"
+        },
+        "tebSchoolSitesMaintenance": {
+          "1": "Strona główna serwisu Liceum",
+          "2": "Strona główna serwisu Technikum"
+        },
+        "technikumPlWebsite": {
+          "1": "Strona główna serwisu Technikum.pl"
+        },
+        "ogramToV2": {
+          "1": "Panel główny platformy Ogram.to w wersji 2"
+        },
+        "ogramTo": {
+          "1": "Panel główny platformy Ogram.to"
+        },
+        "iabForum": {
+          "1": "Interfejs forum dyskusyjnego IAB"
+        },
+        "iabHowTo": {
+          "1": "Układ strony poradnikowej IAB"
+        },
+        "coderhinoCompanyWebsite": {
+          "1": "Strona główna firmy Coderhino"
+        }
+      },
+      "backToTimeline": "Wróć do osi czasu"
     },
     "testimonials": {
       "header": "Co mówią inni",

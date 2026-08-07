@@ -97,7 +97,6 @@ onUnmounted(() => {
         </a>
       </nav>
 
-      <!-- mobile: stationary icons row -->
       <div class="lg:hidden flex items-center gap-3">
         <a href="https://github.com/marchewazz" target="_blank" aria-label="Github"
           class="opacity-80 hover:opacity-100 transition-opacity">
@@ -115,13 +114,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <!-- mobile section nav swiper -->
     <div class="lg:hidden relative h-10">
-      <div
-        class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-r from-current to-transparent opacity-10" />
-      <div
-        class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-l from-current to-transparent opacity-10" />
-
       <Swiper slides-per-view="auto" :space-between="24" :free-mode="true" :centered-slides="true" class="!px-4 h-full"
         @swiper="onSwiperInit">
         <SwiperSlide v-for="link in sectionLinks" :key="link.id" class="!w-auto flex items-center">

@@ -26,8 +26,8 @@ function switchLocale(lang) {
     />
 
     <span class="absolute w-full flex items-center justify-between px-2 pointer-events-none">
-        <img :src="flagUK" alt="" class="size-4 lg:size-6 rounded-full overflow-hidden object-cover object-center" />
-        <img :src="flagPL" alt="" class="size-4 lg:size-6 rounded-full overflow-hidden object-cover object-center" />
+        <img :src="flagUK" :alt="$t('nav.flagsAlts.uk')" class="size-4 lg:size-6 rounded-full overflow-hidden object-cover object-center" />
+        <img :src="flagPL" :alt="$t('nav.flagsAlts.pl')" class="size-4 lg:size-6 rounded-full overflow-hidden object-cover object-center" />
     </span>
   </button>
 </template>

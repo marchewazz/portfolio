@@ -34,52 +34,53 @@ const props = defineProps({
 
 const projectImages = {
   "teb-registration-form-inpost": [
-    InpostScreen
+    { src: InpostScreen, altKey: "alts.tebRegistrationFormInpost.1" }
   ],
   "teb-registration-form-development": [
-    UpiScreen
+    { src: UpiScreen, altKey: "alts.tebRegistrationFormDevelopment.1" }
   ],
   "teb-website-development": [
-    TebScreen
+    { src: TebScreen, altKey: "alts.tebWebsiteDevelopment.1" }
   ],
   "teb-registration-form-maintenance": [
-    UpiScreen
+    { src: UpiScreen, altKey: "alts.tebRegistrationFormMaintenance.1" }
   ],
   "milestone": [
-    MilestoneScreen
+    { src: MilestoneScreen, altKey: "alts.milestone.1" }
   ],
   "teb-website-maintenance": [
-    TebScreen
+    { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1" }
   ],
   "teb-registration-form": [
-    UpiScreen
+    { src: UpiScreen, altKey: "alts.tebRegistrationForm.1" }
   ],
   "teb-ai-offers-bot": [
-    ChatlabScreen
+    { src: ChatlabScreen, altKey: "alts.tebAiOffersBot.1" }
   ],
   "teb-school-sites-maintenance": [
-    LiceumScreen,
-    TechnikumScreen,
+    { src: LiceumScreen, altKey: "alts.tebSchoolSitesMaintenance.1" },
+    { src: TechnikumScreen, altKey: "alts.tebSchoolSitesMaintenance.2" },
   ],
   "technikum-pl-website": [
-    TechnikumScreen
+    { src: TechnikumScreen, altKey: "alts.technikumPlWebsite.1" }
   ],
   "ogram-to-v2": [
-    OgramTo2Screen
+    { src: OgramTo2Screen, altKey: "alts.ogramToV2.1" }
   ],
   "ogram-to": [
-    OgramToScreen
+    { src: OgramToScreen, altKey: "alts.ogramTo.1" }
   ],
   "iab-forum": [
-    ForumIabScreen
+    { src: ForumIabScreen, altKey: "alts.iabForum.1" }
   ],
   "iab-how-to": [
-    HowToIabScreen
+    { src: HowToIabScreen, altKey: "alts.iabHowTo.1" }
   ],
   "coderhino-company-website": [
-    CoderhinoScreen
+    { src: CoderhinoScreen, altKey: "alts.coderhinoCompanyWebsite.1" }
   ],
 };
+
 const activeProjectImages = computed(() => {
   console.log(projectImages[activeProject.value.slug] ?? [])
   return projectImages[activeProject.value.slug] ?? [];
@@ -150,19 +151,14 @@ onUnmounted(() => ctx?.revert())
 <template>
   <div class="relative min-h-100 w-full">
     <Transition name="stage" mode="out-in">
-      <!-- STAGE 1: Timeline -->
       <ol v-if="!activeProject" key="timeline" ref="listRef" class="relative min-w-0">
         <li v-for="(item, index) in items" :key="index" class="relative mb-10 md:ms-3 last:mb-0 md:ps-10">
-          <!-- Connecting line (only if not the last item) -->
           <span v-if="index !== items.length - 1"
-            class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-claret dark:bg-primary-yellow"></span>
-
-          <!-- Dot on the line -->
+            class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-claret dark:bg-primary-yellow translate-y-2"></span>
           <span
-            class="absolute hidden md:flex items-center justify-center w-4 h-4 rounded-full -start-2 ring-4 ring-primary-claret dark:ring-primary-blue bg-transparent"></span>
+            class="absolute hidden md:flex items-center justify-center w-4 h-4 rounded-full translate-y-1/2 -start-2 ring-4 ring-primary-claret dark:ring-primary-blue bg-primary-blue/90 dark:bg-primary-claret/70"></span>
 
-          <!-- Date -->
-          <time class="font-heading text-lg text-primary-black dark:text-primary-yellow mb-1">
+          <time class="font-heading text-lg text-primary-black dark:text-primary-yellow">
             {{ item.date }}
           </time>
 
@@ -172,15 +168,13 @@ onUnmounted(() => ctx?.revert())
             </h4>
             <Logo class="h-5 text-[#151515] dark:text-white" />
           </div>
-          <h4 class="text-sm text-primary-claret dark:text-primary-blue font-bold">
+          <h4 class="text-sm text-primary-claret dark:text-primary-blue font-bold mt-2">
             {{ item.form }}
           </h4>
-          <!-- Description -->
           <p class="font-imb text-lg text-primary-black dark:text-primary-white mt-2">
             {{ item.description }}
           </p>
 
-          <!-- Project triggers, styled like the accordion, only if present -->
           <div v-if="item.projects && item.projects.length" class="mt-3">
             <div v-for="(project, pIndex) in item.projects" :key="project.title"
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
@@ -197,7 +191,6 @@ onUnmounted(() => ctx?.revert())
         </li>
       </ol>
 
-      <!-- STAGE 2: Project detail (timeline hidden) -->
       <div v-else key="detail" class="w-full flex flex-col gap-2">
  
            <button
@@ -208,13 +201,14 @@ onUnmounted(() => ctx?.revert())
           <ArrowLeft class="group-hover:-translate-x-2 transition-transform duration-300" />
           {{ $t('home.experience.backToTimeline') }}
         </button>
-        <Swiper :modules="[Autoplay]" :slides-per-view="1" :space-between="10" class="w-full rounded-3xl overflow-hidden" :loop="true" 
-        :autoplay="{
-          delay: 3000,
-          disableOnInteraction: true,
-        }">
-          <SwiperSlide v-for="image in activeProjectImages" :key="image">
-            <img :src="image" class="hover:scale-105 w-full rounded-3xl transition-transform duration-300" alt="" />
+        <Swiper :modules="[Autoplay]" :slides-per-view="1" :space-between="10" class="w-full rounded-3xl overflow-hidden" :loop="true"
+          :autoplay="{ delay: 3000, disableOnInteraction: true }">
+          <SwiperSlide v-for="image in activeProjectImages" :key="image.src">
+            <img
+              :src="image.src"
+              class="hover:scale-105 w-full rounded-3xl transition-transform duration-300"
+              :alt="$t(`home.experience.${image.altKey}`)"
+            />
           </SwiperSlide>
         </Swiper>
         <div class="flex flex-wrap gap-2">

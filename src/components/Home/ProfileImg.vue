@@ -97,7 +97,6 @@ function handleMouseLeave() {
 </script>
 
 <template>
-    <!-- FLIP CARD zamiast zwykłego <img> -->
     <div
         class="w-1/2 lg:w-100 shrink-0 aspect-square perspective-distant group cursor-pointer"
         @mouseenter="handleMouseEnter"
@@ -108,20 +107,16 @@ function handleMouseLeave() {
             class="relative w-full h-full transition-transform duration-700 ease-in-out transform-3d"
             :class="flipped ? 'transform-[rotateY(180deg)]' : ''"
         >
-            <!-- FRONT: zdjęcie -->
             <div class="absolute inset-0 backface-hidden">
                 <img
                     class="w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-gray-100 rotate-1"
                     :src="Face"
-                    alt="Mateusz Marchewczyk"
+                    :alt="$t('home.hero.alt')"
                 />
             </div>
-
-            <!-- BACK: terminal -->
             <div
                 class="absolute inset-0 backface-hidden transform-[rotateY(180deg)] rounded-2xl shadow-2xl border-2 border-primary-yellow bg-[#1e1e2e] overflow-hidden flex flex-col"
             >
-                <!-- pasek terminala -->
                 <div class="flex items-center gap-2 px-4 py-2.5 bg-[#151521] border-b border-white/10 shrink-0">
                     <span class="w-3 h-3 rounded-full bg-red-500"></span>
                     <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
@@ -129,7 +124,6 @@ function handleMouseLeave() {
                     <span class="ml-2 text-xs text-gray-400 font-mono">devInfo.js</span>
                 </div>
 
-                <!-- treść terminala -->
                 <div class="p-4 font-mono text-xs sm:text-sm text-primary-yellow overflow-hidden flex-1">
                     <p
                         v-for="(line, i) in terminalLines"

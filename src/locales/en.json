@@ -5,7 +5,16 @@
     "experience": "Experience",
     "testimonials": "Testimonials",
     "events": "Events",
-    "collaboration": "Collaboration"
+    "collaboration": "Collaboration",
+    "flagsAlts": {
+      "uk": "United Kingdom flag",
+      "pl": "Poland flag"
+    }
+  },
+  "head": {
+    "title": "Mateusz Marchewczyk's portfolio",
+    "leftPage": "You left the page",
+    "returnedToPage": "Welcome back"
   },
   "home": {
     "hero": {
@@ -13,7 +22,8 @@
       "firstParagraph": "I'm a 22-year-old full-stack developer from Kielce, currently working remotely. For over three years I've been growing my skills on real, commercial projects — I started as an intern while still in technical school, and today I work as a Mid Full-Stack Developer, combining programming with coordinating the team's work.",
       "secondParagraph": "I move comfortably on both the frontend and backend — from designing interfaces based on Figma mockups, through business logic in PHP and Vue, to MySQL database structure. Day to day I work with WordPress, Roots/Sage, Laravel, and integrate external systems such as the InPost API or SalesForce.",
       "thirdParagraph": "What I value most are projects where I can see the whole process — from the idea, through implementation, to deployment and the real effect for the user. I work closely with sales, marketing, and SEO teams, which has taught me to look at code not just technically, but also from a business perspective.",
-      "more": "More about collaboration with me"
+      "more": "More about collaboration with me",
+      "alt": "Mateusza Marchewczyk's profile pic"
     },
     "skills": {
       "header": "My skills"
@@ -238,7 +248,56 @@
           "description": "My first work placement in technical school. During this placement we built a browser layout synced with data from the League of Legends game client. On this project I was responsible for the backend in Node.js.",
           "projects": []
         }
-      ]
+      ],
+      "alts": {
+        "tebRegistrationFormInpost": {
+          "1": "TEB registration form with InPost parcel locker integration"
+        },
+        "tebRegistrationFormDevelopment": {
+          "1": "TEB registration form interface built during development"
+        },
+        "tebWebsiteDevelopment": {
+          "1": "TEB company website homepage built during development"
+        },
+        "tebRegistrationFormMaintenance": {
+          "1": "TEB registration form after maintenance updates"
+        },
+        "milestone": {
+          "1": "Milestone project dashboard interface"
+        },
+        "tebWebsiteMaintenance": {
+          "1": "TEB company website homepage after maintenance updates"
+        },
+        "tebRegistrationForm": {
+          "1": "TEB online registration form interface"
+        },
+        "tebAiOffersBot": {
+          "1": "AI chatbot interface for generating TEB offers"
+        },
+        "tebSchoolSitesMaintenance": {
+          "1": "Liceum school website homepage",
+          "2": "Technikum school website homepage"
+        },
+        "technikumPlWebsite": {
+          "1": "Technikum.pl school website homepage"
+        },
+        "ogramToV2": {
+          "1": "Ogram.to platform, version 2, main dashboard"
+        },
+        "ogramTo": {
+          "1": "Ogram.to platform main dashboard"
+        },
+        "iabForum": {
+          "1": "IAB forum discussion board interface"
+        },
+        "iabHowTo": {
+          "1": "IAB how-to guide page layout"
+        },
+        "coderhinoCompanyWebsite": {
+          "1": "Coderhino company website homepage"
+        }
+      },
+      "backToTimeline": "Back to timeline" 
     },
     "testimonials": {
       "header": "What others say",

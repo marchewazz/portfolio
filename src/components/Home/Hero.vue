@@ -54,7 +54,6 @@ function copyEmail() {
                             <LinkedIn class="size-6" />
                         </a>
 
-                        <!-- Split email pill -->
                         <div
                             class="flex w-full sm:w-fit justify-between items-center rounded-full bg-primary-yellow text-primary-claret overflow-hidden h-11">
                             <a :href="`mailto:${email}`"
