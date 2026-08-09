@@ -1,6 +1,5 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { p } from 'vue-router/dist/router-CWoNjPRp.mjs';
 
 const { tm } = useI18n()
 </script>

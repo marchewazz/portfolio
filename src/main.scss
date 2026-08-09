@@ -114,9 +114,15 @@ html {
     scroll-padding-top: 88px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    min-height: 100dvh;
+    background-color: var(--color-primary-blue);
 
     @media (min-width: 1024px) {
         scroll-padding-top: 64px;
+    }
+
+    &.dark {
+        background-color: var(--color-primary-claret);
     }
 }
 
@@ -124,7 +130,7 @@ body {
   font-family: "JetBrains Mono", monospace;
   overflow-x: hidden;
 
-  &:not(:has(#nprogress)) header {
+  &:not(:has(#loader)) header {
     position: fixed;
   }
 }
@@ -267,3 +273,5 @@ button {
         background: var(--color-primary-blue) !important;
     }
 }
+
+

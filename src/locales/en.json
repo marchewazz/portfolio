@@ -418,5 +418,13 @@
     "ideas": "ideas: me",
     "coding": "coding: me & Claude",
     "builtWith": "// built with Vue 3, Tailwind 4, swiper.js & gsap"
+  },
+  "loader": {
+    "text1": "Gaining experience",
+    "text2": "Forming thoughts",
+    "text3": "Compiling the projects",
+    "text4": "Translating references",
+    "text5": "Generating footer",
+    "text6": "Turning on the console"
   }
 }

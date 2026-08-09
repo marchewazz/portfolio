@@ -1,9 +1,11 @@
 <script setup>
-import { watch } from 'vue';
+import { watch, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
+import router from './router.js';
+import Loading from './components/Loading.vue';
 
 const { t, locale } = useI18n();
 const route = useRoute();
@@ -36,10 +38,22 @@ function handleVisibilityChange() {
 }
 
 document.addEventListener('visibilitychange', handleVisibilityChange);
+
+const isLoading = ref(true)
+
+router.beforeEach((to, from, next) => {
+  isLoading.value = true
+  next()
+})
+
+router.afterEach(() => {
+  isLoading.value = false
+})
 </script>
 
 <template>
   <Header />
+  <Loading v-if="isLoading" />
   <router-view />
   <Footer />
 </template>
