@@ -6,6 +6,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+import { p } from 'vue-router/dist/router-CWoNjPRp.mjs'
 
 const { tm } = useI18n()
 
@@ -44,12 +45,12 @@ const modules = [Autoplay, Pagination, Navigation]
 
                         <div class="flex items-center gap-3 mt-2">
                             <div class="flex flex-col">
-                                <span class="font-heading text-sm text-primary-claret dark:text-primary-yellow">
+                                <p class="font-heading text-sm text-primary-claret dark:text-primary-yellow">
                                     {{ testimonial.name }}
-                                </span>
-                                <span class="font-imb text-xs text-primary-black dark:text-primary-white">
+                                </p>
+                                <p class="font-imb text-xs text-primary-black dark:text-primary-white">
                                     {{ testimonial.role }}
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>

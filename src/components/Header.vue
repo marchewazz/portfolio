@@ -80,8 +80,8 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'fixed top-0 z-10 w-full transition-colors duration-300',
-    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-transparent text-primary-claret dark:text-primary-white'
+    'top-0 z-10 w-full transition-colors duration-300',
+    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-primary-blue/90 dark:bg-primary-claret/50 [body:not(:has(#nprogress))_&]:bg-transparent text-primary-claret dark:text-primary-white'
   ]">
     <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-16">
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
@@ -89,22 +89,22 @@ onUnmounted(() => {
           :class="activeSection === link.id ? 'text-xl' : 'text-base'">
           {{ $t(link.key) }}
         </a>
-        <a class="h-full min-w-11 items-center justify-center group lg:hidden xl:flex" href="https://github.com/marchewazz" target="_blank">
+        <a class="h-full min-w-11 items-center justify-center group lg:flex" href="https://github.com/marchewazz" target="_blank">
           <component :is="GitHub" class="w-7 group-hover:w-8" />
         </a>
-        <a class="h-full min-w-11 items-center justify-center group lg:hidden xl:flex" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
+        <a class="h-full min-w-11 items-center justify-center group lg:flex" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
           <component :is="LinkedIn" class="w-7 group-hover:w-8" />
         </a>
       </nav>
 
-      <div class="lg:hidden flex items-center gap-3">
+      <div class="lg:hidden flex items-center gap-3 self-stretch">
         <a href="https://github.com/marchewazz" target="_blank" aria-label="Github"
-          class="opacity-80 hover:opacity-100 transition-opacity">
-          <component :is="GitHub" />
+          class="h-full min-w-11 min-h-11 flex items-center justify-center group">
+          <component class="w-7 group-hover:w-8" :is="GitHub" />
         </a>
         <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank" aria-label="LinkedIn"
-          class="opacity-80 hover:opacity-100 transition-opacity">
-          <component :is="LinkedIn" />
+          class="h-full min-w-11 min-h-11 flex items-center justify-center group">
+          <component class="w-7 group-hover:w-8" :is="LinkedIn" />
         </a>
       </div>
 

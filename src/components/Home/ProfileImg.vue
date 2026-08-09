@@ -20,19 +20,22 @@ const devInfo = {
     firstName: "Mateusz",
     lastName: "Marchewczyk",
     role: "Full-stack developer",
-    experience: "3+ lat",
+    yearsOfExperience: "over_3",
+    mainTechnologies: "[\"vue\", \"php\", \"wordpress\", \"tailwind\"]",
     status: "employed_open_to_contact",
 }
 
+// indent is now a level (0 or 1), not literal spaces in the string
 const scriptLines = [
-    { text: '> console.log(tl_dr)', delay: 30 },
-    { text: '{', delay: 20 },
-    { text: `  "firstName": "${devInfo.firstName}",`, delay: 16 },
-    { text: `  "lastName": "${devInfo.lastName}",`, delay: 16 },
-    { text: `  "role": "${devInfo.role}",`, delay: 16 },
-    { text: `  "experience": "${devInfo.experience}",`, delay: 16 },
-    { text: `  "status": "${devInfo.status}",`, delay: 16 },
-    { text: '}', delay: 20 },
+    { text: '> console.log(tl_dr)', delay: 30, indent: 0 },
+    { text: '{', delay: 20, indent: 0 },
+    { text: `"firstName": "${devInfo.firstName}",`, delay: 16, indent: 1 },
+    { text: `"lastName": "${devInfo.lastName}",`, delay: 16, indent: 1 },
+    { text: `"role": "${devInfo.role}",`, delay: 16, indent: 1 },
+    { text: `"yearsOfExperience": "${devInfo.yearsOfExperience}",`, delay: 16, indent: 1 },
+    { text: `"mainTechnologies": ${devInfo.mainTechnologies},`, delay: 16, indent: 1 },
+    { text: `"status": "${devInfo.status}",`, delay: 16, indent: 1 },
+    { text: '}', delay: 20, indent: 0 },
 ]
 
 let typingTimeout = null
@@ -98,7 +101,7 @@ function handleMouseLeave() {
 
 <template>
     <div
-        class="w-1/2 lg:w-100 shrink-0 aspect-square perspective-distant group cursor-pointer"
+        class="w-full h-80 sm:w-1/2 sm:h-auto lg:w-100 shrink-0 sm:aspect-square perspective-distant group cursor-pointer"
         tabindex="0"
         @focusin="handleMouseEnter"
         @focusout="handleMouseLeave"
@@ -127,11 +130,13 @@ function handleMouseLeave() {
                     <span class="ml-2 text-xs text-gray-400 font-mono">devInfo.js</span>
                 </div>
 
-                <div class="p-4 font-mono text-xs sm:text-sm text-primary-yellow overflow-hidden flex-1">
+                <div class="p-2 lg:p-4 font-mono text-xs sm:text-sm text-primary-yellow overflow-hidden flex-1">
                     <p
                         v-for="(line, i) in terminalLines"
                         :key="i"
-                        class="whitespace-pre leading-relaxed"
+                        class="leading-relaxed wrap-break-word"
+                        style="text-wrap: auto;"
+                        :style="{ paddingLeft: scriptLines[i]?.indent ? '1rem' : '0' }"
                         :class="line.trim().startsWith('>') ? 'text-green-400' : 'text-gray-200'"
                     >
                         {{ line }}<span v-if="i === terminalLines.length - 1 && typing" class="animate-pulse">▍</span>

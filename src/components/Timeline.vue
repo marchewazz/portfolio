@@ -180,9 +180,9 @@ onUnmounted(() => ctx?.revert())
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
               <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-left group"
                 @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
-                <span class="font-heading text-lg text-primary-claret dark:text-primary-blue">
+                <p class="font-heading text-lg text-primary-claret dark:text-primary-blue">
                   {{ project.title }}
-                </span>
+                </p>
                 <ArrowRight class="shrink-0 text-primary-claret dark:text-primary-blue transition-transform duration-300 group-hover:translate-x-2" />
               </button>
             </div>

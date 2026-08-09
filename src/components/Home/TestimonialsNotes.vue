@@ -1,5 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { p } from 'vue-router/dist/router-CWoNjPRp.mjs';
 
 const { tm } = useI18n()
 </script>
@@ -24,12 +25,12 @@ const { tm } = useI18n()
 
                     <div class="flex items-center gap-3 mt-2">
                         <div class="flex flex-col">
-                            <span class="text-primary-claret dark:text-primary-yellow">
+                            <p class="text-primary-claret dark:text-primary-yellow">
                                 {{ testimonial.name }}
-                            </span>
-                            <span class="font-imb text-primary-black dark:text-primary-white">
+                            </p>
+                            <p class="font-imb text-primary-black dark:text-primary-white">
                                 {{ testimonial.role }}
-                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>

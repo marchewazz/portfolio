@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import Frontend from "../../assets/images/icons/frontend.svg"
 import Backend from "../../assets/images/icons/backend.svg"
 import Db from "../../assets/images/icons/db.svg"
@@ -8,47 +9,25 @@ import Tools from "../../assets/images/icons/tools.svg"
 import Overlay from "../../assets/images/overlay.svg"
 import Cpu from "../../assets/images/icons/cpu.svg"
 
+const { tm } = useI18n()
+
 const activeIndex = ref(0)
 const skillsContainer = ref(null)
 
-const skills = [
-    {
-        title: 'Frontend',
-        technologies: ['Vue', 'React', 'TypeScript', 'Tailwind', 'SCSS'],
-        icon: Frontend
-    },
-    {
-        title: 'Backend',
-        technologies: ['Node.js', 'Express', 'PHP', 'Laravel'],
-        icon: Backend
-    },
-    {
-        title: 'Database',
-        technologies: ['PostgreSQL', 'MongoDB', 'Redis'],
-        icon: Db
-    },
-    {
-        title: 'AI',
-        technologies: ['Codex', 'Claude'],
-        icon: Cpu
-    },
-    {
-        title: 'Tools',
-        technologies: ['Git', 'Docker', 'Figma', 'Vite'],
-        icon: Tools
-    },
-      {
-        title: 'CMS',
-        technologies: ['Wordpress'],
-        icon: CMS
-    },
+const skillKeys = [
+    { key: 'frontend', icon: Frontend },
+    { key: 'backend', icon: Backend },
+    { key: 'database', icon: Db },
+    { key: 'ai', icon: Cpu },
+    { key: 'tools', icon: Tools },
+    { key: 'cms', icon: CMS },
 ]
 
 let intervalId = null
 
 function startAutoCycle() {
     intervalId = setInterval(() => {
-        activeIndex.value = (activeIndex.value + 1) % skills.length
+        activeIndex.value = (activeIndex.value + 1) % skillKeys.length
     }, 5000)
 }
 
@@ -82,11 +61,11 @@ onUnmounted(() => stopAutoCycle())
                 </h2>
             </div>
         </div>
-      
+
         <div class="flex flex-col justify-center mx-auto lg:flex-row max-w-480 w-full" ref="skillsContainer">
             <button
-                v-for="(skill, index) in skills"
-                :key="skill.title"
+                v-for="(skill, index) in skillKeys"
+                :key="skill.key"
                 @click="toggle(index)"
                 class="relative overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-4 items-center
                 h-80"
@@ -94,12 +73,12 @@ onUnmounted(() => stopAutoCycle())
             >
                 <component :is="skill.icon" class="size-12 text-primary-yellow dark:text-primary-claret transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'hidden' : 'max-h-12 min-h-12'" />
                 <span class="font-heading text-xl whitespace-nowrap mb-4">
-                    {{ skill.title }}
+                    {{ $t(`home.skills.items.${skill.key}.title`) }}
                 </span>
 
-                <div class="flex flex-col gap-2 transition-opacity duration-300 font-imb text-xl"
+                <div class="grid grid-cols-2 md:grid-cols-1 w-full gap-2 transition-opacity duration-300 font-imb text-xl"
                     :class="activeIndex === index ? 'opacity-100' : 'hidden lg:block opacity-0'">
-                    <span v-for="tech in skill.technologies" :key="tech" class="whitespace-nowrap">
+                    <span v-for="tech in tm(`home.skills.items.${skill.key}.technologies`)" :key="tech" class="whitespace-nowrap">
                         {{ tech }}
                     </span>
                 </div>

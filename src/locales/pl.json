@@ -26,7 +26,62 @@
       "alt": "Zdjęcia profilowe Mateusza Marchewczyka"
     },
     "skills": {
-      "header": "Moje umiejętności"
+      "header": "Moje umiejętności",
+      "items": {
+        "frontend": {
+          "title": "Frontend",
+          "technologies": [
+            "Vue",
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "Bootstrap",
+            "SCSS"
+          ]
+        },
+        "backend": {
+          "title": "Backend",
+          "technologies": [
+            "Node.js",
+            "Express",
+            "PHP",
+            "Laravel"
+          ]
+        },
+        "database": {
+          "title": "Baza danych",
+          "technologies": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB"
+          ]
+        },
+        "ai": {
+          "title": "AI",
+          "technologies": [
+            "Codex",
+            "Claude",
+            "ChatLab"
+          ]
+        },
+        "tools": {
+          "title": "Narzędzia",
+          "technologies": [
+            "Git",
+            "Docker",
+            "Figma",
+            "Vite",
+            "Jira",
+            "DBeaver"
+          ]
+        },
+        "cms": {
+          "title": "CMS",
+          "technologies": [
+            "Wordpress"
+          ]
+        }
+      }
     },
     "experience": {
       "header": "Doświadczenie",
@@ -205,7 +260,7 @@
           "date": "marzec 2023 — czerwiec 2023",
           "form": "ZDALNIE",
           "title": "Stażysta",
-          "description": "Staż który łączyłem ze szkołą w ramach którego brałem udział przy pierwszych komercyjnych projektach.",
+          "description": "Staż który łączyłem ze szkołą w ramach którego brałem udział przy pierwszych komercyjnych projektach. Moim zadaniem było głównie przenoszenie wyglądu z Figm do HTML oraz pisanie skryptów w JS",
           "projects": [
             {
               "title": "Strona firmowa coderhino.cc",
@@ -332,8 +387,7 @@
       "workflow": {
         "title": "Jak pracuję",
         "text": "Sprawnie poruszam się zarówno we frontendzie, jak i backendzie — od schematu bazy danych po interfejs użytkownika — współpracując z projektantami i zespołami produktowymi."
-      },
-      "cta": "Porozmawiajmy o Twoim projekcie."
+      }
     },
     "events": {
       "header": "Społeczność i wydarzenia",
@@ -358,5 +412,10 @@
         }
       ]
     }
+  },
+  "footer": {
+    "ideas": "pomysły: ja",
+    "coding": "wykonanie: ja i Claude",
+    "builtWith": "// Vue 3, Tailwind 4, swiper.js i gsap"
   }
 }

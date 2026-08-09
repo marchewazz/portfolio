@@ -26,7 +26,62 @@
       "alt": "Mateusza Marchewczyk's profile pic"
     },
     "skills": {
-      "header": "My skills"
+      "header": "My skills",
+      "items": {
+        "frontend": {
+          "title": "Frontend",
+          "technologies": [
+            "Vue",
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "Bootstrap",
+            "SCSS"
+          ]
+        },
+        "backend": {
+          "title": "Backend",
+          "technologies": [
+            "Node.js",
+            "Express",
+            "PHP",
+            "Laravel"
+          ]
+        },
+        "database": {
+          "title": "Database",
+          "technologies": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB"
+          ]
+        },
+        "ai": {
+          "title": "AI",
+          "technologies": [
+            "Codex",
+            "Claude",
+            "ChatLab"
+          ]
+        },
+        "tools": {
+          "title": "Tools",
+          "technologies": [
+            "Git",
+            "Docker",
+            "Figma",
+            "Vite",
+            "Jira",
+            "DBeaver"
+          ]
+        },
+        "cms": {
+          "title": "CMS",
+          "technologies": [
+            "Wordpress"
+          ]
+        }
+      }
     },
     "experience": {
       "header": "Experience",
@@ -297,7 +352,7 @@
           "1": "Coderhino company website homepage"
         }
       },
-      "backToTimeline": "Back to timeline" 
+      "backToTimeline": "Back to timeline"
     },
     "testimonials": {
       "header": "What others say",
@@ -358,5 +413,10 @@
         }
       ]
     }
+  },
+  "footer": {
+    "ideas": "ideas: me",
+    "coding": "coding: me & Claude",
+    "builtWith": "// built with Vue 3, Tailwind 4, swiper.js & gsap"
   }
 }

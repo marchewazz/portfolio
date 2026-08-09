@@ -27,14 +27,14 @@ function copyEmail() {
                   <div class="flex items-center rounded-full bg-primary-blue text-primary-claret overflow-hidden h-11 max-w-full w-full sm:w-fit justify-between">
                         <a
                             :href="`mailto:${email}`"
-                            class="px-4 h-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-claret/10 transition"
+                            class="px-2 lg:px-4 h-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-claret/10 transition-colors"
                         >
                             {{ email }}
                         </a>
                         <button
                             @click="copyEmail"
                             aria-label="Copy email"
-                            class="h-full px-4 min-w-11 flex items-center justify-center border-l border-primary-claret/20 hover:bg-primary-claret/10 transition cursor-pointer"
+                            class="h-full px-2 lg:px-4 shrink-0 min-w-11 flex items-center justify-center border-l border-primary-claret/20 hover:bg-primary-claret/10 transition-colors cursor-pointer"
                         >
                             <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="9" y="9" width="11" height="11" rx="2" />
