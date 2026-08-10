@@ -16,8 +16,10 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
         <div>
             <div class="bg-main"></div>
             <Experience />
-            <TestimonialsSwiper />
-            <TestimonialsNotes />
+            <div id="testimonials">
+                <TestimonialsSwiper />
+                <TestimonialsNotes />
+            </div>
             <Events />
             <Collaboration />
         </div>

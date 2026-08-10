@@ -14,7 +14,7 @@ const { theme, toggleTheme } = useTheme()
     :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
   >
     <span
-      class="absolute top-0.5 lg:top-0.75 left-0.5 size-7 lg:size-9 rounded-full bg-white/80 shadow-md flex text-sm lg:text-lg items-center justify-center transition-transform duration-300"
+      class="absolute top-0.5 left-0.5 size-7 lg:size-9 rounded-full bg-white/80 shadow-md flex text-sm lg:text-lg items-center justify-center transition-transform duration-300"
       :class="theme === 'dark' ? 'translate-x-7' : 'translate-x-0'"
     >
       {{ theme === 'dark' ? '🌙' : '☀️' }}

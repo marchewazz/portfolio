@@ -9,14 +9,15 @@
     "flagsAlts": {
       "uk": "United Kingdom flag",
       "pl": "Poland flag"
-    }
+    },
+    "backToMainPage": "Back to Main page"
   },
   "head": {
-    "title": "Mateusz Marchewczyk's portfolio",
-    "leftPage": "You left the page",
-    "returnedToPage": "Welcome back"
+    "leftPage": "Hey, I got cookies 🍪"
   },
   "home": {
+    "title": "Mateusz Marchewczyk's portfolio",
+    "returnedToPage": "🍪 Mateusz Marchewczyk's portfolio",
     "hero": {
       "header": "Hello, my name is ",
       "firstParagraph": "I'm a 22-year-old full-stack developer from Kielce, currently working remotely. For over three years I've been growing my skills on real, commercial projects — I started as an intern while still in technical school, and today I work as a Mid Full-Stack Developer, combining programming with coordinating the team's work.",
@@ -414,7 +415,76 @@
       ]
     }
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "returnedToPage": "🍪 Privacy Policy",
+    "lastUpdated": "Last updated: August 1, 2026",
+    "sections": [
+      {
+        "heading": "1. Data Controller",
+        "text": "The controller of your personal data is [Company Name], located at [company address]. For any matters related to data protection, please contact us using the details provided in the Contact section."
+      },
+      {
+        "heading": "2. What Data We Collect",
+        "text": "When you use our website, we may collect the following data:",
+        "list": [
+          "Identification data (name, surname, email address)",
+          "Technical data (IP address, browser type, operating system)",
+          "Usage data (pages visited, time spent on the site)"
+        ]
+      },
+      {
+        "heading": "3. Purpose of Data Processing",
+        "text": "We process your data for the following purposes:",
+        "list": [
+          "Providing services available on the website",
+          "Communication regarding customer support",
+          "Statistical analysis and improving service quality",
+          "Fulfilling legal obligations imposed on the controller"
+        ]
+      },
+      {
+        "heading": "4. Legal Basis for Processing",
+        "text": "We process your data based on Article 6(1) of the GDPR, in particular in connection with the performance of a contract, legal obligations, and the legitimate interest of the controller."
+      },
+      {
+        "heading": "5. Data Retention Period",
+        "text": "We store personal data for the period necessary to achieve the purposes for which it was collected, but no longer than required by applicable law."
+      },
+      {
+        "heading": "6. Your Rights",
+        "text": "Under the GDPR, you have the following rights:",
+        "list": [
+          "Right of access to your data",
+          "Right to rectification of data",
+          "Right to erasure of data",
+          "Right to restriction of processing",
+          "Right to data portability",
+          "Right to object",
+          "Right to lodge a complaint with a supervisory authority"
+        ]
+      },
+      {
+        "heading": "7. Cookies",
+        "text": "Our website uses cookies to ensure proper functioning of the service, analyze traffic, and personalize content. You can manage cookie settings in your browser."
+      },
+      {
+        "heading": "8. Data Sharing",
+        "text": "Your data may be shared with third parties only to the extent necessary to provide services (e.g., hosting providers, payment systems) and with entities authorized by law."
+      },
+      {
+        "heading": "9. Changes to This Privacy Policy",
+        "text": "We reserve the right to make changes to this privacy policy. We will inform you of any changes by publishing a new version on this page."
+      }
+    ],
+    "contact": {
+      "text": "If you have any questions regarding this privacy policy, please contact us at:",
+      "email": "contact\\@yourcompany.com"
+    }
+  },
   "footer": {
+    "privacy": "Privacy policy",
+    "home": "Home",
     "ideas": "ideas: me",
     "coding": "coding: me & Claude",
     "builtWith": "// built with Vue 3, Tailwind 4, swiper.js & gsap"

@@ -1,6 +1,9 @@
 <script setup>
 import LinkedIn from "../assets/images/icons/linkedin.svg?component"
 import GitHub from "../assets/images/icons/github.svg?component"
+import { useRoute } from "vue-router"
+
+const route = useRoute()
 
 const year = new Date().getFullYear()
 
@@ -12,6 +15,7 @@ const links = [
     { href: '#events', key: 'nav.events' },
     { href: '#collaboration', key: 'nav.collaboration' },
 ]
+
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const links = [
             <div>
                 <div class="text-sm text-primary-claret dark:text-white  mb-1">&lt;nav&gt;</div>
                 <nav class="flex flex-col gap-0.5 pl-4 sm:pl-6">
-                    <a v-for="link in links" :key="link.href" :href="link.href"
+                    <a v-if="route.name == 'home'" v-for="link in links" :key="link.href" :href="link.href"
                         class="group flex items-baseline gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue hover:pl-3 transition-[padding,background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">href="{{ link.href
@@ -39,6 +43,22 @@ const links = [
                             $t(link.key) }}</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
                     </a>
+                    <RouterLink v-if="route.name == 'home'" to="/privacy"
+                        aria-label="Privacy"
+                        class="group flex items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a</span>
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">href="/privacy"&gt;</span>
+                        <span class="font-ibm font-semibold text-primary-black dark:text-primary-white group-hover:text-primary-yellow dark:group-hover:text-primary-claret">{{$t("footer.privacy") }}</span>
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
+                    </RouterLink>
+                    <RouterLink v-if="route.name != 'home'" to="/"
+                        aria-label="Privacy"
+                        class="group flex items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a</span>
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">href="/home"&gt;</span>
+                        <span class="font-ibm font-semibold text-primary-black dark:text-primary-white group-hover:text-primary-yellow dark:group-hover:text-primary-claret">{{$t("footer.home") }}</span>
+                        <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
+                    </RouterLink>
                 </nav>
                 <div class="text-sm text-primary-claret dark:text-white  mt-1">&lt;/nav&gt;</div>
             </div>

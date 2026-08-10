@@ -9,14 +9,15 @@
     "flagsAlts": {
       "uk": "Flaga Zjednoczonego Królestwa",
       "pl": "Flaga Polski"
-    }
+    },
+     "backToMainPage": "Wróć na stronę główną"
   },
   "head": {
-    "title": "Portfolio Mateusz Marchewczyka",
-    "leftPage": "poszedłeś se",
-    "returnedToPage": "cześć znowu"
+    "leftPage": "Zostań, mam ciasteczka 🍪"
   },
   "home": {
+    "title": "Portfolio Mateusz Marchewczyka",
+    "returnedToPage": "🍪 Portfolio Mateusz Marchewczyka",
     "hero": {
       "header": "Cześć, jestem ",
       "firstParagraph": "Jestem 22-letnim full-stack developerem z Kielc, obecnie pracującym zdalnie. Od ponad trzech lat rozwijam swoje umiejętności w prawdziwych, komercyjnych projektach — zaczynałem jako stażysta jeszcze w trakcie nauki w technikum, a dziś pracuję na stanowisku Mid Full-Stack Developera, łącząc programowanie z koordynacją pracy zespołu.",
@@ -413,7 +414,76 @@
       ]
     }
   },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "returnedToPage": "🍪 Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 1 sierpnia 2026",
+    "sections": [
+      {
+        "heading": "1. Administrator danych",
+        "text": "Administratorem Twoich danych osobowych jest [Nazwa firmy], z siedzibą pod adresem [adres firmy]. W sprawach związanych z ochroną danych możesz skontaktować się z nami pod adresem podanym w sekcji Kontakt."
+      },
+      {
+        "heading": "2. Jakie dane zbieramy",
+        "text": "W ramach korzystania z naszej strony możemy zbierać następujące dane:",
+        "list": [
+          "Dane identyfikacyjne (imię, nazwisko, adres e-mail)",
+          "Dane techniczne (adres IP, typ przeglądarki, system operacyjny)",
+          "Dane dotyczące korzystania ze strony (odwiedzane podstrony, czas spędzony na stronie)"
+        ]
+      },
+      {
+        "heading": "3. Cel przetwarzania danych",
+        "text": "Twoje dane przetwarzamy w celu:",
+        "list": [
+          "Świadczenia usług dostępnych na stronie",
+          "Kontaktu w sprawach związanych z obsługą klienta",
+          "Analizy statystycznej i poprawy jakości usług",
+          "Wypełnienia obowiązków prawnych ciążących na administratorze"
+        ]
+      },
+      {
+        "heading": "4. Podstawa prawna przetwarzania",
+        "text": "Dane przetwarzamy na podstawie art. 6 ust. 1 RODO, w szczególności w związku z wykonaniem umowy, obowiązkiem prawnym oraz prawnie uzasadnionym interesem administratora."
+      },
+      {
+        "heading": "5. Okres przechowywania danych",
+        "text": "Dane osobowe przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane, nie dłużej jednak niż wynika to z obowiązujących przepisów prawa."
+      },
+      {
+        "heading": "6. Twoje prawa",
+        "text": "Zgodnie z RODO przysługują Ci następujące prawa:",
+        "list": [
+          "Prawo dostępu do swoich danych",
+          "Prawo do sprostowania danych",
+          "Prawo do usunięcia danych",
+          "Prawo do ograniczenia przetwarzania",
+          "Prawo do przenoszenia danych",
+          "Prawo do wniesienia sprzeciwu",
+          "Prawo do wniesienia skargi do organu nadzorczego (PUODO)"
+        ]
+      },
+      {
+        "heading": "7. Pliki cookies",
+        "text": "Nasza strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania serwisu, analizy ruchu oraz personalizacji treści. Możesz zarządzać ustawieniami cookies w swojej przeglądarce."
+      },
+      {
+        "heading": "8. Udostępnianie danych",
+        "text": "Twoje dane mogą być udostępniane podmiotom trzecim wyłącznie w zakresie niezbędnym do realizacji usług (np. dostawcom hostingu, systemów płatności) oraz podmiotom uprawnionym na podstawie przepisów prawa."
+      },
+      {
+        "heading": "9. Zmiany w polityce prywatności",
+        "text": "Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. O wszelkich zmianach będziemy informować poprzez publikację nowej wersji na tej stronie."
+      }
+    ],
+    "contact": {
+      "text": "W przypadku pytań dotyczących niniejszej polityki prywatności prosimy o kontakt pod adresem:",
+      "email": "kontakt\\@twojafirma.pl"
+    }
+  },
   "footer": {
+    "privacy": "Polityka prywatności",
+    "home": "Strona główna",
     "ideas": "pomysły: ja",
     "coding": "wykonanie: ja i Claude",
     "builtWith": "// Vue 3, Tailwind 4, swiper.js i gsap"

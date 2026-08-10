@@ -93,6 +93,7 @@ let ctx
 
 const activeKey = ref(null)
 const activeProject = ref(null)
+const savedScrollY = ref(0)
 
 function toggleProject(itemIndex, projectIndex) {
   const key = `${itemIndex}-${projectIndex}`
@@ -101,6 +102,7 @@ function toggleProject(itemIndex, projectIndex) {
     activeProject.value = null
     emit('detail-close')
   } else {
+    savedScrollY.value = window.scrollY
     activeKey.value = key
     activeProject.value = props.items[itemIndex].projects[projectIndex]
     document.getElementById("experience").scrollIntoView()
@@ -113,14 +115,28 @@ function isActive(itemIndex, projectIndex) {
 }
 
 function closePanel() {
-  const index = activeKey.value
+  const index = activeKey.value // capture before nulling, same as before
+
   activeKey.value = null
   activeProject.value = null
 
   setTimeout(() => {
-    document.getElementById(index).scrollIntoView()
-  }, 300);
- 
+    window.scrollTo({ top: savedScrollY.value, behavior: 'auto' })
+
+    const el = document.getElementById(index)
+    if (el) {
+      const classes = ['dark:bg-primary-yellow/90','px-2','dark:text-primary-claret!','bg-primary-claret/90','text-primary-yellow']
+      classes.forEach(element => {
+        el.classList.add(element)
+      });
+      setTimeout(() => {
+         classes.forEach(element => {
+          el.classList.remove(element)
+        });
+      }, 2000)
+    }
+  }, 300)
+
   emit('detail-close')
 }
 
@@ -178,12 +194,12 @@ onUnmounted(() => ctx?.revert())
           <div v-if="item.projects && item.projects.length" class="mt-3">
             <div v-for="(project, pIndex) in item.projects" :key="project.title"
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
-              <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-left group"
+              <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]"
                 @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
-                <p class="font-heading text-lg text-primary-claret dark:text-primary-blue">
+                <p class="font-heading text-lg">
                   {{ project.title }}
                 </p>
-                <ArrowRight class="shrink-0 text-primary-claret dark:text-primary-blue transition-transform duration-300 group-hover:translate-x-2" />
+                <ArrowRight class="shrink-0 transition-transform duration-300 group-hover:translate-x-2" />
               </button>
             </div>
           </div>
