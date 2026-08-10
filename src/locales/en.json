@@ -49,7 +49,7 @@
           ]
         },
         "database": {
-          "title": "Database",
+          "title": "Databases",
           "technologies": [
             "MySQL",
             "PostgreSQL",

@@ -16,7 +16,7 @@ function copyEmail() {
 </script>
 
 <template>
-    <div class="bg-primary-blue dark:bg-primary-claret hero pt-20 min-h-[min(100dvh,1080px)]" id="hero">
+    <div class="bg-primary-blue dark:bg-primary-claret hero pt-16 min-h-[min(100dvh,1080px)]" id="hero">
         <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-evenly gap-16 py-8 lg:py-16">
             <ProfileImg />
             <div class="flex flex-col justify-start gap-4 lg:max-w-[63%]">

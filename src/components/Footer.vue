@@ -24,7 +24,7 @@ const links = [
             &lt;footer&gt;
         </div>
 
-        <div class="flex flex-col sm:flex-row justify-between gap-6 px-4 sm:px-8 py-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-6 px-8 lg:px-16 py-4">
 
             <!-- Otwierający tag <nav> -->
             <div>
@@ -68,7 +68,7 @@ const links = [
 
         <!-- Status/copyright -->
         <div
-            class="px-6 lg:px-8 py-4 flex flex-col  border-t border-dashed border-primary-black dark:border-primary-blue">
+            class="px-8 lg:px-16 py-4 flex flex-col  border-t border-dashed border-primary-black dark:border-primary-blue">
             <div class="text-sm text-primary-claret dark:text-white pr-1">&lt;div class="additional-informations"&gt;</div>
             <div class="flex flex-col text-primary-black dark:text-primary-white lg:flex-row justify-between gap-2 px-8 lg:px-10 py-3 text-sm">
                 <p>{{ $t("footer.ideas") }}</p>

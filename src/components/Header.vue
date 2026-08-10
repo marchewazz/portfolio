@@ -85,15 +85,15 @@ onUnmounted(() => {
   ]">
     <div class="flex justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-16">
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
-        <a v-for="link in sectionLinks" :key="link.id" :href="link.href" class="font-bold transition-all duration-100 h-full flex items-center hover:text-xl hover:font-black"
+        <a v-for="link in sectionLinks" :key="link.id" :href="link.href" class="font-bold transition-[font-weight,font-size] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="activeSection === link.id ? 'text-xl' : 'text-base'">
           {{ $t(link.key) }}
         </a>
         <a class="h-full min-w-11 items-center justify-center group lg:flex" href="https://github.com/marchewazz" target="_blank">
-          <component :is="GitHub" class="w-7 group-hover:w-8" />
+          <component :is="GitHub" class="w-7 group-hover:w-8 transition-[width] duration-100" />
         </a>
         <a class="h-full min-w-11 items-center justify-center group lg:flex" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
-          <component :is="LinkedIn" class="w-7 group-hover:w-8" />
+          <component :is="LinkedIn" class="w-7 group-hover:w-8 transition-[width] duration-100" />
         </a>
       </nav>
 
