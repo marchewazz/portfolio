@@ -13,11 +13,10 @@
      "backToMainPage": "Wróć na stronę główną"
   },
   "head": {
-    "leftPage": "Zostań, mam ciasteczka 🍪"
+    "leftPage": "🍪 Zostań, mam ciasteczka"
   },
   "home": {
-    "title": "Portfolio Mateusz Marchewczyka",
-    "returnedToPage": "🍪 Portfolio Mateusz Marchewczyka",
+    "title": "Mateusz Marchewczyk - portfolio",
     "hero": {
       "header": "Cześć, jestem ",
       "firstParagraph": "Jestem 22-letnim full-stack developerem z Kielc, obecnie pracującym zdalnie. Od ponad trzech lat rozwijam swoje umiejętności w prawdziwych, komercyjnych projektach — zaczynałem jako stażysta jeszcze w trakcie nauki w technikum, a dziś pracuję na stanowisku Mid Full-Stack Developera, łącząc programowanie z koordynacją pracy zespołu.",
@@ -416,7 +415,6 @@
   },
   "privacy": {
     "title": "Polityka prywatności",
-    "returnedToPage": "🍪 Polityka prywatności",
     "lastUpdated": "Ostatnia aktualizacja: 1 sierpnia 2026",
     "sections": [
       {

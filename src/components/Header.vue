@@ -90,7 +90,7 @@ watch(activeSection, (id) => {
 })
 
 watch(
-  () => route.name,
+  () => route.name && route.name,
   (name) => {
     if (name === 'home') {
       ensureObserverSetup()
@@ -103,7 +103,7 @@ watch(
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 
-  if (route.name === 'home') {
+  if (route.name && route.name === 'home') {
     ensureObserverSetup()
   }
 })
@@ -120,18 +120,13 @@ onUnmounted(() => {
     isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-primary-blue/90 dark:bg-primary-claret/50 dark:[body:has(#loader)_&]:bg-primary-claret [body:not(:has(#loader))_&]:bg-transparent text-primary-claret dark:text-primary-white'
   ]">
     <div class="flex lg:justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-16">
-      <nav class="lg:hidden">
-        <RouterLink v-if="route.name != 'home'" to="/" class="font-bold transition-[font-weight,font-size] duration-100 h-full flex items-center hover:text-xl hover:font-black">
-          {{ $t("nav.backToMainPage") }}
-        </RouterLink>
-      </nav>
       <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
-        <a v-if="route.name == 'home'" v-for="link in sectionLinks" :key="link.id" :href="link.href"
+        <a v-if="route.name && route.name == 'home'" v-for="link in sectionLinks" :key="link.id" :href="link.href"
           class="font-bold transition-[font-weight,font-size] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="activeSection === link.id ? 'text-xl' : 'text-base'">
           {{ $t(link.key) }}
         </a>
-        <RouterLink v-if="route.name != 'home'" to="/" class="font-bold transition-[font-weight,font-size] duration-100 h-full flex items-center hover:text-xl hover:font-black">
+        <RouterLink v-if="route.name && route.name != 'home'" to="/" class="font-bold transition-[font-weight,font-size] duration-100 h-full flex items-center hover:text-xl hover:font-black">
           {{ $t("nav.backToMainPage") }}
         </RouterLink>
         <a class="h-full min-w-11 items-center justify-center group lg:flex" href="https://github.com/marchewazz"
@@ -162,9 +157,12 @@ onUnmounted(() => {
     </div>
 
     <div class="lg:hidden relative h-10"
-    :class="{ 'hidden': route.name != 'home' }">
+    :class="{ 'px-4 lg:px-10 flex items-center': route.name && route.name != 'home' }">
       <nav>
-        <Swiper v-if="route.name == 'home'" slides-per-view="auto" :space-between="24" :free-mode="true"
+        <RouterLink v-if="route.name && route.name != 'home'" to="/" class="font-bold h-10 transition-[font-weight,font-size] duration-100 flex items-center text-sm hover:text-base hover:font-black">
+          {{ $t("nav.backToMainPage") }}
+        </RouterLink>
+        <Swiper v-if="route.name && route.name == 'home'" slides-per-view="auto" :space-between="24" :free-mode="true"
           :centered-slides="true" class="!px-4 h-full" @swiper="onSwiperInit">
 
           <SwiperSlide v-for="link in sectionLinks" :key="link.id" class="!w-auto flex items-center">

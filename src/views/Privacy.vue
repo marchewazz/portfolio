@@ -5,9 +5,14 @@ const { t, tm, rt } = useI18n()
 </script>
 
 <template>
-  <main class="container dark:text-primary-white pt-16 mx-auto">
-    <h1>{{ t('privacy.title') }}</h1>
-    <p class="privacy__updated">{{ t('privacy.lastUpdated') }}</p>
+  <main class="text-primary-black dark:text-primary-white pt-24 mx-auto">
+    <section class="bg-primary-claret dark:bg-primary-blue">
+      <div class="container flex justify-center items-center py-8">
+           <h1 class="text-2xl dark:text-primary-claret text-primary-yellow">{{ $t('privacy.title') }}</h1>
+      </div>
+    </section>
+    <section class="py-8 container">
+        <p class="privacy__updated">{{ t('privacy.lastUpdated') }}</p>
 
     <section
       v-for="(section, index) in tm('privacy.sections')"
@@ -28,5 +33,6 @@ const { t, tm, rt } = useI18n()
       {{ t('privacy.contact.text') }}
       <a :href="`mailto:${t('privacy.contact.email')}`">{{ t('privacy.contact.email') }}</a>
     </p>
+    </section>
   </main>
 </template>

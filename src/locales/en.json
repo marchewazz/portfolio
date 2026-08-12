@@ -13,11 +13,10 @@
     "backToMainPage": "Back to Main page"
   },
   "head": {
-    "leftPage": "Hey, I got cookies 🍪"
+    "leftPage": "🍪 Hey, I got cookies"
   },
   "home": {
-    "title": "Mateusz Marchewczyk's portfolio",
-    "returnedToPage": "🍪 Mateusz Marchewczyk's portfolio",
+    "title": "Mateusz Marchewczyk - portfolio",
     "hero": {
       "header": "Hello, my name is ",
       "firstParagraph": "I'm a 22-year-old full-stack developer from Kielce, currently working remotely. For over three years I've been growing my skills on real, commercial projects — I started as an intern while still in technical school, and today I work as a Mid Full-Stack Developer, combining programming with coordinating the team's work.",
