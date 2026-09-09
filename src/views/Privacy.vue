@@ -5,10 +5,10 @@ const { t, tm, rt } = useI18n()
 </script>
 
 <template>
-  <main class="text-primary-black dark:text-primary-white pt-24 mx-auto">
+  <main class="text-primary-black dark:text-primary-white pt-22 lg:pt-16 mx-auto">
     <section class="bg-primary-claret dark:bg-primary-blue">
-      <div class="container flex justify-center items-center py-8">
-           <h1 class="text-2xl dark:text-primary-claret text-primary-yellow">{{ $t('privacy.title') }}</h1>
+      <div class="container mx-auto flex justify-center items-center py-8">
+        <h1 class="text-2xl dark:text-primary-claret text-primary-yellow text-center">{{ $t('privacy.title') }}</h1>
       </div>
     </section>
     <section class="py-8 container">
