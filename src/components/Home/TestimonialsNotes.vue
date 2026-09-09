@@ -11,7 +11,7 @@ const { tm } = useI18n()
                 {{ $t('home.testimonials.header') }}
             </h2>
 
-            <div class="flex flex-wrap justify-center gap-12 w-full py-12 px-4 rounded-3xl bg-primary-claret dark:bg-primary-blue/70 bg-testimonials">
+            <div class="flex flex-wrap justify-center gap-12 w-full py-12 px-4 rounded-3xl bg-primary-claret max-w-6xl dark:bg-primary-blue/70 bg-testimonials">
                 <div
                     tabindex="0"
                     v-for="(testimonial, index) in tm('home.testimonials.items')"

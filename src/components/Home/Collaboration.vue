@@ -18,7 +18,7 @@ function copyEmail() {
     <section class="sm:pt-16 sm:pb-20">
         <div class="container mx-auto pl-0! pr-0! sm:pl-4! sm:pr-4!">
             <div id="collaboration"
-                class="items-center flex flex-col gap-8 bg-primary-claret dark:bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
+                class="items-center flex flex-col gap-8 bg-primary-claret max-w-6xl mx-auto dark:bg-primary-yellow sm:rounded-2xl p-6 shadow-inner shadow-black">
                 <h2 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                     {{ $t('home.collaboration.header') }}
                 </h2>
@@ -26,16 +26,16 @@ function copyEmail() {
                 <p class="text-primary-yellow dark:text-primary-claret text-center max-w-2xl">
                     {{ $t('home.collaboration.intro') }}
                 </p>
-                <div class="flex flex-col lg:flex-row gap-4 max-w-full">
+                <div class="flex flex-col lg:flex-row gap-4 max-w-4xl w-full">
 
                     <div class="bg-primary-yellow rounded-full w-full">
                         <a :href="ResumePL" download
-                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-claret/10 transition-colors w-full">
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
                             {{ $t("home.hero.resume_pl") }}
                         </a>
                     </div>
                     <div
-                        class="flex items-center rounded-full min-w-fit bg-primary-blue text-primary-claret overflow-hidden h-11 max-w-full w-full sm:w-fit justify-between">
+                        class="flex items-center rounded-full min-w-fit bg-primary-blue text-primary-claret overflow-hidden h-11 max-w-full w-full justify-between">
                         <a :href="`mailto:${email}`"
                             class="px-2 lg:px-4 h-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-claret/10 transition-colors">
                             {{ email }}
@@ -55,7 +55,7 @@ function copyEmail() {
                     </div>
                     <div class="bg-primary-yellow rounded-full w-full">
                         <a :href="ResumeEN" download
-                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-claret/10 transition-colors w-full">
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
                             {{ $t("home.hero.resume_en") }}
                         </a>
                     </div>
