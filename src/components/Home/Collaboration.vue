@@ -66,9 +66,9 @@ function copyEmail() {
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
                     <div tabindex="0" v-for="key in ['employment', 'location', 'availability', 'workflow']" :key="key"
                         class="collaboration-card border-2 border-primary-yellow dark:border-primary-blue rounded-2xl p-6 flex flex-col gap-2 hover:scale-105 md:hover:scale-120 md:focus-visible:scale-120 transition-[scale]">
-                        <h3 class="text-primary-claret dark:text-primary-blue text-lg font-semibold">
+                        <p class="text-primary-claret dark:text-primary-blue text-lg font-semibold">
                             {{ $t(`home.collaboration.${key}.title`) }}
-                        </h3>
+                        </p>
                         <p class="text-primary-black dark:text-primary-blue text-sm">
                             {{ $t(`home.collaboration.${key}.text`) }}
                         </p>

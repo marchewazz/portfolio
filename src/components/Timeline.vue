@@ -187,10 +187,10 @@ onUnmounted(() => ctx?.revert())
           </time>
 
           <div class="flex flex-col items-start lg:flex-row lg:items-center gap-4 py-2">
-            <h3 class="text-xl text-primary-claret dark:text-primary-blue font-bold">
-              {{ item.title }}
-            </h3>
-            <Logo class="h-5 text-[#151515] dark:text-white" />
+            <p class="text-xl text-primary-claret dark:text-primary-blue font-bold">
+              {{ item.title }} <span class="text-black dark:text-white">- CODERHI<span class="text-[#af272f]">N</span>O</span>
+            </p>
+            <!-- <Logo class="h-5 text-[#151515] dark:text-white" /> -->
           </div>
           <p class="text-sm text-primary-claret dark:text-primary-blue font-bold mt-2">
             {{ item.form }}

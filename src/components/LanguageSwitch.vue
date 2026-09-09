@@ -21,7 +21,7 @@ function switchLocale(lang) {
     aria-label="Switch language"
   >
     <span
-      class="absolute top-0.5 left-0.5 size-7 lg:size-9 rounded-full bg-white/80 shadow-md transition-transform duration-300"
+      class="absolute top-0.5 left-0.5 size-7 lg:size-9 rounded-full bg-gray-200 shadow-md transition-transform duration-300"
       :class="locale === 'pl' ? 'translate-x-8' : 'translate-x-0'"
     />
 
