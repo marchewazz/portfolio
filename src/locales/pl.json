@@ -23,7 +23,9 @@
       "secondParagraph": "Swobodnie poruszam się zarówno po stronie frontendu, jak i backendu — od projektowania interfejsów w oparciu o makiety z Figmy, przez logikę biznesową w PHP i Vue, po strukturę baz danych MySQL. Na co dzień pracuję z Wordpressem, Roots/Sage, Laravelem oraz integruję systemy zewnętrzne, takie jak API InPost czy SalesForce.",
       "thirdParagraph": "Najbardziej cenię projekty, w których mogę zobaczyć cały proces — od pomysłu, przez implementację, aż po wdrożenie i realny efekt dla użytkownika. Blisko współpracuję z działami sprzedaży, marketingu i SEO, co nauczyło mnie patrzeć na kod nie tylko technicznie, ale też biznesowo.",
       "more": "Informacje o współpracy ze mną",
-      "alt": "Zdjęcia profilowe Mateusza Marchewczyka"
+      "alt": "Zdjęcia profilowe Mateusza Marchewczyka",
+      "resume_pl": "Pobierz CV po polsku",
+      "resume_en": "Pobierz CV po angielsku"
     },
     "skills": {
       "header": "Moje umiejętności",

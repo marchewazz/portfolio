@@ -24,8 +24,6 @@ const router = createRouter({
           const el = document.querySelector(to.hash);
           if (el) {
             resolve({ el: to.hash, behavior: 'smooth' });
-          } else {
-            setTimeout(tryScroll, 50);
           }
         };
         tryScroll();

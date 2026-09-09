@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay } from 'swiper/modules'
 
 import UpiScreen from "../assets/images/screens/upi-screen.png"
+import UpiScreen2 from "../assets/images/screens/upi-screen-2.png"
 import CoderhinoScreen from "../assets/images/screens/coderhino.png"
 import HowToIabScreen from "../assets/images/screens/how-to-iab.png"
 import ForumIabScreen from "../assets/images/screens/forum-iab.png"
@@ -17,6 +18,9 @@ import OgramTo2Screen from "../assets/images/screens/ogram-to-2.png"
 import TechnikumScreen from "../assets/images/screens/technikum.png"
 import LiceumScreen from "../assets/images/screens/liceum.png"
 import TebScreen from "../assets/images/screens/teb.png"
+import TebScreen2 from "../assets/images/screens/teb-2.png"
+import TebScreen3 from "../assets/images/screens/teb-3.png"
+import TebScreen4 from "../assets/images/screens/teb-4.png"
 import ChatlabScreen from "../assets/images/screens/chatlab.png"
 import MilestoneScreen from "../assets/images/screens/milestone.png"
 import InpostScreen from "../assets/images/screens/inpost.png"
@@ -37,13 +41,17 @@ const projectImages = {
     { src: InpostScreen, altKey: "alts.tebRegistrationFormInpost.1" }
   ],
   "teb-registration-form-development": [
-    { src: UpiScreen, altKey: "alts.tebRegistrationFormDevelopment.1" }
+    { src: UpiScreen, altKey: "alts.tebRegistrationFormDevelopment.1" },
+    { src: UpiScreen2, altKey: "alts.tebRegistrationFormMaintenance.2" }
   ],
   "teb-website-development": [
-    { src: TebScreen, altKey: "alts.tebWebsiteDevelopment.1" }
+    { src: TebScreen, altKey: "alts.tebWebsiteDevelopment.1" },
+    { src: TebScreen2, altKey: "alts.tebWebsiteDevelopment.1" },
+    { src: TebScreen3, altKey: "alts.tebWebsiteDevelopment.1" },
+    { src: TebScreen4, altKey: "alts.tebWebsiteDevelopment.1" }
   ],
   "teb-registration-form-maintenance": [
-    { src: UpiScreen, altKey: "alts.tebRegistrationFormMaintenance.1" }
+    { src: UpiScreen, altKey: "alts.tebRegistrationFormMaintenance.1" },
   ],
   "milestone": [
     { src: MilestoneScreen, altKey: "alts.milestone.1" }

@@ -4,6 +4,8 @@ import Face from "../../assets/images/face.jpg"
 import ProfileImg from './ProfileImg.vue'
 import LinkedIn from "../../assets/images/icons/linkedin.svg?component"
 import GitHub from "../../assets/images/icons/github.svg?component"
+import ResumePL from "../../assets/resume-pl.pdf"
+import ResumeEN from "../../assets/resume-en.pdf"
 
 const email = 'mateuszmarchewczyk24@gmail.com'
 const copied = ref(false)
@@ -19,14 +21,15 @@ function copyEmail() {
     <div class="bg-primary-blue dark:bg-primary-claret hero pt-16 min-h-[min(100dvh,1080px)]" id="hero">
         <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-evenly gap-16 py-8 lg:py-16">
             <ProfileImg />
-            <div class="flex flex-col justify-start gap-4 lg:max-w-[63%]">
+            <div class="flex flex-col justify-start gap-4 max-w-full lg:max-w-[63%]">
                 <h1
                     class="flex items-center justify-between text-base sm:text-lg xl:text-2xl bg-primary-yellow text-primary-claret font-bold rounded-full w-fit">
                     <span class="px-2 sm:px-4 lg:px-6 py-2 text-center">Full-stack developer</span>
                     <span class="bg-[#4FC08D] text-white px-2 sm:px-4 lg:px-6 self-stretch flex items-center ml-auto">
                         Vue
                     </span>
-                    <span class="bg-[#777BB4] text-white rounded-r-full px-2 sm:px-4 lg:px-6 flex items-center self-stretch">
+                    <span
+                        class="bg-[#777BB4] text-white rounded-r-full px-2 sm:px-4 lg:px-6 flex items-center self-stretch">
                         PHP
                     </span>
                 </h1>
@@ -46,7 +49,7 @@ function copyEmail() {
                     {{ $t("home.hero.thirdParagraph") }}
                 </p>
 
-                <div class="flex flex-col xl:flex-row xl:items-center gap-4">
+                <div class="flex flex-col xl:flex-row xl:items-center xl:flex-wrap gap-4">
                     <div class="flex items-center flex-wrap xl:justify-center gap-4">
                         <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
                             aria-label="GitHub"
@@ -80,12 +83,28 @@ function copyEmail() {
                             </button>
                         </div>
                     </div>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-primary-yellow rounded-full sm:w-fit w-full">
+                            <a :href="ResumePL" download
+                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-claret/10 transition-colors w-full">
+                                {{ $t("home.hero.resume_pl") }}
+                            </a>
+                        </div>
+
+                        <div class="bg-primary-yellow rounded-full sm:w-fit w-full">
+                            <a :href="ResumeEN" download
+                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-claret/10 transition-colors w-full">
+                                {{ $t("home.hero.resume_en") }}
+                            </a>
+                        </div>
+                    </div>
                     <div class="bg-primary-yellow rounded-full sm:w-fit w-full">
                         <a href="#collaboration"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-claret/10 transition-colors w-full">
                             {{ $t("home.hero.more") }}
                         </a>
                     </div>
+                    
                 </div>
             </div>
         </div>

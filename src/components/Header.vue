@@ -172,8 +172,6 @@ onUnmounted(() => {
               {{ $t(link.key) }}
             </a>
           </SwiperSlide>
-
-
         </Swiper>
       </nav>
     </div>
