@@ -5,6 +5,7 @@
     "experience": "Doświadczenie",
     "testimonials": "Rekomendacje",
     "events": "Wydarzenia",
+    "education": "Edukacja",
     "collaboration": "Współpraca",
     "flagsAlts": {
       "uk": "Flaga Zjednoczonego Królestwa",
@@ -411,6 +412,17 @@
           "name": "Codeweek",
           "year": "2022",
           "description": "Byłem jednym z dwóch prelegentów w ramach lekcji \"Monty Python w IT\" podczas CodeWeek w mojej szkole. Przedstawialiśmy skrypt w Pythonie pozwalający ściągnąć dane z strony Wikipedia oraz zbudowaliśmy czat na żywo z użyciem biblioteki socket"
+        }
+      ]
+    },
+    "education": {
+      "header": "Edukacja",
+      "items": [
+        {
+          "year": "2019 - 2024",
+          "degree": "Technik programista",
+          "school": "Technikum nr 1 w Gliwicach",
+          "description": "W szkole poznałem podstawy PHP, JS oraz jego frameworków czy MySQL. Zaliczyłem krótkie epizody z aplikacjami desktopowymi w C# oraz aplikacjami mobilnymi pisanymi w Javie w Android Studio. Jednocześnie starałem się poszerzać swoją wiedzę ponad podstawę programową. Szukałem technologii w których chciałbym rozwijać się dalej - od szeroko używanych jak MongoDB, Django czy React Native po Kivy czy Svelte, a także zacząłem swój staż w CODERHINO. Szkołę ukończyłem uzyskując 99% na egzaminie zawodowym."
         }
       ]
     }

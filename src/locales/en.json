@@ -5,6 +5,7 @@
     "experience": "Experience",
     "testimonials": "Testimonials",
     "events": "Events",
+    "education": "Education",
     "collaboration": "Collaboration",
     "flagsAlts": {
       "uk": "United Kingdom flag",
@@ -412,6 +413,17 @@
           "name": "Codeweek",
           "year": "2022",
           "description": "I was one of two speakers for the lesson \"Monty Python in IT\" during CodeWeek at my school. We presented a Python script for pulling data from Wikipedia and built a live chat using the socket library."
+        }
+      ]
+    },
+    "education": {
+      "header": "Education",
+      "items": [
+        {
+          "year": "2019 - 2024",
+          "degree": "Programmer technician",
+          "school": "Technical School number 1, Gliwice",
+          "description": "At school I got to know basics of PHP, JS and its frameworks and MySQL. I gained some experience with desktop apps in C# and with mobile apps in Java with Android Studio. In the meantime I have tried to extend my knowledge - from widely used MongoDB, Django or React Native to Kivy or Svelte, also I started my internship at CODERHINO. I finished school with 99% on my professional examination."
         }
       ]
     }

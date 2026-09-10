@@ -1,5 +1,6 @@
 <script setup>
 import Collaboration from '../components/Home/Collaboration.vue';
+import Education from '../components/Home/Education.vue';
 import Events from '../components/Home/Events.vue';
 import Experience from '../components/Home/Experience.vue';
 import Hero from '../components/Home/Hero.vue';
@@ -21,6 +22,7 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
                 <TestimonialsNotes />
             </div>
             <Events />
+            <Education />
             <Collaboration />
         </div>
     </main>

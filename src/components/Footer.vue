@@ -13,6 +13,7 @@ const links = [
     { href: '#experience', key: 'nav.experience' },
     { href: '#testimonials', key: 'nav.testimonials' },
     { href: '#events', key: 'nav.events' },
+    { href: '#education', key: 'nav.education' },
     { href: '#collaboration', key: 'nav.collaboration' },
 ]
 
