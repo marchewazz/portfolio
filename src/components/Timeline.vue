@@ -203,7 +203,8 @@ onUnmounted(() => ctx?.revert())
             <div v-for="(project, pIndex) in item.projects" :key="project.title"
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
               <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]"
-                @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
+               :aria-label="`${$t('home.experience.experienceButtonAria')}${project.title}`"
+              @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
                 <p class="font-heading text-lg">
                   {{ project.title }}
                 </p>
@@ -220,6 +221,7 @@ onUnmounted(() => ctx?.revert())
           type="button"
           class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue group"
           @click="closePanel"
+          :aria-label="$t('home.experience.backButtonAria')"
         >
           <ArrowLeft class="group-hover:-translate-x-2 transition-transform duration-300" />
           {{ $t('home.experience.backToTimeline') }}

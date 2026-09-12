@@ -36,20 +36,21 @@ const links = [
                 <div class="text-sm text-primary-claret dark:text-white  mb-1">&lt;nav&gt;</div>
                 <nav class="flex flex-col gap-0.5 pl-1 sm:pl-6">
                     <a v-if="route.name && route.name == 'home'" v-for="link in links" :key="link.href" :href="link.href"
+                        :aria-label="`${$t('footer.linksAria')}${$t(link.key)}`"
                         class="group flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue hover:pl-3 transition-[padding,background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a href="{{ link.href }}"&gt;</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret px-2 sm:px-0">{{$t(link.key) }}</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
                     </a>
                     <RouterLink v-if="route.name && route.name == 'home'" to="/privacy"
-                        aria-label="Privacy"
+                        :aria-label="$t('footer.privacyAria')"
                         class="group flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a href="/privacy"&gt;</span>
                         <span class="font-ibm text-primary-black dark:text-white group-hover:text-primary-yellow dark:group-hover:text-primary-claret px-2 sm:px-0">{{$t("footer.privacy") }}</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
                     </RouterLink>
                     <RouterLink v-if="route.name && route.name != 'home'" to="/"
-                        aria-label="Privacy"
+                        :aria-label="$t('footer.homeAria')"
                         class="group flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a href="/home"&gt;</span>
                         <span class="font-ibm text-primary-black dark:text-white group-hover:text-primary-yellow dark:group-hover:text-primary-claret px-2 sm:px-0">{{$t("footer.home") }}</span>
@@ -62,7 +63,7 @@ const links = [
             <div>
                 <div class="text-sm text-primary-claret dark:text-white  mb-1">&lt;div class="important-links"&gt;</div>
                 <div class="flex flex-col gap-0.5 pl-1 sm:pl-6">
-                    <a href="https://github.com/marchewazz" target="_blank" aria-label="GitHub"
+                    <a href="https://github.com/marchewazz" target="_blank" :aria-label="$t('footer.githubAria')"
                         class="group flex items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">href="github"&gt;</span>
@@ -70,7 +71,7 @@ const links = [
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;/a&gt;</span>
                     </a>
                     <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank"
-                        aria-label="LinkedIn"
+                        :aria-label="$t('footer.linkedinAria')"
                         class="group flex items-center gap-1 py-1.5 px-2 text-sm hover:bg-primary-claret dark:hover:bg-primary-blue transition-[background-color] duration-150">
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">&lt;a</span>
                         <span class="text-primary-claret dark:text-white text-sm group-hover:text-primary-yellow dark:group-hover:text-primary-claret">href="linkedin"&gt;</span>

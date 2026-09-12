@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import Face from "../../assets/images/face.jpg"
 
-const email = 'mateuszmarchewczyk24@gmail.com'
+const email = 'marchewczykmateusz24@gmail.com'
 const copied = ref(false)
 
 function copyEmail() {

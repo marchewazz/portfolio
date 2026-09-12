@@ -11,7 +11,7 @@ const { theme, toggleTheme } = useTheme()
     :class="theme === 'dark' ? 'bg-slate-700 border-primary-yellow' : 'bg-primary-yellow border-primary-claret'"
     role="switch"
     :aria-checked="theme === 'dark'"
-    :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+    :aria-label="`${$t('nav.switchThemeAria')} ${theme === 'dark' ? $t('nav.brightTheme') : $t('nav.darkTheme') }`"
   >
     <span
       class="absolute top-0.5 left-0.5 size-7 lg:size-9 rounded-full bg-gray-200 shadow-md flex text-sm lg:text-lg items-center justify-center transition-transform duration-300"

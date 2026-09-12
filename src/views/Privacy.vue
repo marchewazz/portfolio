@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n'
 
 const { t, tm, rt } = useI18n()
+const email = 'marchewczykmateusz24@gmail.com'
 </script>
 
 <template>
@@ -31,7 +32,7 @@ const { t, tm, rt } = useI18n()
 
     <p class="privacy__contact">
       {{ t('privacy.contact.text') }}
-      <a :href="`mailto:${t('privacy.contact.email')}`">{{ t('privacy.contact.email') }}</a>
+      <a  :aria-label="$t('privacy.emailAria', { email })" :href="`mailto:${t('privacy.contact.email')}`">{{ t('privacy.contact.email') }}</a>
     </p>
     </section>
   </main>

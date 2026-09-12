@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 import ResumePL from "../../assets/resume-pl.pdf"
 import ResumeEN from "../../assets/resume-en.pdf"
 
-const email = 'mateuszmarchewczyk24@gmail.com'
+const email = 'marchewczykmateusz24@gmail.com'
 const copied = ref(false)
 
 function copyEmail() {
@@ -30,6 +30,7 @@ function copyEmail() {
 
                     <div class="bg-primary-yellow rounded-full w-full">
                         <a :href="ResumePL" download
+                            :aria-label="$t('home.polishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
                             {{ $t("home.hero.resume_pl") }}
                         </a>
@@ -37,10 +38,12 @@ function copyEmail() {
                     <div
                         class="flex items-center rounded-full min-w-fit bg-primary-blue text-primary-claret overflow-hidden h-11 max-w-full w-full justify-between">
                         <a :href="`mailto:${email}`"
+                        :aria-label="$t('home.emailAria', { email })"
                             class="px-2 lg:px-4 h-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-claret/10 transition-colors">
                             {{ email }}
                         </a>
-                        <button @click="copyEmail" aria-label="Copy email"
+                        <button @click="copyEmail"
+                            :aria-label="$t('home.copyEmailAria', { email })"
                             class="h-full px-2 lg:px-4 shrink-0 min-w-11 flex items-center justify-center border-l border-primary-claret/20 hover:bg-primary-claret/10 transition-colors cursor-pointer">
                             <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
                                 height="18" fill="none" stroke="currentColor" stroke-width="2">
@@ -55,6 +58,7 @@ function copyEmail() {
                     </div>
                     <div class="bg-primary-yellow rounded-full w-full">
                         <a :href="ResumeEN" download
+                            :aria-label="$t('home.englishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
                             {{ $t("home.hero.resume_en") }}
                         </a>

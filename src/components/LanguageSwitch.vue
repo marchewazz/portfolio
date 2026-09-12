@@ -18,7 +18,7 @@ function switchLocale(lang) {
     class="relative inline-flex items-center w-17 lg:w-19 h-9 lg:h-11 rounded-full bg-white/30 transition-colors duration-300 border-2 border-primary-claret dark:border-primary-yellow"
     role="switch"
     :aria-checked="locale === 'pl'"
-    aria-label="Switch language"
+    :aria-label="`${$t('nav.switchLanguageAria')} ${locale === 'en' ? $t('nav.polishLanguage') : $t('nav.englishLanguage') }`"
   >
     <span
       class="absolute top-0.5 left-0.5 size-7 lg:size-9 rounded-full bg-gray-200 shadow-md transition-transform duration-300"

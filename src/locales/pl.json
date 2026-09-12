@@ -11,13 +11,30 @@
       "uk": "Flaga Zjednoczonego Królestwa",
       "pl": "Flaga Polski"
     },
-     "backToMainPage": "Wróć na stronę główną"
+    "backToMainPage": "Wróć na stronę główną",
+    "linksAria": "Przejdź do sekcji - ",
+    "privacyAria": "Przejdź do strony o polityce prywatności",
+    "homeAria": "Przejdź do strony głównej",
+    "githubAria": "Przejdź do profilu GitHub",
+    "linkedinAria": "Przejdź do profilu LinkedIn",
+    "switchLanguageAria": "Zmień język na -",
+    "switchThemeAria": "Zmień motyw na -",
+    "polishLanguage": "polski",
+    "englishLanguage": "angielski",
+    "darkTheme": "ciemny",
+    "brightTheme": "jasny"
   },
   "head": {
     "leftPage": "🍪 Zostań, mam ciasteczka"
   },
   "home": {
     "title": "Mateusz Marchewczyk - portfolio",
+    "githubAria": "Przejdź do profilu GitHub",
+    "linkedinAria": "Przejdź do profilu LinkedIn",
+    "polishResumeAria": "Pobierz CV po polsku",
+    "englishResumeAria": "Pobierz CV po angielsku",
+    "emailAria": "Napisz mail do {email}",
+    "copyEmailAria": "Skopiuj mail do {email}",
     "hero": {
       "header": "Cześć, jestem ",
       "firstParagraph": "Jestem 22-letnim full-stack developerem z Kielc, obecnie pracującym zdalnie. Od ponad trzech lat rozwijam swoje umiejętności w prawdziwych, komercyjnych projektach — zaczynałem jako stażysta jeszcze w trakcie nauki w technikum, a dziś pracuję na stanowisku Mid Full-Stack Developera, łącząc programowanie z koordynacją pracy zespołu.",
@@ -26,10 +43,12 @@
       "more": "Informacje o współpracy ze mną",
       "alt": "Zdjęcia profilowe Mateusza Marchewczyka",
       "resume_pl": "Pobierz CV po polsku",
-      "resume_en": "Pobierz CV po angielsku"
+      "resume_en": "Pobierz CV po angielsku",
+      "collaborationAria": "Przejdź do sekcji o współpracy"
     },
     "skills": {
       "header": "Moje umiejętności",
+      "buttonAria": "Zobacz umiejętności w - ",
       "items": {
         "frontend": {
           "title": "Frontend",
@@ -307,6 +326,8 @@
           "projects": []
         }
       ],
+      "experienceButtonAria": "Zobacz szczegóły o - ",
+      "backButtonAria": "Wróć do osi czasu",
       "alts": {
         "tebRegistrationFormInpost": {
           "1": "Formularz rejestracyjny TEB z integracją paczkomatów InPost"
@@ -375,6 +396,10 @@
     "collaboration": {
       "header": "Współpraca",
       "intro": "Obecnie pracuję jako Full Stack Developer, jestem otwarty na nowe możliwości i ciekawe projekty.",
+      "polishResumeAria": "Pobierz CV po polsku",
+      "englishResumeAria": "Pobierz CV po angielsku",
+      "emailAria": "Napisz mail do {email}",
+      "copyEmailAria": "Skopiuj mail do {email}",
       "employment": {
         "title": "Forma zatrudnienia",
         "text": "Otwarty na pracę na pełny etat."
@@ -491,14 +516,20 @@
     "contact": {
       "text": "W przypadku pytań dotyczących niniejszej polityki prywatności prosimy o kontakt pod adresem:",
       "email": "kontakt\\@twojafirma.pl"
-    }
+    },
+    "emailAria": "Napisz mail do {email}"
   },
   "footer": {
     "privacy": "Polityka prywatności",
     "home": "Strona główna",
     "ideas": "pomysły: ja",
     "coding": "wykonanie: ja i Claude",
-    "builtWith": "// Vue 3, Tailwind 4, swiper.js i gsap"
+    "builtWith": "// Vue 3, Tailwind 4, swiper.js i gsap",
+    "linksAria": "Przejdź do sekcji - ",
+    "privacyAria": "Przejdź do strony o polityce prywatności",
+    "homeAria": "Przejdź do strony głównej",
+    "githubAria": "Przejdź do profilu GitHub",
+    "linkedinAria": "Przejdź do profilu LinkedIn"
   },
   "loader": {
     "text1": "Zbieranie doświadczenia",

@@ -11,13 +11,30 @@
       "uk": "United Kingdom flag",
       "pl": "Poland flag"
     },
-    "backToMainPage": "Back to Main page"
+    "backToMainPage": "Back to Main page",
+    "linksAria": "Go to section - ",
+    "privacyAria": "Go to privacy page",
+    "homeAria": "Go to home page",
+    "githubAria": "Go to GitHub profile",
+    "linkedinAria": "Go to LinkedIn profile",
+    "switchLanguageAria": "Change language to -",
+    "switchThemeAria": "Change theme to -",
+    "polishLanguage": "Polish",
+    "englishLanguage": "English",
+    "darkTheme": "dark",
+    "brightTheme": "bright"
   },
   "head": {
     "leftPage": "🍪 Hey, I got cookies"
   },
   "home": {
     "title": "Mateusz Marchewczyk - portfolio",
+    "githubAria": "Przejdź do profilu GitHub",
+    "linkedinAria": "Przejdź do profilu LinkedIn",
+    "polishResumeAria": "Download Polish resume",
+    "englishResumeAria": "Download English resume",
+    "emailAria": "Mail to {email}",
+    "copyEmailAria": "Copy mail {email}",
     "hero": {
       "header": "Hello, my name is ",
       "firstParagraph": "I'm a 22-year-old full-stack developer from Kielce, currently working remotely. For over three years I've been growing my skills on real, commercial projects — I started as an intern while still in technical school, and today I work as a Mid Full-Stack Developer, combining programming with coordinating the team's work.",
@@ -26,10 +43,12 @@
       "more": "More about collaboration with me",
       "alt": "Mateusza Marchewczyk's profile pic",
       "resume_pl": "Download polish resume",
-      "resume_en": "Download english resume"
+      "resume_en": "Download english resume",
+      "collaborationAria": "Go to section about collaboration"
     },
     "skills": {
       "header": "My skills",
+      "buttonAria": "See the skills in ",
       "items": {
         "frontend": {
           "title": "Frontend",
@@ -88,6 +107,8 @@
     },
     "experience": {
       "header": "Experience",
+      "experienceButtonAria": "See details about - ",
+      "backButtonAria": "Go back to timeline",
       "items": [
         {
           "date": "November 2025 — present",
@@ -375,6 +396,10 @@
     "collaboration": {
       "header": "Collaboration",
       "intro": "I currently work as a Full Stack Developer and I'm open to new opportunities and interesting projects.",
+      "polishResumeAria": "Download Polish resume",
+      "englishResumeAria": "Download English resume",
+      "emailAria": "Mail to {email}",
+      "copyEmailAria": "Copy mail {email}",
       "employment": {
         "title": "Employment type",
         "text": "Open to full-time employment."
@@ -492,15 +517,21 @@
     ],
     "contact": {
       "text": "If you have any questions regarding this privacy policy, please contact us at:",
-      "email": "contact\\@yourcompany.com"
-    }
+      "email": "contact\\%{'@'}yourcompany.com"
+    },
+    "emailAria": "Mail to {email}"
   },
   "footer": {
     "privacy": "Privacy policy",
     "home": "Home",
     "ideas": "ideas: me",
     "coding": "coding: me & Claude",
-    "builtWith": "// built with Vue 3, Tailwind 4, swiper.js & gsap"
+    "builtWith": "// built with Vue 3, Tailwind 4, swiper.js & gsap",
+    "linksAria": "Go to section - ",
+    "privacyAria": "Go to privacy page",
+    "homeAria": "Go to home page",
+    "githubAria": "Go to GitHub profile",
+    "linkedinAria": "Go to LinkedIn profile"
   },
   "loader": {
     "text1": "Gaining experience",
