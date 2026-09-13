@@ -132,22 +132,22 @@ onUnmounted(() => {
         </RouterLink>
         <a :aria-label="$t('nav.githubAria')" class="h-full min-w-11 items-center justify-center group lg:flex" href="https://github.com/marchewazz"
           target="_blank">
-          <component :is="GitHub" class="w-7 group-hover:w-8 transition-[width] duration-100" />
+          <component :is="GitHub" class="w-7 group-hover:scale-120 transition-transform duration-100" />
         </a>
         <a :aria-label="$t('nav.linkedinAria')" class="h-full min-w-11 items-center justify-center group lg:flex"
           href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
-          <component :is="LinkedIn" class="w-7 group-hover:w-8 transition-[width] duration-100" />
+          <component :is="LinkedIn" class="w-7 group-hover:scale-120 transition-transform duration-100" />
         </a>
       </nav>
 
       <div class="lg:hidden flex items-center gap-3 self-stretch">
         <a href="https://github.com/marchewazz" target="_blank" :aria-label="$t('nav.githubAria')"
           class="h-full min-w-11 min-h-11 flex items-center justify-center group">
-          <component class="w-7 group-hover:w-8 transition-[width] duration-100" :is="GitHub" />
+          <component class="w-7 group-hover:scale-120 transition-transform duration-100" :is="GitHub" />
         </a>
         <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank" :aria-label="$t('nav.linkedinAria')"
           class="h-full min-w-11 min-h-11 flex items-center justify-center group">
-          <component class="w-7 group-hover:w-8 transition-[width] duration-100" :is="LinkedIn" />
+          <component class="w-7 group-hover:scale-120 transition-transform duration-100" :is="LinkedIn" />
         </a>
       </div>
 
@@ -167,7 +167,7 @@ onUnmounted(() => {
           :centered-slides="true" class="!px-4 h-full" @swiper="onSwiperInit">
 
           <SwiperSlide v-for="link in sectionLinks" :key="link.id" class="!w-auto flex items-center">
-            <a  :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`" :href="link.href" class="whitespace-nowrap font-bold transition-all duration-150 pb-1" :class="activeSection === link.id
+            <a  :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`" :href="link.href" class="whitespace-nowrap font-bold transition-[font-weight,font-size,opacity] duration-100 hover:text-lg hover:font-black" :class="activeSection === link.id
               ? 'text-lg border-b-2 border-current'
               : 'text-sm opacity-60'">
               {{ $t(link.key) }}

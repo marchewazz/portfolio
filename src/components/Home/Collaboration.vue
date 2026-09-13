@@ -28,10 +28,10 @@ function copyEmail() {
                 </p>
                 <div class="flex flex-col lg:flex-row gap-4 max-w-4xl w-full">
 
-                    <div class="bg-primary-yellow rounded-full w-full">
+                    <div class="rounded-full w-full">
                         <a :href="ResumePL" download
                             :aria-label="$t('home.polishResumeAria')"
-                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret  dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-colors w-full">
                             {{ $t("home.hero.resume_pl") }}
                         </a>
                     </div>
@@ -56,10 +56,10 @@ function copyEmail() {
                             </svg>
                         </button>
                     </div>
-                    <div class="bg-primary-yellow rounded-full w-full">
+                    <div class="rounded-full w-full">
                         <a :href="ResumeEN" download
                             :aria-label="$t('home.englishResumeAria')"
-                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret hover:bg-primary-claret/90 transition-colors w-full">
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-colors w-full">
                             {{ $t("home.hero.resume_en") }}
                         </a>
                     </div>
