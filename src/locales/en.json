@@ -35,6 +35,7 @@
     "englishResumeAria": "Download English resume",
     "emailAria": "Mail to {email}",
     "copyEmailAria": "Copy mail {email}",
+    "description": "Do uzupełnienia",
     "hero": {
       "header": "Hello, my name is ",
       "firstParagraph": "I am a 22-year-old developer, mostly working on websites. Daily I work with PHP, Vue and the WordPress CMS, building themes using Roots/Sage. I also have experience integrating external services such as InPost. Apart from technical work, I collaborate closely with the marketing, sales and SEO departments, and I participate in meetings presenting our results and planning upcoming tasks.",
@@ -456,6 +457,7 @@
   "privacy": {
     "title": "Privacy Policy",
     "returnedToPage": "🍪 Privacy Policy",
+    "description": "Do uzupełnienia",
     "lastUpdated": "Last updated: August 1, 2026",
     "sections": [
       {

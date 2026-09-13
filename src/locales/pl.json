@@ -35,6 +35,7 @@
     "englishResumeAria": "Pobierz CV po angielsku",
     "emailAria": "Napisz mail do {email}",
     "copyEmailAria": "Skopiuj mail do {email}",
+    "description": "Do uzupełnienia",
     "hero": {
       "header": "Cześć, jestem ",
       "firstParagraph": "Jestem 22-letnim developerem poruszającym głównie wokół stron internetowych. Na co dzień pracuję w języku PHP, frameworku Vue a także przy CMS Wordpress budując motywy przy użyciu Roots/Sage. Mam również doświadczenie w integracji zewnętrznych usług takich jak InPost. Oprócz zadań techniczych blisko współpracuję z działami marketingu, sprzedaży i SEO, uczestniczę w spotkaniach przedstawiając nasze wyniki pracy i planując dalsze zadania.",
@@ -454,6 +455,7 @@
   },
   "privacy": {
     "title": "Polityka prywatności",
+    "description": "Do uzupełnienia",
     "lastUpdated": "Ostatnia aktualizacja: 1 sierpnia 2026",
     "sections": [
       {
