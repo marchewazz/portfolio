@@ -21,7 +21,7 @@ function copyEmail() {
     <div class="bg-primary-blue dark:bg-primary-claret hero pt-16 min-h-[min(100dvh,1080px)]" id="hero">
         <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-evenly gap-16 py-8 lg:py-16">
             <ProfileImg />
-            <div class="flex flex-col justify-start gap-4 max-w-full lg:max-w-[63%]">
+            <div class="flex flex-col justify-start gap-4 max-w-full xl:max-w-[63%]">
                 <h1
                     class="flex items-center justify-between text-base sm:text-lg xl:text-2xl bg-primary-yellow text-primary-claret font-bold rounded-full w-fit">
                     <span class="px-2 sm:px-4 lg:px-6 py-2 text-center">Full-stack developer</span>
@@ -39,13 +39,13 @@ function copyEmail() {
                         Mateusz!
                     </span>
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
                     {{ $t("home.hero.firstParagraph") }}
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
                     {{ $t("home.hero.secondParagraph") }}
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
                     {{ $t("home.hero.thirdParagraph") }}
                 </p>
 

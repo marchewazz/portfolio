@@ -101,7 +101,7 @@ function handleMouseLeave() {
 
 <template>
     <div
-        class="w-full h-80 sm:w-1/2 sm:h-auto lg:w-100 shrink-0 sm:aspect-square perspective-distant group cursor-pointer"
+        class="w-70 sm:w-80 h-auto shrink-0 aspect-square perspective-distant group cursor-pointer"
         tabindex="0"
         @focusin="handleMouseEnter"
         @focusout="handleMouseLeave"
