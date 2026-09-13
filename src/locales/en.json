@@ -119,7 +119,7 @@
           "projects": [
             {
               "title": "Maintenance and development of teb.pl",
-              "slug": "teb-website-maintenance",
+              "slug": "teb-website-maintenance-2",
               "description": "In the meantime we continue maintenance work on teb.pl, such as updating offer page headings or embedding information for AI bots on the site. I take part in planning, programming, and implementing new solutions such as alerts about possible integration downtime or highlighting offers and promotions on the site.",
               "tech": [
                 "WordPress",
@@ -223,7 +223,7 @@
             },
             {
               "title": "Maintenance and development of teb.pl",
-              "slug": "teb-website-maintenance",
+              "slug": "teb-website-maintenance-1",
               "description": "Another TEB Edukacja site I work on is the main teb.pl site for adult schools. To do work on this site I collaborate with the marketing and SEO departments. I make necessary fixes, add elements to the site, verify how offers display, and navigate the WordPress panel using plugins such as ACF. During this time, a major project I carried out together with the SEO and marketing departments was the blog.",
               "tech": [
                 "WordPress",
@@ -390,7 +390,7 @@
         {
           "quote": "It was an absolute pleasure working with Mateusz at CODERHINO. Beyond being a reliable teammate, he acted as a fantastic mentor, providing invaluable guidance that significantly helped me level up my technical and professional skills. His knowledge and patience in explaining complex concepts made a real difference in my daily work.",
           "name": "Kacper Pawlik",
-          "role": "Workmate, CODERHINO"
+          "role": "Co-worker, CODERHINO"
         }
       ]
     },

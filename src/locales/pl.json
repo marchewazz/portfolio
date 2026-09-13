@@ -117,7 +117,7 @@
           "projects": [
             {
               "title": "Utrzymanie i rozwój strony teb.pl",
-              "slug": "teb-website-maintenance",
+              "slug": "teb-website-maintenance-2",
               "description": "W międzyczasie kontynujemy prace utrzymaniowe strony teb.pl takie jak aktualizacja nagłówków stron ofert czy zaszywanie informacji dla botów AI na stronie. Biorę udział w planowaniu oraz programowaniu i wdrażaniu nowych rozwiązań jak alerty o możliwych przestojach w integracji lub wyróżnianie ofert i promocji na stronie.",
               "tech": [
                 "Wordpress",
@@ -221,7 +221,7 @@
             },
             {
               "title": "Utrzymanie i rozwój strony teb.pl",
-              "slug": "teb-website-maintenance",
+              "slug": "teb-website-maintenance-1",
               "description": "Kolejną stroną TEB Edukacja przy której pracuję to główna strona Szkół dla dorosłych teb.pl. Do wykonywania prac przy tej stronie współpracuję z działami marketingu oraz SEO. Nanoszę konieczne poprawki, dodaję elementy na stronie, weryfikuję wyświetlanie się ofert a także poruszam się po panelu Wordpress używając wtyczek takich jak ACF. W tym czasie dużym projektem który realizowałem wraz z działem SEO i marketingu był blog.",
               "tech": [
                 "Wordpress",
@@ -390,7 +390,7 @@
         {
           "quote": "Współpraca z Mateuszem w CODERHINO była czystą przyjemnością. Oprócz tego, że był niezawodnym członkiem zespołu, pełnił rolę fantastycznego mentora, udzielając nieocenionych wskazówek, które znacząco pomogły mi rozwinąć moje umiejętności techniczne i zawodowe. Jego wiedza i cierpliwość w tłumaczeniu skomplikowanych zagadnień naprawdę wpłynęły na moją codzienną pracę.",
           "name": "Kacper Pawlik",
-          "role": "Kolega z pracy, CODERHINO"
+          "role": "Współpracownik, CODERHINO"
         }
       ]
     },

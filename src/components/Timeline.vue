@@ -56,7 +56,10 @@ const projectImages = {
   "milestone": [
     { src: MilestoneScreen, altKey: "alts.milestone.1" }
   ],
-  "teb-website-maintenance": [
+  "teb-website-maintenance-1": [
+    { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1" }
+  ],
+  "teb-website-maintenance-2": [
     { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1" }
   ],
   "teb-registration-form": [
