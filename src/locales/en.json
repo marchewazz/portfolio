@@ -37,9 +37,9 @@
     "copyEmailAria": "Copy mail {email}",
     "hero": {
       "header": "Hello, my name is ",
-      "firstParagraph": "I'm a 22-year-old full-stack developer from Kielce, currently working remotely. For over three years I've been growing my skills on real, commercial projects — I started as an intern while still in technical school, and today I work as a Mid Full-Stack Developer, combining programming with coordinating the team's work.",
-      "secondParagraph": "I move comfortably on both the frontend and backend — from designing interfaces based on Figma mockups, through business logic in PHP and Vue, to MySQL database structure. Day to day I work with WordPress, Roots/Sage, Laravel, and integrate external systems such as the InPost API or SalesForce.",
-      "thirdParagraph": "What I value most are projects where I can see the whole process — from the idea, through implementation, to deployment and the real effect for the user. I work closely with sales, marketing, and SEO teams, which has taught me to look at code not just technically, but also from a business perspective.",
+      "firstParagraph": "I am a 22-year-old developer, mostly working on websites. Daily I work with PHP, Vue and the WordPress CMS, building themes using Roots/Sage. I also have experience integrating external services such as InPost. Apart from technical work, I collaborate closely with the marketing, sales and SEO departments, and I participate in meetings presenting our results and planning upcoming tasks.",
+      "secondParagraph": "I have spent my entire career at CODERHINO. I started as a trainee while still in technical school, where I began my internship and gained my first commercial experience building WordPress websites. Over time, I was given increasingly complex tasks, which I completed successfully and independently. Now I have over 3 years of experience, including both on-site and remote work.",
+      "thirdParagraph": "Privately, I am a fan of F1, the NBA and Ekstraklasa, and I also enjoy reading books.",
       "more": "More about collaboration with me",
       "alt": "Mateusza Marchewczyk's profile pic",
       "resume_pl": "Download polish resume",
