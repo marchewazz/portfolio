@@ -392,7 +392,8 @@
           "name": "Kacper Pawlik",
           "role": "Co-worker, CODERHINO"
         }
-      ]
+      ],
+      "bulletMessage": "Go to slide {index}"
     },
     "collaboration": {
       "header": "Collaboration",

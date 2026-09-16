@@ -1,15 +1,34 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { A11y, Autoplay, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-const { tm } = useI18n()
+const { tm, t, locale } = useI18n()
 
-const modules = [Autoplay, Pagination, Navigation]
+const modules = [Autoplay, Pagination, A11y]
+const swiperRef = ref(null)
+
+const paginationOptions = computed(() => ({
+  clickable: true,
+  renderBullet: (index, className) =>
+    `<button class="${className}" type="button" aria-label="${t('home.testimonials.bulletMessage', { index: index + 1 })}"></button>`,
+}))
+
+function onSwiper(swiper) {
+  swiperRef.value = swiper
+}
+
+watch(locale, async () => {
+  await nextTick()
+  const swiper = swiperRef.value
+  if (!swiper || !swiper.pagination) return
+  swiper.pagination.render()
+  swiper.pagination.update()
+})
 </script>
 
 <template>
@@ -25,14 +44,15 @@ const modules = [Autoplay, Pagination, Navigation]
                 :space-between="32"
                 :loop="true"
                 :autoplay="{ delay: 5000, disableOnInteraction: false }"
-                :pagination="{ clickable: true }"
+                :pagination="paginationOptions"
                 :breakpoints="{
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 }
                 }"
+                @swiper="onSwiper"
                 class="w-full testimonials-swiper"
             >
-                <SwiperSlide
+                 <SwiperSlide
                     v-for="(testimonial, index) in tm('home.testimonials.items')"
                     :key="index"
                     class="grow h-auto! pb-12"

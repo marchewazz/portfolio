@@ -392,7 +392,8 @@
           "name": "Kacper Pawlik",
           "role": "Współpracownik, CODERHINO"
         }
-      ]
+      ],
+      "bulletMessage": "Przejdź do slajdu {index}"
     },
     "collaboration": {
       "header": "Współpraca",

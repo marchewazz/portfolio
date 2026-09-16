@@ -201,8 +201,9 @@ button, a {
         background-image: url(./assets/images/paper.svg);
         background-color: var(--color-primary-claret);
     }
-    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-        background: var(--color-primary-black) !important;
+    .testimonials-swiper {
+        --swiper-pagination-color: var(--color-primary-claret);
+        --swiper-pagination-bullet-inactive-color: var(--color-primary-black);
     }
 }
 
@@ -230,6 +231,18 @@ button, a {
         z-index: -1;
         will-change: transform;
     background-image: url(./assets/images/simple-shiny-blue.svg);
+}
+
+.testimonials-swiper {
+  --swiper-pagination-color: var(--color-primary-yellow);
+  --swiper-pagination-bullet-inactive-color: var(--color-primary-white);
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.swiper-pagination-bullet:focus-visible {
+    transform: scale(150%);
 }
 
 .testimonial-card {
@@ -272,13 +285,6 @@ button, a {
 
 .collaboration-card {
     background-color: var(--color-primary-blue);
-}
-
-.swiper-pagination-bullet {
-    background: var(--color-primary-white) !important;
-    &-active {
-        background: var(--color-primary-blue) !important;
-    }
 }
 
 
