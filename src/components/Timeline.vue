@@ -205,7 +205,8 @@ onUnmounted(() => ctx?.revert())
           <div v-if="item.projects && item.projects.length" class="mt-3">
             <div v-for="(project, pIndex) in item.projects" :key="project.title"
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
-              <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]"
+              <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]
+              focus-visible:bg-primary-claret focus-visible:text-primary-yellow dark:focus-visible:bg-primary-blue dark:focus-visible:text-primary-black"
                :aria-label="`${$t('home.experience.experienceButtonAria')}${project.title}`"
               @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
                 <p class="font-heading text-lg">
@@ -222,7 +223,8 @@ onUnmounted(() => ctx?.revert())
  
            <button
           type="button"
-          class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue group"
+          class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue group
+          focus-visible:bg-primary-claret focus-visible:text-primary-yellow dark:focus-visible:bg-primary-blue dark:focus-visible:text-primary-black"
           @click="closePanel"
           :aria-label="$t('home.experience.backButtonAria')"
         >

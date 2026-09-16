@@ -67,11 +67,12 @@ onUnmounted(() => stopAutoCycle())
                 v-for="(skill, index) in skillKeys"
                 :key="skill.key"
                 @click="toggle(index)"
-                class="relative overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-4 items-center h-80"
+                class="relative overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-4 items-center h-80
+                dark:focus-visible:bg-primary-claret focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-yellow"
                 :class="activeIndex === index ? 'flex-3 bg-primary-yellow dark:bg-primary-blue text-primary-black dark:text-primary-white p-6' : ' text-primary-yellow dark:text-primary-claret flex-1 bg-transparent p-6'"
                  :aria-label="`${$t('home.skills.buttonAria')}${$t(`home.skills.items.${skill.key}.title`)}`"
                 >
-                <component :is="skill.icon" class="size-12 text-primary-yellow dark:text-primary-claret transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'hidden' : 'max-h-12 min-h-12'" />
+                <component :is="skill.icon" class="size-12 transition-[max-height] duration-300 overflow-hidden" :class="activeIndex === index ? 'hidden' : 'max-h-12 min-h-12'" />
                 <span class="font-heading text-xl whitespace-nowrap mb-4">
                     {{ $t(`home.skills.items.${skill.key}.title`) }}
                 </span>

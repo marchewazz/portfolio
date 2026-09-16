@@ -32,7 +32,7 @@ const email = 'marchewczykmateusz24@gmail.com'
 
     <p class="privacy__contact">
       {{ t('privacy.contact.text') }}
-      <a  :aria-label="$t('privacy.emailAria', { email })" :href="`mailto:${t('privacy.contact.email')}`">{{ t('privacy.contact.email') }}</a>
+      <a class="focus-visible:bg-primary-claret focus-visible:text-primary-yellow dark:focus-visible:bg-primary-yellow dark:focus-visible:text-primary-claret focus-visible:scale-120 inline-block" :aria-label="$t('privacy.emailAria', { email })" :href="`mailto:${t('privacy.contact.email')}`">{{ t('privacy.contact.email') }}</a>
     </p>
     </section>
   </main>

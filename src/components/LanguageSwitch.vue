@@ -15,7 +15,7 @@ function switchLocale(lang) {
 <template>
   <button
     @click="switchLocale(locale === 'en' ? 'pl' : 'en')"
-    class="relative inline-flex items-center w-17 lg:w-19 h-9 lg:h-11 rounded-full bg-white/30 transition-colors group duration-300 border-2 border-primary-claret dark:border-primary-yellow"
+    class="relative inline-flex items-center w-17 lg:w-19 h-9 lg:h-11 rounded-full bg-white/30 transition-colors group duration-300 border-2 border-primary-claret dark:border-primary-yellow focus-visible:scale-120"
     role="switch"
     :aria-checked="locale === 'pl'"
     :aria-label="`${$t('nav.switchLanguageAria')} ${locale === 'en' ? $t('nav.polishLanguage') : $t('nav.englishLanguage') }`"
