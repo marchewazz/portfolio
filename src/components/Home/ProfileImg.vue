@@ -115,7 +115,7 @@ function handleMouseLeave() {
         >
             <div class="absolute inset-0 backface-hidden">
                 <img
-                    class="w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-gray-100 rotate-1"
+                    class="w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-primary-claret dark:border-primary-yellow rotate-1"
                     :src="Face"
                     :alt="$t('home.hero.alt')"
                 />

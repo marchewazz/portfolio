@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 </script>
 
 <template>
-    <section class="mt-20 py-8 lg:pt-16 lg:pb-20 bg-primary-yellow/95 dark:bg-primary-claret/70" id="education">
+    <section class="mt-20 py-8 lg:pt-16 lg:pb-20 bg-primary-yellow/95 dark:bg-primary-claret/70 transition-colors duration-300 ease-out" id="education">
         <div class="container mx-auto items-center flex flex-col gap-8">
             <h2 class="text-3xl text-center text-primary-claret dark:text-primary-blue">
                 {{ $t('home.education.header') }}

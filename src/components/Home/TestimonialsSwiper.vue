@@ -32,7 +32,7 @@ watch(locale, async () => {
 </script>
 
 <template>
-    <section class="py-8 bg-primary-claret dark:bg-primary-yellow lg:hidden">
+    <section class="py-8 bg-primary-claret dark:bg-primary-yellow transition-colors duration-300 ease-out lg:hidden">
         <div class="container mx-auto items-center flex flex-col gap-8">
             <h2 class="text-primary-yellow dark:text-primary-claret text-3xl text-center">
                 {{ $t('home.testimonials.header') }}

@@ -136,12 +136,12 @@ function closePanel() {
 
     const el = document.getElementById(index)
     if (el) {
-      const classes = ['dark:bg-primary-yellow/90','px-2','dark:text-primary-claret!','bg-primary-claret/90','text-primary-yellow']
+      const classes = ['dark:bg-primary-yellow/90', 'px-2', 'dark:text-primary-claret!', 'bg-primary-claret/90', 'text-primary-yellow']
       classes.forEach(element => {
         el.classList.add(element)
       });
       setTimeout(() => {
-         classes.forEach(element => {
+        classes.forEach(element => {
           el.classList.remove(element)
         });
       }, 2000)
@@ -176,7 +176,7 @@ onUnmounted(() => ctx?.revert())
 </script>
 
 <template>
-  <div class="relative min-h-100 w-full">
+  <div class="relative w-full">
     <Transition name="stage" mode="out-in">
       <ol v-if="!activeProject" key="timeline" ref="listRef" class="relative min-w-0">
         <li v-for="(item, index) in items" :key="index" class="relative mb-10 md:ms-3 last:mb-0 md:ps-10">
@@ -191,7 +191,8 @@ onUnmounted(() => ctx?.revert())
 
           <div class="flex flex-col items-start lg:flex-row lg:items-center gap-4 py-2">
             <p class="text-xl text-primary-claret dark:text-primary-blue font-bold">
-              {{ item.title }} <span class="text-black dark:text-white">- CODERHI<span class="text-[#af272f]">N</span>O</span>
+              {{ item.title }} <span class="text-black dark:text-white">- CODERHI<span
+                  class="text-[#af272f]">N</span>O</span>
             </p>
             <!-- <Logo class="h-5 text-[#151515] dark:text-white" /> -->
           </div>
@@ -205,10 +206,11 @@ onUnmounted(() => ctx?.revert())
           <div v-if="item.projects && item.projects.length" class="mt-3">
             <div v-for="(project, pIndex) in item.projects" :key="project.title"
               class="border-b-2 border-primary-claret dark:border-primary-yellow">
-              <button type="button" class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]
+              <button type="button"
+                class="w-full flex items-center justify-between gap-4 py-4 text-primary-claret dark:text-primary-blue text-left group transition-[padding,background-color]
               focus-visible:bg-primary-claret focus-visible:text-primary-yellow dark:focus-visible:bg-primary-blue dark:focus-visible:text-primary-black"
-               :aria-label="`${$t('home.experience.experienceButtonAria')}${project.title}`"
-              @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
+                :aria-label="`${$t('home.experience.experienceButtonAria')}${project.title}`"
+                @click="toggleProject(index, pIndex)" :id="`${index}-${pIndex}`">
                 <p class="font-heading text-lg">
                   {{ project.title }}
                 </p>
@@ -220,25 +222,24 @@ onUnmounted(() => ctx?.revert())
       </ol>
 
       <div v-else key="detail" class="w-full flex flex-col gap-2">
- 
-           <button
-          type="button"
-          class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue group
+        <button type="button"
+          class="flex items-center gap-2 font-heading text-primary-claret dark:text-primary-blue group transition-colors duration-200
           focus-visible:bg-primary-claret focus-visible:text-primary-yellow dark:focus-visible:bg-primary-blue dark:focus-visible:text-primary-black"
-          @click="closePanel"
-          :aria-label="$t('home.experience.backButtonAria')"
-        >
+          @click="closePanel" :aria-label="$t('home.experience.backButtonAria')">
           <ArrowLeft class="group-hover:-translate-x-2 transition-transform duration-300" />
           {{ $t('home.experience.backToTimeline') }}
         </button>
-        <Swiper :modules="[Autoplay]" :slides-per-view="1" :space-between="10" class="w-full rounded-3xl overflow-hidden" :loop="true"
+        <Swiper :modules="[Autoplay]" :slides-per-view="1" :space-between="10"
+          class="w-full rounded-3xl overflow-visible" :loop="true"
           :autoplay="{ delay: 3000, disableOnInteraction: true }">
           <SwiperSlide v-for="image in activeProjectImages" :key="image.src">
-            <img
-              :src="image.src"
-              class="hover:scale-105 w-full rounded-3xl transition-transform duration-300"
-              :alt="$t(`home.experience.${image.altKey}`)"
-            />
+            <div
+              class="relative w-full aspect-video max-h-100 rounded-3xl overflow-hidden border-2 border-primary-claret dark:border-primary-yellow">
+              <img :src="image.src" class="absolute inset-0 w-full h-full object-top object-cover scale-100 blur-md"
+                aria-hidden="true" />
+              <img :src="image.src" class="relative w-full h-full object-contain"
+                :alt="$t(`home.experience.${image.altKey}`)" />
+            </div>
           </SwiperSlide>
         </Swiper>
         <div class="flex flex-wrap gap-2">

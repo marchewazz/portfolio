@@ -7,7 +7,7 @@ const { tm } = useI18n()
 <template>
     <section class="pt-16 pb-20 overflow-hidden hidden lg:block">
         <div class="container mx-auto items-center flex flex-col gap-8 relative z-2">
-            <h2 class="text-primary-claret dark:text-primary-yellow text-3xl text-center">
+            <h2 class="text-primary-claret dark:text-primary-yellow text-3xl text-center transition-colors duration-200 ease-out">
                 {{ $t('home.testimonials.header') }}
             </h2>
 
@@ -16,7 +16,7 @@ const { tm } = useI18n()
                     tabindex="0"
                     v-for="(testimonial, index) in tm('home.testimonials.items')"
                     :key="index"
-                    class="testimonial-card flex flex-col justify-between border-4 min-h-62.5 border-primary-yellow rounded-xl p-6 gap-x-8 gap-y-4 bg-primary-claret w-full lg:w-[calc(50%-2rem)]"
+                    class="testimonial-card transition-colors duration-200 ease-out flex flex-col justify-between border-4 min-h-62.5 border-primary-yellow rounded-xl p-6 gap-x-8 gap-y-4 bg-primary-claret w-full lg:w-[calc(50%-2rem)]"
                 >
                     <p class="font-imb text-lg text-primary-black dark:text-primary-white">
                         "{{ testimonial.quote }}"

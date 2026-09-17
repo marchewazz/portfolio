@@ -11,7 +11,7 @@ const showHeader = ref(true)
 <template>
     <section class="">
         <div class="container mx-auto flex justify-center py-8 lg:py-16">
-            <div  id="experience" class="items-center flex flex-col w-full lg:w-200 gap-8 p-6 lg:p-8 bg-primary-blue/90 dark:bg-primary-claret/70 border border-black shadow-[inset_0_0_8px_rgba(0,0,0,0.5)] shadow-black rounded-3xl">
+            <div  id="experience" class="items-center flex flex-col w-full lg:w-200 gap-8 p-6 lg:p-8 bg-primary-blue/90 dark:bg-primary-claret/70 transition-colors duration-300 ease-out border border-black shadow-[inset_0_0_8px_rgba(0,0,0,0.5)] shadow-black rounded-3xl">
                 <h2 v-if="showHeader" class="text-primary-claret dark:text-primary-yellow text-3xl text-center">
                     {{ $t('home.experience.header') }}
                 </h2>

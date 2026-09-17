@@ -54,7 +54,7 @@ onUnmounted(() => stopAutoCycle())
 
 <template>
     <section class="flex flex-col bg-primary-claret dark:bg-primary-yellow" id="skills">
-        <div class="bg-primary-yellow dark:bg-primary-blue py-8">
+        <div class="bg-primary-yellow dark:bg-primary-blue py-8 transition-colors duration-500 ease-out">
             <div class="container mx-auto justify-center">
                 <h2 class="text-primary-claret text-3xl text-center">
                     {{ $t("home.skills.header") }}
@@ -67,7 +67,7 @@ onUnmounted(() => stopAutoCycle())
                 v-for="(skill, index) in skillKeys"
                 :key="skill.key"
                 @click="toggle(index)"
-                class="relative overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-4 items-center h-80
+                class="relative overflow-hidden transition-[background-color,color,padding,flex] duration-500 ease-out flex flex-col gap-4 items-center h-80
                 dark:focus-visible:bg-primary-claret focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-yellow"
                 :class="activeIndex === index ? 'flex-3 bg-primary-yellow dark:bg-primary-blue text-primary-black dark:text-primary-white p-6' : ' text-primary-yellow dark:text-primary-claret flex-1 bg-transparent p-6'"
                  :aria-label="`${$t('home.skills.buttonAria')}${$t(`home.skills.items.${skill.key}.title`)}`"

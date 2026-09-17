@@ -15,7 +15,7 @@ import TestimonialsSwiper from '../components/Home/TestimonialsSwiper.vue';
         <Hero />
         <Skills />
         <div>
-            <div class="bg-main"></div>
+            <div class="bg-main transition-[background-image] duration-300"></div>
             <Experience />
             <div id="testimonials">
                 <TestimonialsSwiper />

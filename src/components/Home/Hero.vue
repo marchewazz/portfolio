@@ -18,7 +18,7 @@ function copyEmail() {
 </script>
 
 <template>
-    <div class="bg-primary-blue dark:bg-primary-claret hero pt-16 min-h-[min(100dvh,1080px)]" id="hero">
+    <div class="bg-primary-blue dark:bg-primary-claret transition-colors duration-200 hero pt-16 min-h-[min(100dvh,1080px)]" id="hero">
         <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-evenly gap-16 py-8 lg:py-16">
             <ProfileImg />
             <div class="flex flex-col justify-start gap-4 max-w-full xl:max-w-[63%]">
@@ -33,19 +33,19 @@ function copyEmail() {
                         PHP
                     </span>
                 </h1>
-                <p class="text-3xl font-bold text-primary-claret dark:text-primary-blue mt-4">
+                <p class="text-3xl font-bold transition-colors duration-200 text-primary-claret dark:text-primary-blue mt-4">
                     {{ $t("home.hero.header") }}
                     <span class="text-primary-yellow">
                         Mateusz!
                     </span>
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white transition-colors duration-200 text-lg lg:text-xl">
                     {{ $t("home.hero.firstParagraph") }}
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white transition-colors duration-200 text-lg lg:text-xl">
                     {{ $t("home.hero.secondParagraph") }}
                 </p>
-                <p class="font-imb text-primary-black dark:text-primary-white text-lg lg:text-xl">
+                <p class="font-imb text-primary-black dark:text-primary-white transition-colors duration-200 text-lg lg:text-xl">
                     {{ $t("home.hero.thirdParagraph") }}
                 </p>
 
@@ -53,15 +53,15 @@ function copyEmail() {
                     <div class="flex items-center flex-wrap xl:justify-center gap-4">
                         <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.githubAria')"
-                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition
-                            focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition-[color,background-color,scale]
+                            focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
                             <GitHub class="size-6" />
                         </a>
 
                         <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.linkedinAria')"
-                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition
-                            focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition-[color,background-color,scale]
+                            focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
                             <LinkedIn class="size-6" />
                         </a>
 
@@ -69,13 +69,13 @@ function copyEmail() {
                             class="flex w-full sm:w-fit justify-between items-center rounded-full text-primary-claret">
                             <a :href="`mailto:${email}`"
                                 :aria-label="$t('home.emailAria', { email })"
-                                class="px-2 lg:px-4 h-full min-h-11 rounded-l-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-yellow/90 bg-primary-yellow transition
-                                focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret focus-visible:scale-120">
+                                class="px-2 lg:px-4 h-full min-h-11 rounded-l-full flex items-center justify-center w-full font-semibold text-sm hover:bg-primary-yellow/90 bg-primary-yellow transition-[color,background-color,scale]
+                                focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret focus-visible:scale-110 md:focus-visible:scale-120">
                                 {{ email }}
                             </a>
                             <button @click="copyEmail" :aria-label="$t('home.copyEmailAria', { email })"
-                                class="h-full min-w-11 rounded-r-full min-h-11 px-2 lg:px-4 flex items-center justify-center border-l border-primary-claret/20 bg-primary-yellow hover:bg-primary-yellow/90 transition-colors cursor-pointer
-                                focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret focus-visible:scale-120">
+                                class="h-full min-w-11 rounded-r-full min-h-11 px-2 lg:px-4 flex items-center justify-center border-l border-primary-claret/20 bg-primary-yellow hover:bg-primary-yellow/90 transition-[color,background-color,scale] cursor-pointer
+                                focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret focus-visible:scale-110 md:focus-visible:scale-120">
                                 <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
                                     height="18" fill="none" stroke="currentColor" stroke-width="2">
                                     <rect x="9" y="9" width="11" height="11" rx="2" />
@@ -92,8 +92,8 @@ function copyEmail() {
                         <div class="rounded-full sm:w-fit w-full">
                             <a :href="ResumePL" download
                                  :aria-label="$t('home.polishResumeAria')"
-                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-colors w-full
-                                focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-[color,background-color,scale] w-full
+                                focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
                                 {{ $t("home.hero.resume_pl") }}
                             </a>
                         </div>
@@ -101,8 +101,8 @@ function copyEmail() {
                         <div class="rounded-full sm:w-fit w-full">
                             <a :href="ResumeEN" download
                                 :aria-label="$t('home.englishResumeAria')"
-                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-colors w-full
-                                focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                                class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-[color,background-color,scale] w-full
+                                focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
                                 {{ $t("home.hero.resume_en") }}
                             </a>
                         </div>
@@ -110,8 +110,8 @@ function copyEmail() {
                     <div class="rounded-full sm:w-fit w-full">
                         <a href="#collaboration"
                             :aria-label="$t('home.hero.collaborationAria')"
-                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90  transition-colors w-full
-                            focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90  transition-[color,background-color,scale] w-full
+                            focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
                             {{ $t("home.hero.more") }}
                         </a>
                     </div>
