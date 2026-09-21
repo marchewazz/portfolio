@@ -117,8 +117,12 @@ html {
     min-height: 100dvh;
     background-color: var(--color-primary-blue);
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1280px) {
         scroll-padding-top: 64px;
+    }
+
+    @media (min-width: 1024px) {
+        scroll-padding-top: 104px;
     }
 
     &.dark {

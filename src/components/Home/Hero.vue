@@ -1,9 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Face from "../../assets/images/face.jpg"
 import ProfileImg from './ProfileImg.vue'
-import LinkedIn from "../../assets/images/icons/linkedin.svg?component"
-import GitHub from "../../assets/images/icons/github.svg?component"
 import ResumePL from "../../assets/resume-pl.pdf"
 import ResumeEN from "../../assets/resume-en.pdf"
 
@@ -53,16 +50,16 @@ function copyEmail() {
                     <div class="flex items-center flex-wrap xl:justify-center gap-4">
                         <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.githubAria')"
-                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition-[color,background-color,scale]
-                            focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
-                            <GitHub class="size-6" />
+                            class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-[color,background-color,scale] w-full sm:w-fit
+                                focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                            GitHub
                         </a>
 
                         <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.linkedinAria')"
-                            class="flex items-center shrink-0 justify-center w-11 h-11 rounded-full bg-primary-yellow text-primary-claret hover:opacity-80 transition-[color,background-color,scale]
-                            focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
-                            <LinkedIn class="size-6" />
+                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-yellow text-primary-claret hover:bg-primary-yellow/90 transition-[color,background-color,scale] w-full sm:w-fit
+                                focus-visible:scale-110 md:focus-visible:scale-120 focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret">
+                            LinkedIn
                         </a>
 
                         <div

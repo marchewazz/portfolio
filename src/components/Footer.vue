@@ -1,6 +1,4 @@
 <script setup>
-import LinkedIn from "../assets/images/icons/linkedin.svg?component"
-import GitHub from "../assets/images/icons/github.svg?component"
 import { useRoute } from "vue-router"
 
 const route = useRoute()
@@ -64,18 +62,16 @@ const links = [
                 <div class="text-sm text-primary-claret dark:text-primary-white mb-1 transition-colors duration-100">&lt;div class="important-links"&gt;</div>
                 <div class="flex flex-col gap-0.5 pl-1 sm:pl-6">
                     <a href="https://github.com/marchewazz" target="_blank" :aria-label="$t('footer.githubAria')"
-                        class="flex items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret transition-[background-color,color] duration-100">
-                        <span>&lt;a</span>
-                        <span>href="github"&gt;</span>
-                        <GitHub class="size-4" />
+                        class="flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret transition-[background-color,color] duration-100">
+                        <span>&lt;a href="github"&gt;</span>
+                        <span class="font-ibm px-2 sm:px-0">GitHub</span>
                         <span>&lt;/a&gt;</span>
                     </a>
                     <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank"
                         :aria-label="$t('footer.linkedinAria')"
-                        class="flex items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret transition-[background-color,color] duration-100">
-                        <span>&lt;a</span>
-                        <span>href="linkedin"&gt;</span>
-                        <LinkedIn class="size-4" />
+                        class="flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret transition-[background-color,color] duration-100">
+                        <span>&lt;a href="linkedin"&gt;</span>
+                        <span class="font-ibm px-2 sm:px-0">LinkedIn</span>
                         <span>&lt;/a&gt;</span>
                     </a>
                 </div>

@@ -4,8 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import LanguageSwitch from './LanguageSwitch.vue'
 import ThemeSwitch from './ThemeSwitch.vue'
-import LinkedIn from "../assets/images/icons/linkedin.svg"
-import GitHub from "../assets/images/icons/github.svg"
 import { useRoute } from "vue-router"
 
 const isScrolled = ref(false)
@@ -122,11 +120,11 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'top-0 z-10 w-full transition-colors duration-300',
+    'top-0 z-10 w-full transition-colors duration-300 flex flex-col gap-2',
     isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-primary-blue/90 dark:bg-primary-claret/50 dark:[body:has(#loader)_&]:bg-primary-claret [body:not(:has(#loader))_&]:bg-transparent text-primary-claret dark:text-primary-white'
   ]">
-    <div class="flex lg:justify-between gap-2 items-center px-4 lg:px-10 h-12 lg:h-16">
-      <nav class="hidden lg:flex lg:gap-4 xl:gap-8 items-center h-full">
+    <div class="flex lg:justify-between gap-2 items-center px-4 lg:px-10 h-12 xl:h-16">
+      <nav class="hidden xl:flex lg:gap-4 xl:gap-8 items-center h-full">
         <a v-if="route.name && route.name == 'home'" v-for="link in sectionLinks" :key="link.id" :href="link.href"
           :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`"
           class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center hover:text-xl hover:font-black"
@@ -139,37 +137,37 @@ onUnmounted(() => {
           {{ $t("nav.backToMainPage") }}
         </RouterLink>
         <a :aria-label="$t('nav.githubAria')" href="https://github.com/marchewazz" target="_blank"
-          class="h-full min-w-11 items-center justify-center group lg:flex transition-[background-color,color] duration-100"
+          class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="focusClasses">
-          <component :is="GitHub" class="w-7 group-hover:scale-120 transition-transform duration-100" />
+            GitHub
         </a>
         <a :aria-label="$t('nav.linkedinAria')" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank"
-          class="h-full min-w-11 items-center justify-center group lg:flex transition-[background-color,color] duration-100"
+          class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="focusClasses">
-          <component :is="LinkedIn" class="w-7 group-hover:scale-120 transition-transform duration-100" />
+          LinkedIn
         </a>
       </nav>
 
-      <div class="lg:hidden flex items-center gap-3 self-stretch">
+      <div class="xl:hidden flex items-center gap-3 self-stretch">
         <a href="https://github.com/marchewazz" target="_blank" :aria-label="$t('nav.githubAria')"
-          class="h-full min-w-11 min-h-11 flex items-center justify-center group transition-[background-color,color] duration-100"
+          class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center text-sm lg:text-base hover:text-lg lg:hover:text-xl hover:font-black"
           :class="focusClasses">
-          <component class="w-7 group-hover:scale-120 transition-transform duration-100" :is="GitHub" />
+          GitHub
         </a>
         <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank" :aria-label="$t('nav.linkedinAria')"
-          class="h-full min-w-11 min-h-11 flex items-center justify-center group transition-[background-color,color] duration-100"
+          class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center text-sm lg:text-base hover:text-lg lg:hover:text-xl hover:font-black"
           :class="focusClasses">
-          <component class="w-7 group-hover:scale-120 transition-transform duration-100" :is="LinkedIn" />
+          LinkedIn
         </a>
       </div>
 
-      <div class="flex items-center gap-4 ml-auto lg:ml-0">
+      <div class="flex items-center gap-2 lg:gap-4 ml-auto lg:ml-0">
         <ThemeSwitch />
         <LanguageSwitch />
       </div>
     </div>
 
-    <div class="lg:hidden relative h-10"
+    <div class="xl:hidden relative h-10"
       :class="{ 'px-4 lg:px-10 flex items-center': route.name && route.name != 'home' }">
       <nav>
         <RouterLink :aria-label="$t('nav.backToMainPage')" v-if="route.name && route.name != 'home'" to="/"
