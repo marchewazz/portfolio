@@ -397,7 +397,7 @@
     },
     "collaboration": {
       "header": "Collaboration",
-      "intro": "I currently work as a Full Stack Developer and I'm open to new opportunities and interesting projects.",
+      "intro": "I currently work as a Full Stack Developer",
       "polishResumeAria": "Download Polish resume",
       "englishResumeAria": "Download English resume",
       "emailAria": "Mail to {email}",
@@ -412,7 +412,7 @@
       },
       "availability": {
         "title": "Availability",
-        "text": "Currently employed, open to new offers."
+        "text": "Currently employed"
       },
       "workflow": {
         "title": "How I work",

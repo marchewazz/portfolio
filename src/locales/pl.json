@@ -397,7 +397,7 @@
     },
     "collaboration": {
       "header": "Współpraca",
-      "intro": "Obecnie pracuję jako Full Stack Developer, jestem otwarty na nowe możliwości i ciekawe projekty.",
+      "intro": "Obecnie pracuję jako Full Stack Developer",
       "polishResumeAria": "Pobierz CV po polsku",
       "englishResumeAria": "Pobierz CV po angielsku",
       "emailAria": "Napisz mail do {email}",
@@ -412,7 +412,7 @@
       },
       "availability": {
         "title": "Dostępność",
-        "text": "Obecnie zatrudniony, otwarty na nowe propozycje."
+        "text": "Obecnie zatrudniony"
       },
       "workflow": {
         "title": "Jak pracuję",
