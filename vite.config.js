@@ -18,6 +18,6 @@ export default defineConfig({
   },
   server: {
     host: true,
-    allowedHosts: true // albo konkretnie: ['abcd1234.ngrok-free.app']
+    allowedHosts: true
   }
 })

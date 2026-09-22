@@ -22,7 +22,7 @@ const devInfo = {
     role: "Full-stack developer",
     yearsOfExperience: "over_3",
     mainTechnologies: "[\"vue\", \"php\", \"wordpress\", \"tailwind\"]",
-    status: "employed_open_to_contact",
+    status: "employed",
 }
 
 // indent is now a level (0 or 1), not literal spaces in the string

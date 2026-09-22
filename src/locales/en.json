@@ -92,7 +92,6 @@
           "technologies": [
             "Git",
             "Docker",
-            "Figma",
             "Vite",
             "Jira",
             "DBeaver"
@@ -101,7 +100,7 @@
         "cms": {
           "title": "CMS",
           "technologies": [
-            "Wordpress"
+            "Wordpress with Roots/Sage themes"
           ]
         }
       }
@@ -408,7 +407,7 @@
       },
       "location": {
         "title": "Location",
-        "text": "Kraków, Poland — available for remote or hybrid work."
+        "text": "Kraków, Poland"
       },
       "availability": {
         "title": "Availability",

@@ -79,7 +79,7 @@ onUnmounted(() => stopAutoCycle())
 
                 <div class="grid grid-cols-2 md:grid-cols-1 w-full gap-2 transition-opacity duration-300 font-imb text-xl"
                     :class="activeIndex === index ? 'opacity-100' : 'hidden lg:grid opacity-0'">
-                    <span v-for="tech in tm(`home.skills.items.${skill.key}.technologies`)" :key="tech" class="whitespace-nowrap">
+                    <span v-for="tech in tm(`home.skills.items.${skill.key}.technologies`)" :key="tech">
                         {{ tech }}
                     </span>
                 </div>

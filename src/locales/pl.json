@@ -92,7 +92,6 @@
           "technologies": [
             "Git",
             "Docker",
-            "Figma",
             "Vite",
             "Jira",
             "DBeaver"
@@ -101,7 +100,7 @@
         "cms": {
           "title": "CMS",
           "technologies": [
-            "Wordpress"
+            "Wordpress z motywami Roots/Sage"
           ]
         }
       }
@@ -404,11 +403,11 @@
       "copyEmailAria": "Skopiuj mail do {email}",
       "employment": {
         "title": "Forma zatrudnienia",
-        "text": "Otwarty na pracę na pełny etat."
+        "text": "Praca na pełny etat, UOP"
       },
       "location": {
         "title": "Lokalizacja",
-        "text": "Kraków, Polska — dostępny do pracy zdalnej lub hybrydowej."
+        "text": "Kraków, Polska"
       },
       "availability": {
         "title": "Dostępność",
@@ -416,7 +415,7 @@
       },
       "workflow": {
         "title": "Jak pracuję",
-        "text": "Sprawnie poruszam się zarówno we frontendzie, jak i backendzie — od schematu bazy danych po interfejs użytkownika — współpracując z projektantami i zespołami produktowymi."
+        "text": "Pracuję przy rozwoju frontendu jak i backendu, uczestniczę w spotkaniach, współpracuję z działami marketingu, sprzedaży i SEO, korzystam min. z Jiry i pakietu Office"
       }
     },
     "events": {
