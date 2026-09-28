@@ -114,11 +114,14 @@ function handleMouseLeave() {
             :class="flipped ? 'transform-[rotateY(180deg)]' : ''"
         >
             <div class="absolute inset-0 backface-hidden">
-                <img
+                <!-- <img
                     class="w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-primary-claret dark:border-primary-yellow rotate-1"
                     :src="Face"
                     :alt="$t('home.hero.alt')"
-                />
+                /> -->
+                <div class="w-full h-full text-2xl object-cover rounded-2xl shadow-2xl border-2 border-primary-claret dark:border-primary-yellow rotate-1 bg-white flex justify-center items-center">
+                    WORK IN PROGRESS
+                </div>
             </div>
             <div
                 class="absolute inset-0 backface-hidden transform-[rotateY(180deg)] rounded-2xl shadow-2xl border-2 border-primary-yellow bg-[#1e1e2e] overflow-hidden flex flex-col"

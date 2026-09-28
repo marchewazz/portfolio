@@ -120,8 +120,8 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'top-0 z-10 w-full transition-colors duration-300 flex flex-col gap-2',
-    isScrolled ? 'bg-primary-blue text-primary-claret' : 'bg-primary-blue/90 dark:bg-primary-claret/50 dark:[body:has(#loader)_&]:bg-primary-claret [body:not(:has(#loader))_&]:bg-transparent text-primary-claret dark:text-primary-white'
+    'top-0 z-10 w-full transition-colors duration-300 flex flex-col',
+    isScrolled ? 'bg-primary-claret dark:bg-primary-blue text-primary-blue dark:text-primary-claret' : 'bg-primary-blue/90 dark:bg-primary-claret/50 dark:[body:has(#loader)_&]:bg-primary-claret [body:not(:has(#loader))_&]:bg-transparent text-primary-claret dark:text-primary-white'
   ]">
     <div class="flex lg:justify-between gap-2 items-center px-4 lg:px-10 h-12 xl:h-16">
       <nav class="hidden xl:flex lg:gap-4 xl:gap-8 items-center h-full">
@@ -161,7 +161,7 @@ onUnmounted(() => {
         </a>
       </div>
 
-      <div class="flex items-center gap-2 lg:gap-4 ml-auto lg:ml-0">
+      <div class="flex items-center gap-2 xl:gap-4 ml-auto lg:ml-0">
         <ThemeSwitch />
         <LanguageSwitch />
       </div>

@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted, nextTick, computed } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Logo from "../assets/images/logo-dark.svg?component"
 import ArrowRight from "../assets/images/icons/arrow-right.svg?component"
 import ArrowLeft from "../assets/images/icons/arrow-left.svg?component"
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -10,6 +9,7 @@ import { Autoplay } from 'swiper/modules'
 
 import UpiScreen from "../assets/images/screens/upi-screen.png"
 import UpiScreen2 from "../assets/images/screens/upi-screen-2.png"
+import UpiScreen3 from "../assets/images/screens/upi-screen-3.png"
 import CoderhinoScreen from "../assets/images/screens/coderhino.png"
 import HowToIabScreen from "../assets/images/screens/how-to-iab.png"
 import ForumIabScreen from "../assets/images/screens/forum-iab.png"
@@ -21,8 +21,10 @@ import TebScreen from "../assets/images/screens/teb.png"
 import TebScreen2 from "../assets/images/screens/teb-2.png"
 import TebScreen3 from "../assets/images/screens/teb-3.png"
 import TebScreen4 from "../assets/images/screens/teb-4.png"
+import TebScreen5 from "../assets/images/screens/teb-5.png"
 import ChatlabScreen from "../assets/images/screens/chatlab.png"
 import MilestoneScreen from "../assets/images/screens/milestone.png"
+import MilestoneScreen2 from "../assets/images/screens/milestone-2.png"
 import InpostScreen from "../assets/images/screens/inpost.png"
 
 import 'swiper/css'
@@ -38,62 +40,60 @@ const props = defineProps({
 
 const projectImages = {
   "teb-registration-form-inpost": [
-    { src: InpostScreen, altKey: "alts.tebRegistrationFormInpost.1" }
+    { src: InpostScreen, altKey: "alts.tebRegistrationFormInpost.1", divClass: "", imageClass: "" }
   ],
   "teb-registration-form-development": [
-    { src: UpiScreen, altKey: "alts.tebRegistrationFormDevelopment.1" },
-    { src: UpiScreen2, altKey: "alts.tebRegistrationFormMaintenance.2" }
+    { src: UpiScreen2, altKey: "alts.tebRegistrationFormMaintenance.2", divClass: "", imageClass: "" }
   ],
   "teb-website-development": [
-    { src: TebScreen, altKey: "alts.tebWebsiteDevelopment.1" },
-    { src: TebScreen2, altKey: "alts.tebWebsiteDevelopment.1" },
-    { src: TebScreen3, altKey: "alts.tebWebsiteDevelopment.1" },
-    { src: TebScreen4, altKey: "alts.tebWebsiteDevelopment.1" }
+    { src: TebScreen2, altKey: "alts.tebWebsiteMaintenance.2", divClass: "", imageClass: "" },
   ],
   "teb-registration-form-maintenance": [
-    { src: UpiScreen, altKey: "alts.tebRegistrationFormMaintenance.1" },
+    { src: UpiScreen3, altKey: "alts.tebRegistrationFormMaintenance.3", divClass: "", imageClass: "" },
   ],
   "milestone": [
-    { src: MilestoneScreen, altKey: "alts.milestone.1" }
+    { src: MilestoneScreen, altKey: "alts.milestone.1", divClass: "", imageClass: "h-auto" },
+    { src: MilestoneScreen2, altKey: "alts.milestone.2", divClass: "", imageClass: "h-auto" }
   ],
   "teb-website-maintenance-1": [
-    { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1" }
+    { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1", divClass: "", imageClass: "h-auto" },
+    { src: TebScreen3, altKey: "alts.tebWebsiteMaintenance.3", divClass: "", imageClass: "h-auto" },
+    { src: TebScreen4, altKey: "alts.tebWebsiteMaintenance.4", divClass: "", imageClass: "h-auto" }
   ],
   "teb-website-maintenance-2": [
-    { src: TebScreen, altKey: "alts.tebWebsiteMaintenance.1" }
+    { src: TebScreen5, altKey: "alts.tebWebsiteMaintenance.5", divClass: "", imageClass: "" }
   ],
   "teb-registration-form": [
-    { src: UpiScreen, altKey: "alts.tebRegistrationForm.1" }
+    { src: UpiScreen, altKey: "alts.tebRegistrationForm.1", divClass: "", imageClass: "" }
   ],
   "teb-ai-offers-bot": [
-    { src: ChatlabScreen, altKey: "alts.tebAiOffersBot.1" }
+    { src: ChatlabScreen, altKey: "alts.tebAiOffersBot.1", divClass: "aspect-video", imageClass: "object-contain" }
   ],
   "teb-school-sites-maintenance": [
-    { src: LiceumScreen, altKey: "alts.tebSchoolSitesMaintenance.1" },
-    { src: TechnikumScreen, altKey: "alts.tebSchoolSitesMaintenance.2" },
+    { src: LiceumScreen, altKey: "alts.tebSchoolSitesMaintenance.1", divClass: "", imageClass: "" },
+    { src: TechnikumScreen, altKey: "alts.tebSchoolSitesMaintenance.2", divClass: "", imageClass: "" },
   ],
   "technikum-pl-website": [
-    { src: TechnikumScreen, altKey: "alts.technikumPlWebsite.1" }
+    { src: TechnikumScreen, altKey: "alts.technikumPlWebsite.1", divClass: "", imageClass: "" }
   ],
   "ogram-to-v2": [
-    { src: OgramTo2Screen, altKey: "alts.ogramToV2.1" }
+    { src: OgramTo2Screen, altKey: "alts.ogramToV2.1", divClass: "", imageClass: "" }
   ],
   "ogram-to": [
-    { src: OgramToScreen, altKey: "alts.ogramTo.1" }
+    { src: OgramToScreen, altKey: "alts.ogramTo.1", divClass: "", imageClass: "" }
   ],
   "iab-forum": [
-    { src: ForumIabScreen, altKey: "alts.iabForum.1" }
+    { src: ForumIabScreen, altKey: "alts.iabForum.1", divClass: "", imageClass: "" }
   ],
   "iab-how-to": [
-    { src: HowToIabScreen, altKey: "alts.iabHowTo.1" }
+    { src: HowToIabScreen, altKey: "alts.iabHowTo.1", divClass: "", imageClass: " object-cover" }
   ],
   "coderhino-company-website": [
-    { src: CoderhinoScreen, altKey: "alts.coderhinoCompanyWebsite.1" }
+    { src: CoderhinoScreen, altKey: "alts.coderhinoCompanyWebsite.1", divClass: "", imageClass: "" }
   ],
 };
 
 const activeProjectImages = computed(() => {
-  console.log(projectImages[activeProject.value.slug] ?? [])
   return projectImages[activeProject.value.slug] ?? [];
 });
 
@@ -179,7 +179,7 @@ onUnmounted(() => ctx?.revert())
   <div class="relative w-full">
     <Transition name="stage" mode="out-in">
       <ol v-if="!activeProject" key="timeline" ref="listRef" class="relative min-w-0">
-        <li v-for="(item, index) in items" :key="index" class="relative mb-10 md:ms-3 last:mb-0 md:ps-10">
+        <li v-for="(item, index) in items" :key="index" :id="`experience-${index+1}`" class="relative mb-10 md:ms-3 last:mb-0 md:ps-10">
           <span v-if="index !== items.length - 1"
             class="absolute hidden md:block -inset-s-0.5 top-4 -bottom-10 w-1 bg-primary-claret dark:bg-primary-yellow translate-y-2"></span>
           <span
@@ -232,12 +232,11 @@ onUnmounted(() => ctx?.revert())
         <Swiper :modules="[Autoplay]" :slides-per-view="1" :space-between="10"
           class="w-full rounded-3xl overflow-visible" :loop="true"
           :autoplay="{ delay: 3000, disableOnInteraction: true }">
-          <SwiperSlide v-for="image in activeProjectImages" :key="image.src">
-            <div
-              class="relative w-full aspect-video max-h-100 rounded-3xl overflow-hidden border-2 border-primary-claret dark:border-primary-yellow">
-              <img :src="image.src" class="absolute inset-0 w-full h-full object-top object-cover scale-100 blur-md"
+          <SwiperSlide class="h-auto!" v-for="image in activeProjectImages" :key="image.src">
+            <div :class="['relative w-full h-full max-h-100 rounded-3xl overflow-hidden border-2 border-primary-claret dark:border-primary-yellow', image.divClass]">
+              <img :src="image.src" class="absolute inset-0 w-full h-full object-top object-cover scale- blur-md"
                 aria-hidden="true" />
-              <img :src="image.src" class="relative w-full h-full object-contain"
+              <img :src="image.src" :class="['relative w-full h-full', image.imageClass]"
                 :alt="$t(`home.experience.${image.altKey}`)" />
             </div>
           </SwiperSlide>

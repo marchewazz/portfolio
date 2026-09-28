@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import ResumePL from "../../assets/resume-pl.pdf"
-import ResumeEN from "../../assets/resume-en.pdf"
 
 const email = 'marchewczykmateusz24@gmail.com'
 const copied = ref(false)
@@ -28,7 +26,7 @@ function copyEmail() {
                 </p> -->
                 <div class="grid lg:grid-cols-2 gap-4 max-w-4xl w-full">
                      <div class="rounded-full w-full bg-primary-blue">
-                        <a href="https://linkedin.com/in/your-username" target="_blank"
+                        <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank"
                             :aria-label="$t('nav.linkedinAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm bg-primary-blue text-primary-claret  hover:bg-primary-claret/10 transition-[scale,color,background-color] w-full
                             focus-visible:scale-105 md:focus-visible:scale-120 focus-visible:bg-primary-yellow dark:focus-visible:bg-primary-claret focus-visible:text-primary-claret dark:focus-visible:text-primary-blue">
@@ -59,7 +57,7 @@ function copyEmail() {
                         </button>
                     </div>
                      <div class="rounded-full w-full">
-                        <a :href="ResumePL" download
+                        <a href="/portfolio/public/resume-pl.pdf" target="_blank"
                             :aria-label="$t('home.polishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret  dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-[scale,color,background-color] w-full
                             focus-visible:scale-105 md:focus-visible:scale-120 focus-visible:bg-primary-blue dark:focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-claret">
@@ -67,7 +65,7 @@ function copyEmail() {
                         </a>
                     </div>
                     <div class="rounded-full w-full">
-                        <a :href="ResumeEN" download
+                        <a href="/portfolio/public/resume-en.pdf" target="_blank"
                             :aria-label="$t('home.englishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-[scale,color,background-color] w-full
                             focus-visible:scale-105 md:focus-visible:scale-120 focus-visible:bg-primary-blue dark:focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-claret">

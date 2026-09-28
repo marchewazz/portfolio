@@ -35,7 +35,7 @@
     "englishResumeAria": "Download English resume",
     "emailAria": "Mail to {email}",
     "copyEmailAria": "Copy mail {email}",
-    "description": "Do uzupełnienia",
+    "description": "Mateusz Marchewczyk's portfolio - Full-stack developer specialized in Vue and PHP. See my projects, experience and contact me for collaboration.",
     "hero": {
       "header": "Hello, my name is ",
       "firstParagraph": "I am a 22-year-old developer, mostly working on websites. Daily I work with PHP, Vue and the WordPress CMS, building themes using Roots/Sage. I also have experience integrating external services such as InPost. Apart from technical work, I collaborate closely with the marketing, sales and SEO departments, and I participate in meetings presenting our results and planning upcoming tasks.",
@@ -169,26 +169,24 @@
               ]
             },
             {
-              "title": "Milestone",
+              "title": "Website for bilingual high school Milestone",
               "slug": "milestone",
               "description": "A WordPress theme for a bilingual high school run by TEB Edukacja — I was fully responsible for this site.",
               "tech": [
                 "WordPress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
             {
-              "title": "Zbalansowani",
+              "title": "Website for psychologi clinic Zbalansowani",
               "slug": "zbalansowani",
               "description": "A WordPress theme for a psychological counseling center run by TEB Edukacja — I was responsible for translating the design from Figma into code, scripting the site, and building the ACF field and CPT logic needed for the site to function.",
               "tech": [
                 "WordPress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             }
@@ -201,7 +199,7 @@
           "description": "I kept combining work with school until finishing technical school in April 2024; from June 2024 I worked full-time, mainly on TEB Edukacja projects. During this time I grew a lot, especially in communication and teamwork.",
           "projects": [
             {
-              "title": "teb.pl registration form",
+              "title": "Developing teb.pl registration form",
               "slug": "teb-registration-form",
               "description": "The first very large project I had the chance to work on — a form that lets a user enroll at TEB school and even sign a contract without leaving home. An extensive system connected to the site's offers, deduplication in SalesForce, additionally generating a draft with a payment schedule and allowing fast payment via the AutoPay gateway. On this project I worked on both the frontend, translating the design from Figma and building logic such as storing form values, and on the backend, designing cron events, creating contract drafts from templates, programming a payment schedule generator based on documentation from the sales department, and connecting the form to the integration bus. I have fond memories of this project and I'm glad I still get to work on it.",
               "tech": [
@@ -211,7 +209,7 @@
               ]
             },
             {
-              "title": "Rollout of an AI bot informing about offers and branches",
+              "title": "Implementation of an AI bot informing about offers, departments and recruitment",
               "slug": "teb-ai-offers-bot",
               "description": "A very timely project. On teb.pl, the Livechat widget was to be replaced by an AI bot provided by ChatLab, based on GPT. I built the API for this bot according to the sales department's guidelines, and helped define the bot's role, the API action descriptions, and the decision scheme by which the bot could return the right offer, taking into account our database schema and the data in the site's ACF fields. Even though we were often puzzled by the Virtual Advisor's logic, we delivered a working sales assistant.",
               "tech": [
@@ -239,41 +237,37 @@
                 "WordPress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
             {
-              "title": "technikum.pl website",
+              "title": "Developing technikum.pl website",
               "slug": "technikum-pl-website",
               "description": "The first project for TEB Edukacja I was involved in — I worked on the early stages of the site, translating the design from Figma into code.",
               "tech": [
                 "WordPress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
             {
-              "title": "ogram.to v2",
+              "title": "Web portal for board games players ogram.to v2",
               "slug": "ogram-to-v2",
               "description": "The second version of the ogram.to site, this time built as a WordPress theme, working with the ACF and CPT plugins. I was part of a two-person team responsible for the desktop and mobile look of the site and for how the site worked with content created in WordPress.",
               "tech": [
                 "WordPress",
                 "Roots/Sage",
-                "Blade",
                 "PHP",
                 "Tailwind"
               ]
             },
             {
-              "title": "ogram.to",
+              "title": "Web portal for board games players ogram.to",
               "slug": "ogram-to",
               "description": "The first version of the ogram.to site — this was my first contact with the Laravel framework. I built styled views, wrote JavaScript scripts, learned how migrations and models work, and used the built-in authentication.",
               "tech": [
                 "Laravel",
-                "Blade",
                 "SCSS",
                 "JavaScript"
               ]
@@ -297,7 +291,7 @@
               ]
             },
             {
-              "title": "How To IAB",
+              "title": "Website about evenets How To IAB",
               "slug": "iab-how-to",
               "description": "A clean WordPress theme for the IAB association. My task was to translate the design from Figma into code and write the necessary JavaScript. The site is responsive and works with ACF.",
               "tech": [
@@ -308,7 +302,7 @@
               ]
             },
             {
-              "title": "IAB Forum",
+              "title": "Website of organization IAB Forum",
               "slug": "iab-forum",
               "description": "My first commercial project during the internship. My task was to build the site's code, including responsiveness, based on a Figma design.",
               "tech": [
@@ -339,13 +333,20 @@
           "1": "TEB company website homepage built during development"
         },
         "tebRegistrationFormMaintenance": {
-          "1": "TEB registration form after maintenance updates"
+          "1": "TEB registration form after maintenance updates",
+          "2": "TEB registration form after maintenance updates",
+          "3": "TEB registration form after maintenance updates"
         },
         "milestone": {
-          "1": "Milestone project dashboard interface"
+          "1": "Milestone project dashboard interface",
+          "2": "Milestone project dashboard interface"
         },
         "tebWebsiteMaintenance": {
-          "1": "TEB company website homepage after maintenance updates"
+          "1": "TEB company website homepage after maintenance updates",
+          "2": "TEB company website homepage after maintenance updates",
+          "3": "TEB company website homepage after maintenance updates",
+          "4": "TEB company website homepage after maintenance updates",
+          "5": "TEB company website homepage after maintenance updates"
         },
         "tebRegistrationForm": {
           "1": "TEB online registration form interface"
@@ -403,19 +404,19 @@
       "copyEmailAria": "Copy mail {email}",
       "employment": {
         "title": "Employment type",
-        "text": "Open to full-time employment."
+        "text": "Full-time employment, employment contract."
       },
       "location": {
         "title": "Location",
-        "text": "Kraków, Poland"
+        "text": "Kraków, Poland."
       },
       "availability": {
         "title": "Availability",
-        "text": "Currently employed"
+        "text": "Currently employed."
       },
       "workflow": {
         "title": "How I work",
-        "text": "I move comfortably across both frontend and backend — from the database schema to the user interface — collaborating with designers and product teams."
+        "text": "I work with development of both frontend and backend. I participate in meeting, collborate with departments of marketing, sales and SEO, also I use Jira and Office package."
       },
       "cta": "Let's talk about your project."
     },
@@ -457,69 +458,41 @@
   "privacy": {
     "title": "Privacy Policy",
     "returnedToPage": "🍪 Privacy Policy",
-    "description": "Do uzupełnienia",
-    "lastUpdated": "Last updated: August 1, 2026",
+    "description": "Privacy policy of portfolio - information about personal data, cookies and user's RODO rights.",
+    "lastUpdated": "Last updated: September 24, 2026",
     "sections": [
       {
         "heading": "1. Data Controller",
-        "text": "The controller of your personal data is [Company Name], located at [company address]. For any matters related to data protection, please contact us using the details provided in the Contact section."
+        "text": "The data controller is Mateusz Marchewczyk, who runs this website as a private individual based in Poland. Contact: the email address provided below."
       },
       {
-        "heading": "2. What Data We Collect",
-        "text": "When you use our website, we may collect the following data:",
-        "list": [
-          "Identification data (name, surname, email address)",
-          "Technical data (IP address, browser type, operating system)",
-          "Usage data (pages visited, time spent on the site)"
-        ]
+        "heading": "2. What Data I Collect",
+        "text": "This website does not collect personal data. There are no forms, user accounts, comments, cookies, or analytics or tracking tools."
       },
       {
-        "heading": "3. Purpose of Data Processing",
-        "text": "We process your data for the following purposes:",
-        "list": [
-          "Providing services available on the website",
-          "Communication regarding customer support",
-          "Statistical analysis and improving service quality",
-          "Fulfilling legal obligations imposed on the controller"
-        ]
+        "heading": "3. Hosting",
+        "text": "This website is hosted on GitHub Pages. GitHub, as the hosting provider, may automatically process technical data about visitors (e.g. IP address) in its server logs. You can find more information in GitHub's privacy policy."
       },
       {
-        "heading": "4. Legal Basis for Processing",
-        "text": "We process your data based on Article 6(1) of the GDPR, in particular in connection with the performance of a contract, legal obligations, and the legitimate interest of the controller."
+        "heading": "4. localStorage",
+        "text": "This website may store simple settings in your browser's localStorage, e.g. selected color theme and language. This data stays only on your device, is not sent to me or to any third parties, and is not used for tracking. You can delete it at any time in your browser settings (clearing site data)."
       },
       {
-        "heading": "5. Data Retention Period",
-        "text": "We store personal data for the period necessary to achieve the purposes for which it was collected, but no longer than required by applicable law."
+        "heading": "5. Email Contact",
+        "text": "If you email me, I will use your email address and the content of your message only to reply to you. I do not share them with anyone else. I use a Gmail mailbox, so messages are stored and processed by Google in accordance with Google's privacy policy. I delete messages upon your request."
       },
       {
         "heading": "6. Your Rights",
-        "text": "Under the GDPR, you have the following rights:",
-        "list": [
-          "Right of access to your data",
-          "Right to rectification of data",
-          "Right to erasure of data",
-          "Right to restriction of processing",
-          "Right to data portability",
-          "Right to object",
-          "Right to lodge a complaint with a supervisory authority"
-        ]
+        "text": "Under the GDPR, you have the right to access your data, have it rectified or erased, restrict its processing, and lodge a complaint with the President of the Personal Data Protection Office (PUODO) in Poland."
       },
       {
-        "heading": "7. Cookies",
-        "text": "Our website uses cookies to ensure proper functioning of the service, analyze traffic, and personalize content. You can manage cookie settings in your browser."
-      },
-      {
-        "heading": "8. Data Sharing",
-        "text": "Your data may be shared with third parties only to the extent necessary to provide services (e.g., hosting providers, payment systems) and with entities authorized by law."
-      },
-      {
-        "heading": "9. Changes to This Privacy Policy",
-        "text": "We reserve the right to make changes to this privacy policy. We will inform you of any changes by publishing a new version on this page."
+        "heading": "7. Changes",
+        "text": "If new features that process data (e.g. analytics) are added to the website, I will update this policy. The current version is always published on this page."
       }
     ],
     "contact": {
       "text": "If you have any questions regarding this privacy policy, please contact us at:",
-      "email": "contact\\%{'@'}yourcompany.com"
+      "email": "marchewczykmateusz24\\@gmail.com"
     },
     "emailAria": "Mail to {email}"
   },

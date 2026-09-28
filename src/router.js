@@ -1,4 +1,4 @@
-import { nextTick } from 'vue';
+import { nextTick, watch } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -14,24 +14,45 @@ const routes = [
   },
 ]
 
+function waitForElement(selector, timeout = 3000) {
+  return new Promise((resolve) => {
+    const found = document.querySelector(selector)
+    if (found) return resolve(found)
+
+    const observer = new MutationObserver(() => {
+      const el = document.querySelector(selector)
+      if (el) {
+        observer.disconnect()
+        resolve(el)
+      }
+    })
+    observer.observe(document.body, { childList: true, subtree: true })
+
+    setTimeout(() => {
+      observer.disconnect()
+      resolve(null)
+    }, timeout)
+  })
+}
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/portfolio/'),
   routes,
-  scrollBehavior(to, from, savedPosition) {
-    // if (to.hash) {
-    //   return new Promise((resolve) => {
-    //     const tryScroll = () => {
-    //       const el = document.querySelector(to.hash);
-    //       if (el) {
-    //         resolve({ el: to.hash, behavior: 'smooth' });
-    //       }
-    //     };
-    //     tryScroll();
-    //   });
-    // }
-    if (savedPosition) return savedPosition;
-    return { top: 0 };
-  }
+  async scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+
+    if (to.hash) {
+      const el = await waitForElement(to.hash)
+      if (el) {
+        el.scrollIntoView({ behavior: 'auto', block: 'start' }) 
+        return false
+      }
+      return { top: 0 }
+    }
+
+    if (to.name !== from.name) return { top: 0 }
+    return false
+  },
 })
 
 export default router

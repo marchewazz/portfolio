@@ -1,5 +1,5 @@
 <script setup>
-import { watch, ref } from 'vue';
+import { watch, ref, nextTick } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import Footer from './components/Footer.vue';
@@ -27,7 +27,6 @@ function updateHead() {
       metaDesc.setAttribute('name', 'description');
       document.head.appendChild(metaDesc);
     }
-    console.log(`here`)
     metaDesc.setAttribute('content', t(`${route.name}.description`));
   }
 }
@@ -52,8 +51,22 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach((to, from) => {
   isLoading.value = false
-  console.log(to, from)
-  if (to.name != from.name) window.scrollTo(0, 0)
+
+  if (to.hash) {
+    console.log(`herehre`)
+    console.log(to.hash)
+    nextTick(() => {
+      const el = document.querySelector(to.hash)
+      console.log(el)
+      if (el) {
+        el.scrollIntoView({ behavior: 'auto', block: 'start'})
+      } else {
+        window.scrollTo(0, 0)
+      }
+    })
+  } else if (to.name !== from.name) {
+    window.scrollTo(0, 0)
+  }
 })
 </script>
 

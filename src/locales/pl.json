@@ -35,7 +35,7 @@
     "englishResumeAria": "Pobierz CV po angielsku",
     "emailAria": "Napisz mail do {email}",
     "copyEmailAria": "Skopiuj mail do {email}",
-    "description": "Do uzupełnienia",
+    "description": "Portfolio Mateusz Marchewczyk - Full-stack developer pracujący w Vue i PHP. Zobacz moje projekty, doświadczenie i skontaktuj się ze mną.",
     "hero": {
       "header": "Cześć, jestem ",
       "firstParagraph": "Jestem 22-letnim developerem poruszającym głównie wokół stron internetowych. Na co dzień pracuję w języku PHP, frameworku Vue a także przy CMS Wordpress budując motywy przy użyciu Roots/Sage. Mam również doświadczenie w integracji zewnętrznych usług takich jak InPost. Oprócz zadań techniczych blisko współpracuję z działami marketingu, sprzedaży i SEO, uczestniczę w spotkaniach przedstawiając nasze wyniki pracy i planując dalsze zadania.",
@@ -117,7 +117,7 @@
             {
               "title": "Utrzymanie i rozwój strony teb.pl",
               "slug": "teb-website-maintenance-2",
-              "description": "W międzyczasie kontynujemy prace utrzymaniowe strony teb.pl takie jak aktualizacja nagłówków stron ofert czy zaszywanie informacji dla botów AI na stronie. Biorę udział w planowaniu oraz programowaniu i wdrażaniu nowych rozwiązań jak alerty o możliwych przestojach w integracji lub wyróżnianie ofert i promocji na stronie.",
+              "description": "W międzyczasie kontynujemy prace utrzymaniowe strony teb.pl takie jak aktualizacja nagłówków stron ofert czy zaszywanie informacji dla botów AI na stronie. Biorę udział w planowaniu oraz programowaniu i wdrażaniu nowych rozwiązań np. alerty o możliwych przestojach w integracji lub wyróżnianie ofert i promocji na stronie.",
               "tech": [
                 "Wordpress",
                 "PHP",
@@ -128,7 +128,7 @@
             {
               "title": "Integracja formularza z InPost",
               "slug": "teb-registration-form-inpost",
-              "description": "Małe uwygodnienie w fomularzu, usystematyzowanie wysyłek potrzebnych dokumentów do oddziału w razie potrzeby, wszystko dzieje się w ramach zapisu, użytkownik po kilku kliknięciach dostaje kod nadania do paczkomatu w mieście które wybrał. W tym projekcie odpowiedzialny byłem za wygląd elementów informujących o wysyłce przez InPost, integrację z API  oraz wdrożenie na stronę.",
+              "description": "Małe uwygodnienie w fomularzu, usystematyzowanie wysyłek potrzebnych dokumentów do oddziału w razie potrzeby, wszystko dzieje się w ramach zapisu, użytkownik po kilku kliknięciach dostaje kod nadania do paczkomatu w mieście które wybrał. W tym projekcie odpowiedzialny byłem za wdrożenie elementów informujących o wysyłce przez InPost, integrację z API  oraz wdrożenie na stronę.",
               "tech": [
                 "Vue",
                 "PHP",
@@ -138,7 +138,7 @@
             {
               "title": "Dodatkowe prace projektowe przy formularzu",
               "slug": "teb-registration-form-development",
-              "description": "Oprócz tego, że formularz musi odpowiadać zmianom które przeprowadzamy na stronie min. w integracji realizujemy w ramach niego osobne projekty. Byłem odpowiedzialny w całości za wprowadzenie kilku z nich. Jednym z nich jest okno dosprzedaży zaaktualizowane o wyszukiwarkę oraz nowe połączenia ofert tak by zaproponować użytkownikowi dodatkowe produkty jak najbardziej dopasowane pod niego.",
+              "description": "Oprócz tego, że formularz musi odpowiadać zmianom które przeprowadzamy na stronie min. w integracji, realizujemy w ramach niego osobne projekty. Byłem odpowiedzialny w całości za wdrożenie kilku z nich. Jednym z nich jest okno dosprzedaży zaaktualizowane o wyszukiwarkę oraz nowe połączenia ofert tak by zaproponować użytkownikowi dodatkowe produkty jak najbardziej dopasowane pod niego.",
               "tech": [
                 "Vue",
                 "PHP",
@@ -148,7 +148,7 @@
             {
               "title": "Prace projektowe teb.pl",
               "slug": "teb-website-development",
-              "description": "Podczas pracy przy stronie teb.pl czasem realizujemy większe projekty. W bliskiej współpracy z działami sprzedaży czy marketingu planujemy zmiany a ja odpowiadam za ich zaprogramowanie i wdrożenie. Często projekty obejmują zmiany wyglądu całych podstron, zmiany w integracji ofert czy struktur baz danych. Wyróżnić mogę tutaj przebudowę zakładki z ofertą oraz wszelkie prace związane z dodatkowymi opcjami w SalesForce pod które trzeba dostosować stronę.",
+              "description": "Podczas pracy przy stronie teb.pl czasem realizujemy większe projekty. W bliskiej współpracy z działami sprzedaży czy marketingu planujemy zmiany a ja odpowiadam za ich zaprogramowanie i wdrożenie. Często projekty obejmują zmiany wyglądu całych podstron, zmiany w integracji ofert czy struktur baz danych. Wyróżnić mogę tutaj przebudowę zakładki z ofertą oraz wszelkie prace związane z dodatkowymi opcjami w SalesForce pod które trzeba dostosować stronę i jej integrację.",
               "tech": [
                 "Wordpress",
                 "PHP",
@@ -169,12 +169,11 @@
             {
               "title": "Strona dwujęzycznego liceum Milestone",
               "slug": "milestone",
-              "description": "Motyw Wordpress dla dwujęzycznego liceum prowadzonego przez TEB Edukacja, byłem odpowiedzialny w pełni za tę stronę.",
+              "description": "Motyw Wordpress dla dwujęzycznego liceum prowadzonego przez TEB Edukacja, byłem odpowiedzialny w pełni za stworzenie motywu.",
               "tech": [
                 "Wordpress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
@@ -186,7 +185,6 @@
                 "Wordpress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             }
@@ -221,7 +219,7 @@
             {
               "title": "Utrzymanie i rozwój strony teb.pl",
               "slug": "teb-website-maintenance-1",
-              "description": "Kolejną stroną TEB Edukacja przy której pracuję to główna strona Szkół dla dorosłych teb.pl. Do wykonywania prac przy tej stronie współpracuję z działami marketingu oraz SEO. Nanoszę konieczne poprawki, dodaję elementy na stronie, weryfikuję wyświetlanie się ofert a także poruszam się po panelu Wordpress używając wtyczek takich jak ACF. W tym czasie dużym projektem który realizowałem wraz z działem SEO i marketingu był blog.",
+              "description": "Kolejną stroną TEB Edukacja przy której pracuję to główna strona Szkół dla dorosłych teb.pl. Do wykonywania prac przy tej stronie współpracuję z działami marketingu oraz SEO. Nanoszę konieczne poprawki, dodaję elementy na stronie, weryfikuję wyświetlanie się ofert a także poruszam się po panelu Wordpress używając wtyczek takich jak ACF. W tym czasie jednym z projektów który realizowałem był blog.",
               "tech": [
                 "Wordpress",
                 "PHP",
@@ -232,12 +230,11 @@
             {
               "title": "Utrzymanie oraz rozwój stron technikum.pl oraz teb.liceum.pl",
               "slug": "teb-school-sites-maintenance",
-              "description": "Przez około rok dbałem o obie te strony, weryfikując i nanosząc poprawki treści, aktualizując wygląd strony oraz formularz zapisu o potrzebne elementy np. tooltipy. Największym wyzwaniem podczas utrzymywania tych stron był projekt Edukacji Domowej oraz Liceum Plastycznego, rozciągnięcie strony stworzonej pod liceum tak by nawigacja, kierunki czy formularze wyświetlały odpowiednie informacje w zależności od oddziału wymagało wielu warunków w kodzie :).",
+              "description": "Przez około rok dbałem o obie te strony, weryfikując i nanosząc poprawki treści, aktualizując wygląd strony oraz formularz zapisu o potrzebne elementy np. tooltipy. Największym wyzwaniem podczas utrzymywania tych stron był projekt Edukacji Domowej oraz Liceum Plastycznego, rozciągnięcie strony stworzonej pod liceum tak by nawigacja, kierunki czy formularze wyświetlały odpowiednie informacje w zależności od oddziału wymagały dużej rozbudowy kodu.",
               "tech": [
                 "Wordpress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
@@ -249,7 +246,6 @@
                 "Wordpress",
                 "Roots/Sage",
                 "JavaScript",
-                "Blade",
                 "SCSS"
               ]
             },
@@ -260,7 +256,6 @@
               "tech": [
                 "Wordpress",
                 "Roots/Sage",
-                "Blade",
                 "PHP",
                 "Tailwind"
               ]
@@ -268,10 +263,9 @@
             {
               "title": "Portal dla graczy ogram.to",
               "slug": "ogram-to",
-              "description": "Pierwsza wersja strony ogram.to, był to mój pierwszy kontakt z frameworkiem Laravel. Tworzyłem ostylowane widoki, pisałem skrypty JavaScript, poznałem działanie migracji oraz modeli oraz użyłem wbudowanej autentykacji.",
+              "description": "Pierwsza wersja strony ogram.to, był to mój pierwszy komercyjny kontakt z frameworkiem Laravel. Tworzyłem ostylowane widoki, pisałem skrypty JavaScript, poznałem działanie migracji i modeli oraz użyłem wbudowanej autentykacji.",
               "tech": [
                 "Laravel",
-                "Blade",
                 "SCSS",
                 "JavaScript"
               ]
@@ -330,50 +324,57 @@
       "backButtonAria": "Wróć do osi czasu",
       "alts": {
         "tebRegistrationFormInpost": {
-          "1": "Formularz rejestracyjny TEB z integracją paczkomatów InPost"
+          "1": "Interfejs formularza rejestracyjnego TEB z informacją o InPost"
         },
         "tebRegistrationFormDevelopment": {
-          "1": "Interfejs formularza rejestracyjnego TEB stworzony podczas developmentu"
+          "1": "Interfejs formularza rejestracyjnego TEB"
         },
         "tebWebsiteDevelopment": {
-          "1": "Strona główna serwisu TEB stworzona podczas developmentu"
+          "1": "Strona oferty TEB po aktualizacjach"
         },
         "tebRegistrationFormMaintenance": {
-          "1": "Formularz rejestracyjny TEB po aktualizacjach w ramach utrzymania"
+          "1": "Interfejs formularza rejestracyjnego TEB",
+          "2": "Okno dosprzedaży w formularz rejestracyjnym TEB po aktualizacjach",
+          "3": "Formularz rejestracyjny TEB po aktualizacjach w ramach utrzymania"
         },
         "milestone": {
-          "1": "Panel projektu Milestone"
+          "1": "Strona główna Milestone",
+          "2": "Jedna z sekcji z strony Milestone"
         },
         "tebWebsiteMaintenance": {
-          "1": "Strona główna serwisu TEB po aktualizacjach w ramach utrzymania"
+          "1": "Strona główna TEB",
+          "2": "Strona oferty TEB po aktualizacjach",
+          "3": "Blog TEB",
+          "4": "Wpis na blogu TEB",
+          "5": "Zaktualizwane menu strony TEB"
         },
         "tebRegistrationForm": {
           "1": "Interfejs formularza rejestracyjnego online TEB"
         },
         "tebAiOffersBot": {
-          "1": "Interfejs chatbota AI generującego oferty TEB"
+          "1": "Interfejs chatbota AI zbierącego oferty w szkołach TEB"
         },
         "tebSchoolSitesMaintenance": {
-          "1": "Strona główna serwisu Liceum",
-          "2": "Strona główna serwisu Technikum"
+          "1": "Strona główna TEB Liceum",
+          "2": "Strona główna TEB Technikum"
         },
         "technikumPlWebsite": {
-          "1": "Strona główna serwisu Technikum.pl"
+          "1": "Strona główna TEB Technikum"
         },
         "ogramToV2": {
-          "1": "Panel główny platformy Ogram.to w wersji 2"
+          "1": "Strona główna Ogram.to w wersji 2"
         },
         "ogramTo": {
-          "1": "Panel główny platformy Ogram.to"
+          "1": "Strona główna Ogram.to"
         },
         "iabForum": {
-          "1": "Interfejs forum dyskusyjnego IAB"
+          "1": "Strona główna Forum IAB"
         },
         "iabHowTo": {
-          "1": "Układ strony poradnikowej IAB"
+          "1": "Strona główna HowToIAB"
         },
         "coderhinoCompanyWebsite": {
-          "1": "Strona główna firmy Coderhino"
+          "1": "Strona główna firmy CODERHINO"
         }
       },
       "backToTimeline": "Wróć do osi czasu"
@@ -403,19 +404,19 @@
       "copyEmailAria": "Skopiuj mail do {email}",
       "employment": {
         "title": "Forma zatrudnienia",
-        "text": "Praca na pełny etat, UOP"
+        "text": "Praca na pełny etat, UOP."
       },
       "location": {
         "title": "Lokalizacja",
-        "text": "Kraków, Polska"
+        "text": "Kraków, Polska."
       },
       "availability": {
         "title": "Dostępność",
-        "text": "Obecnie zatrudniony"
+        "text": "Obecnie zatrudniony."
       },
       "workflow": {
         "title": "Jak pracuję",
-        "text": "Pracuję przy rozwoju frontendu jak i backendu, uczestniczę w spotkaniach, współpracuję z działami marketingu, sprzedaży i SEO, korzystam min. z Jiry i pakietu Office"
+        "text": "Pracuję przy rozwoju frontendu jak i backendu, uczestniczę w spotkaniach, współpracuję z działami marketingu, sprzedaży i SEO, korzystam min. z Jiry i pakietu Office."
       }
     },
     "events": {
@@ -455,69 +456,41 @@
   },
   "privacy": {
     "title": "Polityka prywatności",
-    "description": "Do uzupełnienia",
-    "lastUpdated": "Ostatnia aktualizacja: 1 sierpnia 2026",
+    "description": "Polityka prywatności portfolio - informacje o przetwarzaniu danych osobowych, plikach cookies oraz prawach użytkownika zgodnie z RODO.",
+    "lastUpdated": "Ostatnia aktualizacja: 24 września 2026",
     "sections": [
       {
         "heading": "1. Administrator danych",
-        "text": "Administratorem Twoich danych osobowych jest [Nazwa firmy], z siedzibą pod adresem [adres firmy]. W sprawach związanych z ochroną danych możesz skontaktować się z nami pod adresem podanym w sekcji Kontakt."
+        "text": "Administratorem danych jest Mateusz Marchewczyk, prowadzący tę stronę jako osoba prywatna. Kontakt: adres e-mail podany poniżej."
       },
       {
-        "heading": "2. Jakie dane zbieramy",
-        "text": "W ramach korzystania z naszej strony możemy zbierać następujące dane:",
-        "list": [
-          "Dane identyfikacyjne (imię, nazwisko, adres e-mail)",
-          "Dane techniczne (adres IP, typ przeglądarki, system operacyjny)",
-          "Dane dotyczące korzystania ze strony (odwiedzane podstrony, czas spędzony na stronie)"
-        ]
+        "heading": "2. Jakie dane zbieram",
+        "text": "Ta strona nie zbiera danych osobowych. Nie ma tu formularzy, kont użytkowników, komentarzy, plików cookies ani narzędzi analitycznych czy śledzących."
       },
       {
-        "heading": "3. Cel przetwarzania danych",
-        "text": "Twoje dane przetwarzamy w celu:",
-        "list": [
-          "Świadczenia usług dostępnych na stronie",
-          "Kontaktu w sprawach związanych z obsługą klienta",
-          "Analizy statystycznej i poprawy jakości usług",
-          "Wypełnienia obowiązków prawnych ciążących na administratorze"
-        ]
+        "heading": "3. Hosting",
+        "text": "Strona jest hostowana na GitHub Pages. GitHub, jako dostawca hostingu, może automatycznie przetwarzać dane techniczne odwiedzających (np. adres IP) w logach serwera. Więcej informacji znajdziesz w polityce prywatności GitHub."
       },
       {
-        "heading": "4. Podstawa prawna przetwarzania",
-        "text": "Dane przetwarzamy na podstawie art. 6 ust. 1 RODO, w szczególności w związku z wykonaniem umowy, obowiązkiem prawnym oraz prawnie uzasadnionym interesem administratora."
+        "heading": "4. localStorage",
+        "text": "Strona może zapisywać w pamięci Twojej przeglądarki (localStorage) proste ustawienia, np. wybrany motyw kolorystyczny i język. Dane te pozostają wyłącznie na Twoim urządzeniu, nie są wysyłane do mnie ani do osób trzecich i nie służą do śledzenia. Możesz je w każdej chwili usunąć w ustawieniach przeglądarki (czyszczenie danych witryn)."
       },
       {
-        "heading": "5. Okres przechowywania danych",
-        "text": "Dane osobowe przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane, nie dłużej jednak niż wynika to z obowiązujących przepisów prawa."
+        "heading": "5. Kontakt e-mailowy",
+        "text": "Jeśli napiszesz do mnie e-mail, użyję Twojego adresu i treści wiadomości wyłącznie po to, aby Ci odpowiedzieć. Nie przekazuję ich nikomu dalej. Korzystam ze skrzynki Gmail, więc wiadomości są przechowywane i przetwarzane przez Google zgodnie z polityką prywatności Google. Wiadomości usuwam na Twoją prośbę."
       },
       {
         "heading": "6. Twoje prawa",
-        "text": "Zgodnie z RODO przysługują Ci następujące prawa:",
-        "list": [
-          "Prawo dostępu do swoich danych",
-          "Prawo do sprostowania danych",
-          "Prawo do usunięcia danych",
-          "Prawo do ograniczenia przetwarzania",
-          "Prawo do przenoszenia danych",
-          "Prawo do wniesienia sprzeciwu",
-          "Prawo do wniesienia skargi do organu nadzorczego (PUODO)"
-        ]
+        "text": "Zgodnie z RODO masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (PUODO)."
       },
       {
-        "heading": "7. Pliki cookies",
-        "text": "Nasza strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania serwisu, analizy ruchu oraz personalizacji treści. Możesz zarządzać ustawieniami cookies w swojej przeglądarce."
-      },
-      {
-        "heading": "8. Udostępnianie danych",
-        "text": "Twoje dane mogą być udostępniane podmiotom trzecim wyłącznie w zakresie niezbędnym do realizacji usług (np. dostawcom hostingu, systemów płatności) oraz podmiotom uprawnionym na podstawie przepisów prawa."
-      },
-      {
-        "heading": "9. Zmiany w polityce prywatności",
-        "text": "Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. O wszelkich zmianach będziemy informować poprzez publikację nowej wersji na tej stronie."
+        "heading": "7. Zmiany",
+        "text": "Jeśli na stronie pojawią się nowe funkcje przetwarzające dane (np. analityka), zaktualizuję tę politykę. Aktualna wersja jest zawsze publikowana na tej stronie."
       }
     ],
     "contact": {
-      "text": "W przypadku pytań dotyczących niniejszej polityki prywatności prosimy o kontakt pod adresem:",
-      "email": "kontakt\\@twojafirma.pl"
+      "text": "W razie pytań dotyczących prywatności napisz na adres:",
+      "email": "marchewczykmateusz24\\@gmail.com"
     },
     "emailAria": "Napisz mail do {email}"
   },

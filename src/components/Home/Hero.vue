@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import ProfileImg from './ProfileImg.vue'
-import ResumePL from "../../assets/resume-pl.pdf"
-import ResumeEN from "../../assets/resume-en.pdf"
 
 const email = 'marchewczykmateusz24@gmail.com'
 const copied = ref(false)
@@ -48,7 +46,7 @@ function copyEmail() {
 
                 <div class="flex flex-col xl:flex-row xl:items-center xl:flex-wrap gap-4">
                     <div class="flex items-center flex-wrap xl:justify-center gap-4">
-                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/marchewazz" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.githubAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full sm:w-fit
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90
@@ -60,7 +58,7 @@ function copyEmail() {
                             GitHub
                         </a>
 
-                        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank" rel="noopener noreferrer"
                             :aria-label="$t('nav.linkedinAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full sm:w-fit
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90
@@ -107,7 +105,7 @@ function copyEmail() {
                     </div>
                     <div class="flex flex-wrap gap-4">
                         <div class="rounded-full sm:w-fit w-full">
-                            <a :href="ResumePL" download
+                            <a href="/portfolio/public/resume-pl.pdf" target="_blank"
                                 :aria-label="$t('home.polishResumeAria')"
                                 class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90
@@ -121,7 +119,7 @@ function copyEmail() {
                         </div>
 
                         <div class="rounded-full sm:w-fit w-full">
-                            <a :href="ResumeEN" download
+                            <a href="/portfolio/public/resume-en.pdf" target="_blank"
                                 :aria-label="$t('home.englishResumeAria')"
                                 class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90

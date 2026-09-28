@@ -121,10 +121,6 @@ html {
         scroll-padding-top: 64px;
     }
 
-    @media (min-width: 1024px) {
-        scroll-padding-top: 104px;
-    }
-
     &.dark {
         background-color: var(--color-primary-claret);
     }
