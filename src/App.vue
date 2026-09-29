@@ -53,13 +53,10 @@ router.afterEach((to, from) => {
   isLoading.value = false
 
   if (to.hash) {
-    console.log(`herehre`)
-    console.log(to.hash)
     nextTick(() => {
       const el = document.querySelector(to.hash)
-      console.log(el)
       if (el) {
-        el.scrollIntoView({ behavior: 'auto', block: 'start'})
+        el.scrollIntoView({ behavior: 'auto', block: 'start' })
       } else {
         window.scrollTo(0, 0)
       }

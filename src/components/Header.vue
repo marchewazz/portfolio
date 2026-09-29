@@ -18,6 +18,7 @@ const sectionLinks = [
   { id: 'experience', key: 'nav.experience', href: '#experience' },
   { id: 'testimonials', key: 'nav.testimonials', href: '#testimonials' },
   { id: 'events', key: 'nav.events', href: '#events' },
+  { id: 'education', key: 'nav.education', href: '#education' },
   { id: 'collaboration', key: 'nav.collaboration', href: '#collaboration' },
 ]
 
