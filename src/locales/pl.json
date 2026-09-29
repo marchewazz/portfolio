@@ -31,8 +31,8 @@
     "title": "Mateusz Marchewczyk - portfolio",
     "githubAria": "Przejdź do profilu GitHub",
     "linkedinAria": "Przejdź do profilu LinkedIn",
-    "polishResumeAria": "Pobierz CV po polsku",
-    "englishResumeAria": "Pobierz CV po angielsku",
+    "polishResumeAria": "Zobacz CV po polsku",
+    "englishResumeAria": "Zobacz CV po angielsku",
     "emailAria": "Napisz mail do {email}",
     "copyEmailAria": "Skopiuj mail do {email}",
     "description": "Portfolio Mateusz Marchewczyk - Full-stack developer pracujący w Vue i PHP. Zobacz moje projekty, doświadczenie i skontaktuj się ze mną.",
@@ -43,8 +43,8 @@
       "thirdParagraph": "Prywatnie - jestem fanem F1, NBA i Ekstraklasy oraz lubię czytać książki.",
       "more": "Informacje o współpracy ze mną",
       "alt": "Zdjęcia profilowe Mateusza Marchewczyka",
-      "resume_pl": "Pobierz CV po polsku",
-      "resume_en": "Pobierz CV po angielsku",
+      "resume_pl": "Zobacz CV po polsku",
+      "resume_en": "Zobacz CV po angielsku",
       "collaborationAria": "Przejdź do sekcji o współpracy"
     },
     "skills": {
@@ -398,8 +398,8 @@
     "collaboration": {
       "header": "Współpraca",
       "intro": "Obecnie pracuję jako Full Stack Developer",
-      "polishResumeAria": "Pobierz CV po polsku",
-      "englishResumeAria": "Pobierz CV po angielsku",
+      "polishResumeAria": "Zobacz CV po polsku",
+      "englishResumeAria": "Zobacz CV po angielsku",
       "emailAria": "Napisz mail do {email}",
       "copyEmailAria": "Skopiuj mail do {email}",
       "employment": {

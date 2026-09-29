@@ -31,8 +31,8 @@
     "title": "Mateusz Marchewczyk - portfolio",
     "githubAria": "Przejdź do profilu GitHub",
     "linkedinAria": "Przejdź do profilu LinkedIn",
-    "polishResumeAria": "Download Polish resume",
-    "englishResumeAria": "Download English resume",
+    "polishResumeAria": "Check Polish resume",
+    "englishResumeAria": "Check English resume",
     "emailAria": "Mail to {email}",
     "copyEmailAria": "Copy mail {email}",
     "description": "Mateusz Marchewczyk's portfolio - Full-stack developer specialized in Vue and PHP. See my projects, experience and contact me for collaboration.",
@@ -43,8 +43,8 @@
       "thirdParagraph": "Privately, I am a fan of F1, the NBA and Ekstraklasa, and I also enjoy reading books.",
       "more": "More about collaboration with me",
       "alt": "Mateusza Marchewczyk's profile pic",
-      "resume_pl": "Download polish resume",
-      "resume_en": "Download english resume",
+      "resume_pl": "Check polish resume",
+      "resume_en": "Check english resume",
       "collaborationAria": "Go to section about collaboration"
     },
     "skills": {
@@ -398,8 +398,8 @@
     "collaboration": {
       "header": "Collaboration",
       "intro": "I currently work as a Full Stack Developer",
-      "polishResumeAria": "Download Polish resume",
-      "englishResumeAria": "Download English resume",
+      "polishResumeAria": "Check Polish resume",
+      "englishResumeAria": "Check English resume",
       "emailAria": "Mail to {email}",
       "copyEmailAria": "Copy mail {email}",
       "employment": {

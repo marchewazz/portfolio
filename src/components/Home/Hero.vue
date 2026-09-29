@@ -105,7 +105,7 @@ function copyEmail() {
                     </div>
                     <div class="flex flex-wrap gap-4">
                         <div class="rounded-full sm:w-fit w-full">
-                            <a href="/portfolio/public/resume-pl.pdf" target="_blank"
+                            <a href="/portfolio/resume-pl.pdf" target="_blank"
                                 :aria-label="$t('home.polishResumeAria')"
                                 class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90
@@ -119,7 +119,7 @@ function copyEmail() {
                         </div>
 
                         <div class="rounded-full sm:w-fit w-full">
-                            <a href="/portfolio/public/resume-en.pdf" target="_blank"
+                            <a href="/portfolio/resume-en.pdf" target="_blank"
                                 :aria-label="$t('home.englishResumeAria')"
                                 class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full
                                 bg-primary-claret text-primary-yellow hover:bg-primary-claret/90

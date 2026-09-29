@@ -57,7 +57,7 @@ function copyEmail() {
                         </button>
                     </div>
                      <div class="rounded-full w-full">
-                        <a href="/portfolio/public/resume-pl.pdf" target="_blank"
+                        <a href="/portfolio/resume-pl.pdf" target="_blank"
                             :aria-label="$t('home.polishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret  dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-[scale,color,background-color] w-full
                             focus-visible:scale-105 md:focus-visible:scale-120 focus-visible:bg-primary-blue dark:focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-claret">
@@ -65,7 +65,7 @@ function copyEmail() {
                         </a>
                     </div>
                     <div class="rounded-full w-full">
-                        <a href="/portfolio/public/resume-en.pdf" target="_blank"
+                        <a href="/portfolio/resume-en.pdf" target="_blank"
                             :aria-label="$t('home.englishResumeAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm dark:bg-primary-claret bg-primary-yellow dark:text-primary-blue text-primary-claret dark:hover:bg-primary-claret/90 hover:bg-primary-yellow/80 transition-[scale,color,background-color] w-full
                             focus-visible:scale-105 md:focus-visible:scale-120 focus-visible:bg-primary-blue dark:focus-visible:bg-primary-blue focus-visible:text-primary-claret dark:focus-visible:text-primary-claret">
