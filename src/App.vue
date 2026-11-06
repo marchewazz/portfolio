@@ -65,6 +65,7 @@ router.afterEach((to, from) => {
     window.scrollTo(0, 0)
   }
 })
+  // coment
 </script>
 
 <template>
