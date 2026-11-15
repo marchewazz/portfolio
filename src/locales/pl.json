@@ -283,7 +283,7 @@
           "date": "marzec 2023 — czerwiec 2023",
           "form": "ZDALNIE",
           "title": "Stażysta",
-          "description": "Staż, który łączyłem ze szkołą, i w ramach którego brałem udział w pierwszych komercyjnych projektach. Moim zadaniem było głównie przenoszenie wyglądu z Figmy do HTML oraz pisanie skryptów w JS",
+          "description": "Staż, który łączyłem ze szkołą i w ramach którego brałem udział w pierwszych komercyjnych projektach. Moim zadaniem było głównie przenoszenie wyglądu z Figmy do HTML oraz pisanie skryptów w JS.",
           "projects": [
             {
               "title": "Strona firmowa CODERHINO",
@@ -422,11 +422,11 @@
       },
       "availability": {
         "title": "Dostępność",
-        "text": "Obecnie zatrudniony, otwarty na kontakt."
+        "text": "Obecnie zatrudniony, otwarty na oferty."
       },
       "workflow": {
         "title": "Jak pracuję",
-        "text": "Pracuję przy rozwoju zarówno frontendu, jak i backendu, uczestniczę w spotkaniach, współpracuję z działami marketingu, sprzedaży i SEO, korzystam m.in. z Jiry i pakietu Office."
+        "text": "Pracuję przy rozwoju zarówno frontendu, jak i backendu, uczestniczę w spotkaniach, współpracuję z działami marketingu, sprzedaży i SEO, korzystam m.in. z Jiry i pakietu Microsoft Office."
       }
     },
     "events": {
@@ -436,19 +436,19 @@
           "role": "Uczestnik",
           "name": "WordCamp Kraków",
           "year": "2026",
-          "description": "Miałem przyjemność przez dwa dni uczestniczyć w prelekcjach oraz warsztatach poświęconych WordPressowi, programowaniu i cyberbezpieczeństwu"
+          "description": "Miałem przyjemność przez dwa dni uczestniczyć w prelekcjach oraz warsztatach poświęconych WordPressowi, programowaniu i cyberbezpieczeństwu."
         },
         {
           "role": "Uczestnik",
           "name": "Silesian CYBERHackathon",
           "year": "2024",
-          "description": "Podczas tego wydarzenia byłem częścią kilkuosobowego zespołu, którego celem było zbudowanie tematycznej aplikacji w 8 godzin. Stworzyliśmy prosty webowy panel połączony z czujnikiem do monitorowania warunków, np. pod ziemią"
+          "description": "Podczas tego wydarzenia byłem częścią kilkuosobowego zespołu, którego celem było zbudowanie tematycznej aplikacji w 8 godzin. Stworzyliśmy prosty webowy panel połączony z czujnikiem do monitorowania warunków, np. pod ziemią."
         },
         {
           "role": "Prelegent",
           "name": "Codeweek",
           "year": "2022",
-          "description": "Byłem jednym z dwóch prelegentów w ramach lekcji \"Monty Python w IT\" podczas CodeWeek w mojej szkole. Przedstawialiśmy skrypt w Pythonie pozwalający ściągnąć dane z Wikipedii oraz zbudowaliśmy czat na żywo z użyciem biblioteki socket"
+          "description": "Byłem jednym z dwóch prelegentów w ramach lekcji \"Monty Python w IT\" podczas CodeWeek w mojej szkole. Przedstawialiśmy skrypt w Pythonie pozwalający ściągnąć dane z Wikipedii oraz zbudowaliśmy czat na żywo z użyciem biblioteki socket."
         }
       ]
     },

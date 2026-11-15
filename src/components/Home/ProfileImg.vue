@@ -26,7 +26,7 @@ const devInfo = {
     role: "Full-stack developer",
     yearsOfExperience: "over_3",
     mainTechnologies: "[\"vue\", \"php\", \"wordpress\", \"tailwind\"]",
-    status: "employed",
+    status: "[\"employed\", \"open_to_offers\"]",
 }
 
 // indent is now a level (0 or 1), not literal spaces in the string
@@ -38,7 +38,7 @@ const scriptLines = [
     { text: `"role": "${devInfo.role}",`, delay: 16, indent: 1 },
     { text: `"yearsOfExperience": "${devInfo.yearsOfExperience}",`, delay: 16, indent: 1 },
     { text: `"mainTechnologies": ${devInfo.mainTechnologies},`, delay: 16, indent: 1 },
-    { text: `"status": "${devInfo.status}",`, delay: 16, indent: 1 },
+    { text: `"status": ${devInfo.status}`, delay: 16, indent: 1 },
     { text: '}', delay: 20, indent: 0 },
 ]
 
