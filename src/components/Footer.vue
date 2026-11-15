@@ -33,13 +33,14 @@ const links = [
             <div>
                 <div class="text-sm text-primary-claret dark:text-primary-white mb-1 transition-colors duration-100">&lt;nav&gt;</div>
                 <nav class="flex flex-col gap-0.5 pl-1 sm:pl-6">
-                    <a v-if="route.name && route.name == 'home'" v-for="link in links" :key="link.href" :href="link.href"
+                    <RouterLink v-if="route.name && route.name == 'home'" v-for="link in links" :key="link.href"
+                        :to="{ name: 'home', hash: link.href }"
                         :aria-label="`${$t('footer.linksAria')}${$t(link.key)}`"
                         class="flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret hover:pl-3 transition-[padding,background-color,color] duration-100">
                         <span>&lt;a href="{{ link.href }}"&gt;</span>
                         <span class="px-2 sm:px-0">{{ $t(link.key) }}</span>
                         <span>&lt;/a&gt;</span>
-                    </a>
+                    </RouterLink>
                     <RouterLink v-if="route.name && route.name == 'home'" to="/privacy"
                         :aria-label="$t('footer.privacyAria')"
                         class="flex flex-col sm:flex-row sm:items-center gap-1 py-1.5 px-2 text-sm text-primary-claret dark:text-primary-white hover:bg-primary-claret dark:hover:bg-primary-blue hover:text-primary-yellow dark:hover:text-primary-claret focus-visible:bg-primary-claret dark:focus-visible:bg-primary-blue focus-visible:text-primary-yellow dark:focus-visible:text-primary-claret transition-[background-color,color] duration-100">
