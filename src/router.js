@@ -12,6 +12,11 @@ const routes = [
     name: 'privacy',
     component: () => import('@/views/Privacy.vue'),
   },
+  {
+    // Catch-all: unknown routes (e.g. #/anything) go back to home instead of a blank page
+    path: '/:pathMatch(.*)*',
+    redirect: { name: 'home' },
+  },
 ]
 
 function waitForElement(selector, timeout = 3000) {
