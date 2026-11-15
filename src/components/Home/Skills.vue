@@ -52,13 +52,19 @@ const techColors = {
     'Vitest': { bg: '#1E1E20', text: '#FCC72B', border: '#729B1B' },
     'Playwright': { bg: '#2D4552', text: '#45BA4B', border: '#D65348' },
     'PHPUnit': { bg: '#4F5B93', text: '#FFFFFF' },
-    // CMS (matched by first word, e.g. "Wordpress z motywami Roots/Sage")
-    'Wordpress': { bg: '#21759B', text: '#FFFFFF' },
+    // CMS (matched by first word, e.g. "WordPress z motywami Roots/Sage")
+    'WordPress': { bg: '#21759B', text: '#FFFFFF' },
 }
+
+// Case-insensitive lookup, so "Wordpress" and "WordPress" both match
+const techColorsLower = Object.fromEntries(
+    Object.entries(techColors).map(([name, colors]) => [name.toLowerCase(), colors])
+)
 
 // Returns inline styles for a known technology, or null → falls back to site colors
 function pillStyle(tech) {
-    const c = techColors[tech] ?? techColors[tech.split(' ')[0]]
+    const name = tech.toLowerCase()
+    const c = techColorsLower[name] ?? techColorsLower[name.split(' ')[0]]
     if (!c) return null
     return { background: c.bg, color: c.text, borderColor: c.border ?? 'transparent' }
 }

@@ -26,6 +26,7 @@ import ChatlabScreen from "../assets/images/screens/chatlab.png"
 import MilestoneScreen from "../assets/images/screens/milestone.png"
 import MilestoneScreen2 from "../assets/images/screens/milestone-2.png"
 import InpostScreen from "../assets/images/screens/inpost.png"
+import ZbalansowaniScreen from "../assets/images/screens/zbalansowani.png"
 
 import 'swiper/css'
 
@@ -65,6 +66,9 @@ const projectImages = {
   ],
   "teb-registration-form": [
     { src: UpiScreen, altKey: "alts.tebRegistrationForm.1", divClass: "", imageClass: "" }
+  ],
+  "zbalansowani": [
+    { src: ZbalansowaniScreen, altKey: "alts.zbalansowani.1", divClass: "", imageClass: "" }
   ],
   "teb-ai-offers-bot": [
     { src: ChatlabScreen, altKey: "alts.tebAiOffersBot.1", divClass: "aspect-video", imageClass: "object-contain" }

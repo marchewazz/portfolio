@@ -107,7 +107,7 @@
         "cms": {
           "title": "CMS",
           "technologies": [
-            "Wordpress with Roots/Sage themes"
+            "WordPress with Roots/Sage themes"
           ]
         }
       }
@@ -187,7 +187,7 @@
               ]
             },
             {
-              "title": "Website for psychologi clinic Zbalansowani",
+              "title": "Website for psychology clinic Zbalansowani",
               "slug": "zbalansowani",
               "description": "A WordPress theme for a psychological counseling center run by TEB Edukacja — I was responsible for translating the design from Figma into code, scripting the site, and building the ACF field and CPT logic needed for the site to function.",
               "tech": [
@@ -285,7 +285,7 @@
           "date": "March 2023 — June 2023",
           "form": "REMOTE",
           "title": "Intern",
-          "description": "An internship I combined with school, during which I took part in my first commercial projects.",
+          "description": "An internship I combined with school, during which I took part in my first commercial projects. My main tasks were turning Figma designs into HTML and writing JavaScript scripts.",
           "projects": [
             {
               "title": "CODERHINO company website",
@@ -298,7 +298,7 @@
               ]
             },
             {
-              "title": "Website about evenets How To IAB",
+              "title": "Website about events How To IAB",
               "slug": "iab-how-to",
               "description": "A clean WordPress theme for the IAB association. My task was to translate the design from Figma into code and write the necessary JavaScript. The site is responsive and works with ACF.",
               "tech": [
@@ -361,6 +361,9 @@
         "tebAiOffersBot": {
           "1": "AI chatbot interface for generating TEB offers"
         },
+        "zbalansowani": {
+          "1": "Zbalansowani homepage – a diagnosis and psychotherapy centre for children and teenagers, with a specialist search form"
+        },
         "tebSchoolSitesMaintenance": {
           "1": "Liceum school website homepage",
           "2": "Technikum school website homepage"
@@ -419,11 +422,11 @@
       },
       "availability": {
         "title": "Availability",
-        "text": "Currently employed."
+        "text": "Currently employed, open to offers."
       },
       "workflow": {
         "title": "How I work",
-        "text": "I work with development of both frontend and backend. I participate in meeting, collborate with departments of marketing, sales and SEO, also I use Jira and Office package."
+        "text": "I work with development of both frontend and backend. I participate in meetings, collaborate with departments of marketing, sales and SEO, also I use Jira and Office package."
       },
       "cta": "Let's talk about your project."
     },
@@ -456,7 +459,7 @@
         {
           "year": "2019 - 2024",
           "degree": "Programmer technician",
-          "school": "Technical School number 1, Gliwice",
+          "school": "Technical School No. 1, Gliwice",
           "description": "At school I got to know basics of PHP, JS and its frameworks and MySQL. I gained some experience with desktop apps in C# and with mobile apps in Java with Android Studio. In the meantime I have tried to extend my knowledge - from widely used MongoDB, Django or React Native to Kivy or Svelte, also I started my internship at CODERHINO. I finished school with 99% on my professional examination."
         }
       ]
