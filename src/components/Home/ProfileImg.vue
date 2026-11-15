@@ -1,6 +1,10 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Face from "../../assets/images/face.jpg"
+
+// TODO: set to true after adding the photo to restore the hover/click flip
+// (front = photo, back = typed JSON). While false, the JSON terminal is shown right away.
+const FLIP_ENABLED = false
 
 const email = 'marchewczykmateusz24@gmail.com'
 const copied = ref(false)
@@ -14,7 +18,7 @@ function copyEmail() {
 // --- Terminal flip logic ---
 const terminalLines = ref([])
 const typing = ref(false)
-const flipped = ref(false)
+const flipped = ref(!FLIP_ENABLED)
 
 const devInfo = {
     firstName: "Mateusz",
@@ -80,6 +84,7 @@ function resetTyping() {
 
 // --- Click handling (mainly for touch devices without hover) ---
 function toggleFlip() {
+    if (!FLIP_ENABLED) return
     flipped.value = !flipped.value
     if (flipped.value) {
         startTyping()
@@ -89,20 +94,30 @@ function toggleFlip() {
 }
 
 function handleMouseEnter() {
+    if (!FLIP_ENABLED) return
     flipped.value = true
     startTyping()
 }
 
 function handleMouseLeave() {
+    if (!FLIP_ENABLED) return
     flipped.value = false
     resetTyping()
 }
+
+// With the flip disabled, start typing the JSON as soon as the component mounts
+onMounted(() => {
+    if (!FLIP_ENABLED) startTyping()
+})
+
+onBeforeUnmount(() => clearTimeout(typingTimeout))
 </script>
 
 <template>
     <div
-        class="w-70 sm:w-80 h-auto shrink-0 aspect-square perspective-distant group cursor-pointer"
-        tabindex="0"
+        class="w-70 sm:w-80 h-auto shrink-0 aspect-square perspective-distant group"
+        :class="{ 'cursor-pointer': FLIP_ENABLED }"
+        :tabindex="FLIP_ENABLED ? 0 : undefined"
         @focusin="handleMouseEnter"
         @focusout="handleMouseLeave"
         @mouseenter="handleMouseEnter"
