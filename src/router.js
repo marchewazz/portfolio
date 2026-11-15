@@ -1,5 +1,5 @@
 import { nextTick, watch } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -36,7 +36,9 @@ function waitForElement(selector, timeout = 3000) {
 }
 
 const router = createRouter({
-  history: createWebHistory('/portfolio/'),
+  // Hash history (/portfolio/#/privacy) because GitHub Pages has no SPA fallback
+  // and returns 404 for direct visits / refreshes on routes like /portfolio/privacy
+  history: createWebHashHistory(),
   routes,
   async scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition

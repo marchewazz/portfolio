@@ -133,7 +133,7 @@ function copyEmail() {
                         </div>
                     </div>
                     <div class="rounded-full sm:w-fit w-full">
-                        <a href="#collaboration"
+                        <RouterLink :to="{ name: 'home', hash: '#collaboration' }"
                             :aria-label="$t('home.hero.collaborationAria')"
                             class="flex items-center justify-center h-11 px-4 rounded-full whitespace-nowrap font-semibold text-sm w-full
                             bg-primary-claret text-primary-yellow hover:bg-primary-claret/90
@@ -143,7 +143,7 @@ function copyEmail() {
                             focus-visible:bg-primary-yellow focus-visible:text-primary-claret
                             dark:focus-visible:bg-primary-blue dark:focus-visible:text-primary-claret">
                             {{ $t("home.hero.more") }}
-                        </a>
+                        </RouterLink>
                     </div>
 
                 </div>

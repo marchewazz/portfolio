@@ -126,12 +126,13 @@ onUnmounted(() => {
   ]">
     <div class="flex lg:justify-between gap-2 items-center px-4 lg:px-10 h-12 xl:h-16">
       <nav class="hidden xl:flex lg:gap-4 xl:gap-8 items-center h-full">
-        <a v-if="route.name && route.name == 'home'" v-for="link in sectionLinks" :key="link.id" :href="link.href"
+        <RouterLink v-if="route.name && route.name == 'home'" v-for="link in sectionLinks" :key="link.id"
+          :to="{ name: 'home', hash: link.href }"
           :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`"
           class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="[activeSection === link.id ? 'text-xl' : 'text-base', focusClasses]">
           {{ $t(link.key) }}
-        </a>
+        </RouterLink>
         <RouterLink :aria-label="$t('nav.backToMainPage')" v-if="route.name && route.name != 'home'" to="/"
           class="font-bold transition-[font-weight,font-size,background-color,color] duration-100 h-full flex items-center hover:text-xl hover:font-black"
           :class="focusClasses">
@@ -180,13 +181,13 @@ onUnmounted(() => {
           :centered-slides="true" class="!px-4 h-full" @swiper="onSwiperInit">
 
           <SwiperSlide v-for="link in sectionLinks" :key="link.id" class="!w-auto flex items-center">
-            <a :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`" :href="link.href"
+            <RouterLink :aria-label="`${$t('nav.linksAria')}${$t(link.key)}`" :to="{ name: 'home', hash: link.href }"
               class="whitespace-nowrap font-bold transition-[font-weight,font-size,opacity,background-color,color] duration-100 hover:text-lg hover:font-black px-1"
               :class="[activeSection === link.id
                 ? 'text-lg border-b-2 border-current'
                 : 'text-sm opacity-60', focusClasses]">
               {{ $t(link.key) }}
-            </a>
+            </RouterLink>
           </SwiperSlide>
         </Swiper>
       </nav>
