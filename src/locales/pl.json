@@ -68,7 +68,8 @@
             "Node.js",
             "Express",
             "PHP",
-            "Laravel"
+            "Laravel",
+            "Python"
           ]
         },
         "database": {
@@ -76,7 +77,8 @@
           "technologies": [
             "MySQL",
             "PostgreSQL",
-            "MongoDB"
+            "MongoDB",
+            "SQLite"
           ]
         },
         "ai": {
@@ -84,6 +86,8 @@
           "technologies": [
             "Codex",
             "Claude",
+            "Claude Code",
+            "ChatGPT",
             "ChatLab"
           ]
         },
@@ -94,7 +98,10 @@
             "Docker",
             "Vite",
             "Jira",
-            "DBeaver"
+            "DBeaver",
+            "Vitest",
+            "Playwright",
+            "PHPUnit"
           ]
         },
         "cms": {
